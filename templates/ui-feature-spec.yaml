@@ -1,0 +1,21 @@
+feature:
+  name: "feature-name"
+  objective: "User outcome and business value"
+  scope:
+    in: []
+    out: []
+states:
+  loading: "Expected UI while data is pending"
+  empty: "Expected UI when no data is available"
+  error: "Expected UI for recoverable and unrecoverable errors"
+  success: "Expected UI in normal operation"
+accessibility:
+  keyboard_navigation: true
+  screen_reader_notes: []
+  contrast_requirements: "WCAG AA minimum"
+performance:
+  budget_notes: "Bundle and interaction budget targets"
+verification:
+  unit_tests: []
+  integration_tests: []
+  manual_checks: []

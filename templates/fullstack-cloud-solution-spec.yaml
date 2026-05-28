@@ -1,0 +1,26 @@
+solution:
+  name: "solution-name"
+  objective: "Business and user outcome"
+  cloud: "aws|azure|gcp"
+  regions: []
+frontend:
+  framework: "react|angular|vue|other"
+  rendering_strategy: "ssr|ssg|csr|hybrid"
+  hosting_notes: "CDN, caching, and invalidation strategy"
+backend:
+  language_runtime: "node|java|dotnet|other"
+  service_boundaries: []
+  api_style: "rest|graphql|grpc|event"
+security:
+  authn_authz: "Identity provider and policy model"
+  secrets: "Secret storage and rotation strategy"
+  network_controls: []
+operations:
+  environments: ["dev", "staging", "prod"]
+  ci_cd_strategy: "build, test, deploy, rollback"
+  observability: "logs, metrics, traces, alerts"
+verification:
+  contract_tests: []
+  e2e_tests: []
+  load_tests: []
+  disaster_recovery_checks: []
