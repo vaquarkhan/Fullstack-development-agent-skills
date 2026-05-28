@@ -25,6 +25,26 @@ disable-model-invocation: true
 - Regional failover behavior is tested
 - Static and dynamic content paths have clear scaling model
 
+## Decision Framework
+
+- Prefer the simplest architecture that preserves maintainability under team growth.
+- Make rendering, state, and API boundary decisions explicit before implementation.
+- If a feature affects critical user journeys, require performance and accessibility checks.
+- If introducing dependencies, justify bundle and long-term maintenance cost.
+
+## Common Rationalizations And Rebuttals
+
+- "We can optimize later." -> Performance debt compounds quickly; set budgets now.
+- "Accessibility is polish." -> Accessibility is core behavior and should ship with the feature.
+- "One global state store is easiest." -> Over-centralization increases coupling and slows iteration.
+
+## Evidence Pack
+
+- UX state coverage (loading, empty, error, success) for changed flows
+- Accessibility checks for keyboard, focus, and semantics
+- Performance snapshot for key routes or interactions
+- Test evidence for critical user paths
+
 ## Exit Criteria
 
 - Frontend delivery remains available during regional or origin failures

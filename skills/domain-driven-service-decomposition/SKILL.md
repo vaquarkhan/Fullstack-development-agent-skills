@@ -25,6 +25,26 @@ disable-model-invocation: true
 - Cross-context communication contracts are explicit
 - Team ownership model supports independent deployment
 
+## Decision Framework
+
+- Start with clear scope and ownership boundaries.
+- Prefer incremental, testable slices over broad rewrites.
+- Define compatibility and rollback expectations before release.
+- Require evidence for reliability and operability outcomes.
+
+## Common Rationalizations And Rebuttals
+
+- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
+- "This change is too small for process." -> Small changes still need clear validation criteria.
+- "Docs can wait." -> Missing context increases future delivery and incident cost.
+
+## Evidence Pack
+
+- Scope and acceptance criteria with owner
+- Test or validation evidence for changed behavior
+- Compatibility and rollback notes
+- Operational visibility requirements for production impact
+
 ## Exit Criteria
 
 - Service map is implementable and evolvable

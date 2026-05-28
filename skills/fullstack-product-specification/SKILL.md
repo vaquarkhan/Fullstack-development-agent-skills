@@ -21,6 +21,13 @@ disable-model-invocation: true
 5. Set non-functional requirements (latency, throughput, accessibility, security, auditability).
 6. Record rollout strategy, migration or backfill needs, and rollback criteria.
 
+## Decision Framework
+
+- If requirements are UI-only, force API and data impact review before build starts.
+- If the change touches auth or money flow, require security and failure-mode scenarios.
+- If migration is needed, choose expand-migrate-contract unless a stronger alternative is justified.
+- If performance SLO is unknown, add a baseline measurement task before implementation.
+
 ## Required Artifacts
 
 - Feature brief with acceptance criteria
@@ -35,6 +42,20 @@ disable-model-invocation: true
 - Backend assumptions are embedded in frontend code comments only
 - API errors and edge cases are not defined
 - No migration story for schema or contract changes
+
+## Common Rationalizations And Rebuttals
+
+- "We can define API later once UI is done." -> This causes rework and contract drift; lock minimal API shape early.
+- "Edge cases can wait for QA." -> Undefined error behavior becomes production bugs; specify it now.
+- "Rollback is obvious." -> Rollback often fails with data changes; document exact rollback conditions and steps.
+
+## Evidence Pack
+
+- Approved feature brief with acceptance criteria and owner
+- API contract diff with backward-compatibility note
+- UI state matrix covering all critical transitions
+- Data migration note with rollback decision point
+- NFR checklist with explicit SLO targets
 
 ## Exit Criteria
 
