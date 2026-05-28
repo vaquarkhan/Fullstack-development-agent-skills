@@ -1,0 +1,23 @@
+name: identity-edge-and-global-delivery-starter
+description: One-stop starter for OAuth/OIDC identity, Okta/Cognito integration, edge routing security, load balancing, and CDN acceleration.
+include_skills:
+  - oauth2-oidc-and-token-lifecycle
+  - okta-identity-integration-patterns
+  - aws-cognito-authentication-patterns
+  - nginx-edge-routing-and-security
+  - load-balancer-strategy-and-traffic-distribution
+  - cdn-caching-and-edge-acceleration-patterns
+  - api-gateway-and-edge-security
+  - frontend-load-balancing-and-global-delivery
+include_presets:
+  - aws-fullstack-development
+  - azure-fullstack-development
+  - gcp-fullstack-development
+include_references:
+  - identity-edge-and-delivery-checklist.md
+  - frontend-scaling-and-edge-security-checklist.md
+  - fullstack-auth-security-checklist.md
+success_evidence:
+  - auth token lifecycle tested end-to-end
+  - gateway and NGINX security controls validated
+  - global delivery and failover checks passed

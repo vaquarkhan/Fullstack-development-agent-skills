@@ -14,6 +14,7 @@ This repository is structured as an open skill registry:
 - Reviewer personas specialized for frontend quality, backend reliability, and threat-focused security reviews
 - Starter packs for MVP delivery, enterprise modernization, and reliability hardening
 - Built-in lifecycle command routing (`/spec`, `/plan`, `/build`, `/validate`, `/review`, `/ship`) for consistent execution
+- Multi-agent adapter surfaces for `Cursor`, `Claude`, `Gemini`, `Kiro`, `OpenCode`, `Windsurf`, `Copilot`, and generic `AGENTS.md` consumers
 
 ## Quick Start
 
@@ -44,6 +45,25 @@ This repository is structured as an open skill registry:
 - `bff-architecture-and-api-aggregation`
 - `payments-and-webhook-reliability`
 - `incident-triage-and-oncall-runbooks`
+- `microservice-patterns-saga-and-compensation`
+- `microservice-patterns-outbox-and-cdc`
+- `microservice-patterns-service-mesh-and-traffic-management`
+- `resilience-timeouts-retries-and-circuit-breakers`
+- `domain-driven-service-decomposition`
+- `distributed-monolith-detection-and-remediation`
+- `cqrs-and-event-sourcing-patterns`
+- `interservice-protocol-selection-rest-grpc-graphql`
+- `observability-distributed-tracing-and-ebpf-strategy`
+- `monolith-to-microservices-migration-strategy`
+- `oauth2-oidc-and-token-lifecycle`
+- `okta-identity-integration-patterns`
+- `aws-cognito-authentication-patterns`
+- `nginx-edge-routing-and-security`
+- `load-balancer-strategy-and-traffic-distribution`
+- `cdn-caching-and-edge-acceleration-patterns`
+- `api-gateway-and-edge-security`
+- `frontend-load-balancing-and-global-delivery`
+- `autoscaling-capacity-and-cost-guardrails`
 - `cloud-fullstack-development`
 
 ## Presets
@@ -64,7 +84,12 @@ This repository is structured as an open skill registry:
 ```text
 fullstack-development-agent-skills/
 ├── .cursor/commands/
+├── .claude/commands/
+├── .gemini/commands/
+├── .kiro/steering/
+├── .opencode/
 ├── .github/workflows/
+├── .github/copilot-instructions.md
 ├── agents/
 ├── registry/
 ├── scripts/
@@ -96,3 +121,5 @@ Use `docs/skill-anatomy.md` for required skill structure and quality gates.
 
 - `scripts/install.sh <tool|all> <target-path>`
 - `scripts/install.ps1 -Tool <tool|all> -Target <target-path>`
+
+Supported tools: `cursor`, `claude`, `gemini`, `kiro`, `opencode`, `windsurf`, `copilot`, `codex`, `generic`, `all`.

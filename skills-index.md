@@ -25,6 +25,25 @@
 - `skills/bff-architecture-and-api-aggregation/SKILL.md`
 - `skills/payments-and-webhook-reliability/SKILL.md`
 - `skills/incident-triage-and-oncall-runbooks/SKILL.md`
+- `skills/microservice-patterns-saga-and-compensation/SKILL.md`
+- `skills/microservice-patterns-outbox-and-cdc/SKILL.md`
+- `skills/microservice-patterns-service-mesh-and-traffic-management/SKILL.md`
+- `skills/resilience-timeouts-retries-and-circuit-breakers/SKILL.md`
+- `skills/domain-driven-service-decomposition/SKILL.md`
+- `skills/distributed-monolith-detection-and-remediation/SKILL.md`
+- `skills/cqrs-and-event-sourcing-patterns/SKILL.md`
+- `skills/interservice-protocol-selection-rest-grpc-graphql/SKILL.md`
+- `skills/observability-distributed-tracing-and-ebpf-strategy/SKILL.md`
+- `skills/monolith-to-microservices-migration-strategy/SKILL.md`
+- `skills/oauth2-oidc-and-token-lifecycle/SKILL.md`
+- `skills/okta-identity-integration-patterns/SKILL.md`
+- `skills/aws-cognito-authentication-patterns/SKILL.md`
+- `skills/nginx-edge-routing-and-security/SKILL.md`
+- `skills/load-balancer-strategy-and-traffic-distribution/SKILL.md`
+- `skills/cdn-caching-and-edge-acceleration-patterns/SKILL.md`
+- `skills/api-gateway-and-edge-security/SKILL.md`
+- `skills/frontend-load-balancing-and-global-delivery/SKILL.md`
+- `skills/autoscaling-capacity-and-cost-guardrails/SKILL.md`
 - `skills/cloud-fullstack-development/SKILL.md`
 
 ## Presets
@@ -47,6 +66,10 @@
 - `references/cloud-fullstack-readiness-checklist.md`
 - `references/fullstack-architecture-review-checklist.md`
 - `references/fullstack-auth-security-checklist.md`
+- `references/microservice-patterns-checklist.md`
+- `references/frontend-scaling-and-edge-security-checklist.md`
+- `references/microservices-architecture-patterns-checklist.md`
+- `references/identity-edge-and-delivery-checklist.md`
 
 ## Starter Packs
 
@@ -56,6 +79,9 @@
 - `starter-packs/saas-multi-tenant-starter.yaml`
 - `starter-packs/payments-and-subscriptions-starter.yaml`
 - `starter-packs/incident-hardening-and-slo-starter.yaml`
+- `starter-packs/microservice-patterns-and-edge-security-starter.yaml`
+- `starter-packs/microservices-architecture-modernization-starter.yaml`
+- `starter-packs/identity-edge-and-global-delivery-starter.yaml`
 
 ## Reviewer Personas
 
@@ -88,6 +114,22 @@
 - `.github/workflows/markdown-lint.yml`
 - `.github/workflows/release-artifacts.yml`
 - `.github/workflows/test-installation.yml`
+
+## Agent Adapters
+
+- `AGENTS.md`
+- `CLAUDE.md`
+- `.claude/commands/spec.md`
+- `.claude/commands/plan.md`
+- `.claude/commands/build.md`
+- `.claude/commands/validate.md`
+- `.claude/commands/review.md`
+- `.claude/commands/ship.md`
+- `.gemini/commands/README.md`
+- `.kiro/steering/README.md`
+- `.opencode/README.md`
+- `.windsurfrules.example`
+- `.github/copilot-instructions.md`
 
 ## Templates
 
