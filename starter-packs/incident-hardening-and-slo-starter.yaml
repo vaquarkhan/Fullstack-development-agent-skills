@@ -1,0 +1,20 @@
+name: incident-hardening-and-slo-starter
+description: Starter pack for reducing incident impact with SLO-based operations, rollback readiness, and reliability-focused engineering guardrails.
+include_skills:
+  - fullstack-observability-and-release-engineering
+  - incident-triage-and-oncall-runbooks
+  - distributed-caching-and-invalidation
+  - nodejs-nestjs-backend-microservices
+  - fullstack-testing-and-quality-gates
+include_presets:
+  - nodejs-microservices
+  - aws-fullstack-development
+  - azure-fullstack-development
+  - gcp-fullstack-development
+include_references:
+  - microservice-reliability-checklist.md
+  - cloud-fullstack-readiness-checklist.md
+success_evidence:
+  - SLOs and alert thresholds documented
+  - incident runbook practiced in staging drill
+  - rollback trigger policy approved

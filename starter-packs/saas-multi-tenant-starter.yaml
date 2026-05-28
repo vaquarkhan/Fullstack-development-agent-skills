@@ -1,0 +1,20 @@
+name: saas-multi-tenant-starter
+description: Starter pack for building and operating multi-tenant SaaS applications with secure tenant boundaries and reliable releases.
+include_skills:
+  - fullstack-product-specification
+  - authentication-and-authorization-fullstack
+  - bff-architecture-and-api-aggregation
+  - database-migrations-zero-downtime
+  - feature-flags-and-progressive-delivery
+  - fullstack-observability-and-release-engineering
+include_presets:
+  - fullstack-typescript-monorepo
+  - react-nextjs-frontend
+  - nodejs-microservices
+include_references:
+  - fullstack-architecture-review-checklist.md
+  - fullstack-auth-security-checklist.md
+success_evidence:
+  - tenant isolation checks pass
+  - tenant-aware audit logging implemented
+  - phased rollout plan approved

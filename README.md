@@ -8,6 +8,13 @@ This repository is structured as an open skill registry:
 - each `SKILL.md` starts with YAML frontmatter (`name`, `description`)
 - workflow support material lives in `references/`, `templates/`, and `presets/`
 
+## What Makes This Collection Distinct
+
+- Fullstack-first workflows that tie UI architecture, backend contracts, auth, and release safety together
+- Reviewer personas specialized for frontend quality, backend reliability, and threat-focused security reviews
+- Starter packs for MVP delivery, enterprise modernization, and reliability hardening
+- Built-in lifecycle command routing (`/spec`, `/plan`, `/build`, `/validate`, `/review`, `/ship`) for consistent execution
+
 ## Quick Start
 
 1. Load `skills/using-fullstack-agent-skills/SKILL.md`
@@ -31,6 +38,12 @@ This repository is structured as an open skill registry:
 - `authentication-and-authorization-fullstack`
 - `fullstack-testing-and-quality-gates`
 - `fullstack-observability-and-release-engineering`
+- `feature-flags-and-progressive-delivery`
+- `database-migrations-zero-downtime`
+- `distributed-caching-and-invalidation`
+- `bff-architecture-and-api-aggregation`
+- `payments-and-webhook-reliability`
+- `incident-triage-and-oncall-runbooks`
 - `cloud-fullstack-development`
 
 ## Presets
@@ -50,8 +63,14 @@ This repository is structured as an open skill registry:
 
 ```text
 fullstack-development-agent-skills/
+├── .cursor/commands/
+├── .github/workflows/
+├── agents/
+├── registry/
+├── scripts/
 ├── skills/
 ├── presets/
+├── starter-packs/
 ├── references/
 ├── templates/
 ├── docs/
@@ -70,3 +89,10 @@ fullstack-development-agent-skills/
 ## Contributing
 
 Contributions should be specific, verifiable, and workflow-focused.
+
+Use `docs/skill-anatomy.md` for required skill structure and quality gates.
+
+## Install Scripts
+
+- `scripts/install.sh <tool|all> <target-path>`
+- `scripts/install.ps1 -Tool <tool|all> -Target <target-path>`

@@ -29,6 +29,12 @@ disable-model-invocation: true
 - Auth and access control across UI and backend -> `authentication-and-authorization-fullstack`
 - Fullstack quality gates and release test strategy -> `fullstack-testing-and-quality-gates`
 - Runtime visibility, rollout safety, and rollback discipline -> `fullstack-observability-and-release-engineering`
+- Progressive rollout control and kill-switch operations -> `feature-flags-and-progressive-delivery`
+- Zero-downtime schema and data migration planning -> `database-migrations-zero-downtime`
+- Distributed cache correctness and invalidation strategy -> `distributed-caching-and-invalidation`
+- Backend-for-frontend contract and aggregation design -> `bff-architecture-and-api-aggregation`
+- Payment flow correctness and webhook resilience -> `payments-and-webhook-reliability`
+- Production incident response and runbook execution -> `incident-triage-and-oncall-runbooks`
 - Cloud-specific fullstack architecture and release workflow -> `cloud-fullstack-development`
 
 ## Exit Criteria

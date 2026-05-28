@@ -1,0 +1,19 @@
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate-markdown-and-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JSON files
+        run: |
+          python -m json.tool registry/assets.json > /dev/null
+      - name: Check required index files
+        run: |
+          test -f README.md
+          test -f skills-index.md

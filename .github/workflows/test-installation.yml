@@ -1,0 +1,19 @@
+name: test-installation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test-install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test shell installer
+        run: |
+          chmod +x scripts/install.sh
+          mkdir -p /tmp/fullstack-skill-install
+          ./scripts/install.sh all /tmp/fullstack-skill-install
+          test -d /tmp/fullstack-skill-install/skills
+          test -f /tmp/fullstack-skill-install/skills/using-fullstack-agent-skills/SKILL.md

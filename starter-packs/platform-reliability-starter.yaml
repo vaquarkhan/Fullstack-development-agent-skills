@@ -1,0 +1,23 @@
+name: platform-reliability-starter
+description: Reliability-first starter for teams hardening production fullstack systems under scale, incidents, and strict SLOs.
+use_when:
+  - recurring incidents or latency regressions
+  - new on-call rotation and SLO adoption
+  - high-risk releases touching critical paths
+include_skills:
+  - backend-microservices-architecture
+  - nodejs-nestjs-backend-microservices
+  - fullstack-testing-and-quality-gates
+  - fullstack-observability-and-release-engineering
+  - authentication-and-authorization-fullstack
+include_presets:
+  - nodejs-microservices
+  - fullstack-typescript-monorepo
+include_references:
+  - microservice-reliability-checklist.md
+  - fullstack-auth-security-checklist.md
+  - cloud-fullstack-readiness-checklist.md
+success_evidence:
+  - service error budget and alert thresholds defined
+  - release canary and rollback criteria documented
+  - incident postmortem template adopted

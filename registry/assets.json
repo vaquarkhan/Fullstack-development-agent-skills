@@ -1,0 +1,49 @@
+{
+  "version": "0.1.0",
+  "description": "Machine-readable index for fullstack agent skill assets.",
+  "entry": {
+    "skill": "skills/using-fullstack-agent-skills/SKILL.md"
+  },
+  "skills": [
+    "skills/fullstack-product-specification/SKILL.md",
+    "skills/react-nextjs-frontend-architecture/SKILL.md",
+    "skills/nodejs-nestjs-backend-microservices/SKILL.md",
+    "skills/authentication-and-authorization-fullstack/SKILL.md",
+    "skills/fullstack-testing-and-quality-gates/SKILL.md",
+    "skills/fullstack-observability-and-release-engineering/SKILL.md",
+    "skills/feature-flags-and-progressive-delivery/SKILL.md",
+    "skills/database-migrations-zero-downtime/SKILL.md",
+    "skills/distributed-caching-and-invalidation/SKILL.md",
+    "skills/bff-architecture-and-api-aggregation/SKILL.md",
+    "skills/payments-and-webhook-reliability/SKILL.md",
+    "skills/incident-triage-and-oncall-runbooks/SKILL.md"
+  ],
+  "presets": [
+    "presets/fullstack-typescript-monorepo/SKILL.md",
+    "presets/react-nextjs-frontend/SKILL.md",
+    "presets/nodejs-microservices/SKILL.md",
+    "presets/aws-fullstack-development/SKILL.md",
+    "presets/azure-fullstack-development/SKILL.md",
+    "presets/gcp-fullstack-development/SKILL.md"
+  ],
+  "starterPacks": [
+    "starter-packs/fullstack-mvp-starter.yaml",
+    "starter-packs/enterprise-modernization-starter.yaml",
+    "starter-packs/platform-reliability-starter.yaml",
+    "starter-packs/saas-multi-tenant-starter.yaml",
+    "starter-packs/payments-and-subscriptions-starter.yaml",
+    "starter-packs/incident-hardening-and-slo-starter.yaml"
+  ],
+  "commands": [
+    ".cursor/commands/spec.md",
+    ".cursor/commands/plan.md",
+    ".cursor/commands/build.md",
+    ".cursor/commands/validate.md",
+    ".cursor/commands/review.md",
+    ".cursor/commands/ship.md"
+  ],
+  "scripts": [
+    "scripts/install.sh",
+    "scripts/install.ps1"
+  ]
+}
