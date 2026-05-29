@@ -28,6 +28,14 @@ disable-model-invocation: true
 - If migration is needed, choose expand-migrate-contract unless a stronger alternative is justified.
 - If performance SLO is unknown, add a baseline measurement task before implementation.
 
+## Required Checks
+
+- Feature brief includes testable acceptance criteria
+- API contract draft covers errors, versioning, and examples
+- UI state matrix covers loading, empty, error, and success
+- Data model or migration impact documented with rollback owner
+- Rollout and rollback note approved before build
+
 ## Required Artifacts
 
 - Feature brief with acceptance criteria

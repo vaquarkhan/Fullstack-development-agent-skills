@@ -1,0 +1,19 @@
+name: mobile-fullstack-starter
+description: Mobile and web fullstack integration with offline sync, push, and shared API contracts.
+use_when:
+  - React Native or mobile clients share backend with web
+  - intermittent connectivity is common
+include_skills:
+  - react-native-fullstack-integration
+  - mobile-api-and-offline-sync-patterns
+  - authentication-and-authorization-fullstack
+  - api-contract-first-development
+include_presets:
+  - fullstack-typescript-monorepo
+  - react-nextjs-frontend
+include_references:
+  - fullstack-architecture-review-checklist.md
+success_evidence:
+  - API contracts validated for mobile and web clients
+  - offline sync and conflict rules tested
+  - secure token storage verified on target devices

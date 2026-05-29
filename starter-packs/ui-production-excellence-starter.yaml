@@ -1,0 +1,16 @@
+name: ui-production-excellence-starter
+description: Comprehensive UI delivery starter for App Router, design systems, accessibility, frontend security, and realtime experiences.
+include_skills:
+  - nextjs-app-router-and-streaming-ui
+  - design-system-governance-and-tokens
+  - frontend-security-csp-and-xss-hardening
+  - web-accessibility-wcag-compliance
+  - graphql-client-and-bff-integration
+  - realtime-ui-websockets-and-sse
+  - ui-engineering-and-design-systems
+include_presets:
+  - react-nextjs-frontend
+  - vercel-nextjs-jamstack
+include_references:
+  - ui-production-readiness-checklist.md
+  - frontend-review-checklist.md

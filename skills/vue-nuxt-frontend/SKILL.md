@@ -6,6 +6,11 @@ disable-model-invocation: true
 
 # Vue Nuxt Frontend
 
+## Use When
+
+- Delivering Vue or Nuxt UI with SSR, SSG, or hybrid rendering
+- Component architecture, accessibility, or performance needs review
+
 ## Workflow
 
 1. Define rendering strategy per route (SSR, SSG, or client).

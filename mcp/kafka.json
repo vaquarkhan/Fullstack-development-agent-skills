@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "kafka": {
+      "comment": "Use your organization's Kafka MCP adapter or Confluent-compatible tooling.",
+      "env": {
+        "KAFKA_BOOTSTRAP_SERVERS": "${KAFKA_BOOTSTRAP_SERVERS}"
+      }
+    }
+  }
+}

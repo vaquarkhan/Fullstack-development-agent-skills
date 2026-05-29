@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "azure-docs": {
+      "comment": "Replace with your Azure MCP server configuration and Entra auth setup."
+    }
+  }
+}

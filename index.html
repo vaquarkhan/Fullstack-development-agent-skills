@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack Agent Skills — Production-Grade AI Workflow Registry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <svg class="logo-svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <rect width="28" height="28" rx="6" fill="url(#logo-grad)"/>
+                    <path d="M8 10h12M8 14h8M8 18h10" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                    <defs><linearGradient id="logo-grad" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+                </svg>
+                <span>Fullstack Agent Skills</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#lifecycle">Lifecycle</a>
+                <a href="#skills">Skills</a>
+                <a href="#platforms">Platforms</a>
+                <a href="#examples">Examples</a>
+            </div>
+            <div class="nav-actions">
+                <a href="https://github.com/vaquarkhan/Fullstack-development-agent-skills" class="btn-nav">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    GitHub
+                </a>
+                <a href="#install" class="btn-nav btn-primary-nav">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-gradient"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open Source • MIT Licensed • Production-Grade
+            </div>
+            <h1 class="hero-title">
+                The open skill registry that gives AI agents<br>
+                <span class="hero-highlight">production-grade fullstack delivery discipline</span>
+            </h1>
+            <p class="hero-desc">
+                53+ workflow skills covering UI architecture, backend microservices, identity, edge delivery, 
+                and cloud infrastructure. Each skill is a structured SKILL.md with progressive disclosure for agents.
+            </p>
+            <div class="hero-buttons">
+                <a href="#install" class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 1v10M4 8l4 4 4-4M2 14h12"/></svg>
+                    Get Started
+                </a>
+                <a href="https://github.com/vaquarkhan/Fullstack-development-agent-skills/releases" class="btn btn-outline">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 1v10M4 8l4 4 4-4M2 14h12"/></svg>
+                    Download Latest
+                </a>
+                <a href="#features" class="btn btn-ghost">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4h12M2 8h12M2 12h12"/></svg>
+                    Documentation
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat"><span class="stat-val">53+</span><span class="stat-lbl">Skills</span></div>
+                <div class="hero-stat"><span class="stat-val">15</span><span class="stat-lbl">Presets</span></div>
+                <div class="hero-stat"><span class="stat-val">14</span><span class="stat-lbl">Starter Packs</span></div>
+                <div class="hero-stat"><span class="stat-val">8</span><span class="stat-lbl">Agent Adapters</span></div>
+                <div class="hero-stat"><span class="stat-val">7</span><span class="stat-lbl">Examples</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>53+ Production-Grade Workflow Skills</h3>
+                    <p>Covering UI architecture, backend microservices, API contracts, authentication, observability, release engineering, edge delivery, and cloud infrastructure. Each skill is a structured SKILL.md with progressive disclosure for agents.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☁️</div>
+                    <h3>15 Platform Presets</h3>
+                    <p>Stack-specific defaults for React, Angular, Vue, Node.js, Java Spring Boot, .NET, AWS, Azure, GCP, Kubernetes, and Vercel. Pick your stack and go.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📜</div>
+                    <h3>Contract-First Design</h3>
+                    <p>API contracts, UI state machines, non-functional requirements, and compatibility gates defined before implementation. No guessing interfaces or breaking consumers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Lifecycle-Driven Execution</h3>
+                    <p>Six commands — /spec, /plan, /build, /validate, /review, /ship — route every task through a consistent delivery pipeline with quality gates at each stage.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Operational Hooks & Guardrails</h3>
+                    <p>Session start detection, release guards, review gates, and validation hooks. The repository behaves like a workflow system, not a static library.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏗️</div>
+                    <h3>Runnable Examples</h3>
+                    <p>7 end-to-end architecture examples with specs, implementation guides, and proof paths covering monorepos, SaaS, payments, and multi-cloud delivery.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Review Personas</h3>
+                    <p>Specialized reviewer agents for frontend quality, backend reliability, and security threat analysis. Multi-lens review built into the workflow.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Starter Packs</h3>
+                    <p>Opinionated bundles for MVP, SaaS, payments, reliability, microservices, identity/edge, and per-cloud serverless adoption. Start with best practices baked in.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Install -->
+    <section id="install" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quick Start</h2>
+            </div>
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                    <span class="code-title">Terminal</span>
+                </div>
+                <pre class="code-body"><code><span class="line-num">1</span><span class="code-comment"># Clone the repository</span>
+<span class="line-num">2</span>git clone https://github.com/vaquarkhan/Fullstack-development-agent-skills.git
+<span class="line-num">3</span>cd Fullstack-development-agent-skills
+<span class="line-num">4</span>
+<span class="line-num">5</span><span class="code-comment"># Install for your AI tool</span>
+<span class="line-num">6</span>./scripts/install.sh cursor /path/to/project
+<span class="line-num">7</span>
+<span class="line-num">8</span><span class="code-comment"># Or install for all supported tools</span>
+<span class="line-num">9</span>./scripts/install.sh all /path/to/project
+<span class="line-num">10</span>
+<span class="line-num">11</span><span class="code-comment"># Windows (PowerShell)</span>
+<span class="line-num">12</span>.\scripts\install.ps1 -Tool cursor -Target C:\project</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifecycle -->
+    <section id="lifecycle" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fullstack Delivery Lifecycle</h2>
+                <p class="section-sub">Six commands. One consistent flow from idea to production.</p>
+            </div>
+            <div class="lifecycle-grid">
+                <div class="lc-card">
+                    <div class="lc-num">1</div>
+                    <div class="lc-cmd">/spec</div>
+                    <p>Define business outcome, UI states, API contracts, and non-functional requirements</p>
+                </div>
+                <div class="lc-card">
+                    <div class="lc-num">2</div>
+                    <div class="lc-cmd">/plan</div>
+                    <p>Split work into frontend, backend, data, and release-safe implementation slices</p>
+                </div>
+                <div class="lc-card">
+                    <div class="lc-num">3</div>
+                    <div class="lc-cmd">/build</div>
+                    <p>Implement incrementally with contract discipline and compatibility checks</p>
+                </div>
+                <div class="lc-card">
+                    <div class="lc-num">4</div>
+                    <div class="lc-cmd">/validate</div>
+                    <p>Run lint, tests, type checks, and checklist-driven verification gates</p>
+                </div>
+                <div class="lc-card">
+                    <div class="lc-num">5</div>
+                    <div class="lc-cmd">/review</div>
+                    <p>Evaluate architecture, security, performance, and operability risks</p>
+                </div>
+                <div class="lc-card">
+                    <div class="lc-num">6</div>
+                    <div class="lc-cmd">/ship</div>
+                    <p>Staged rollout with observability checks, canary gates, and rollback readiness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skill Categories</h2>
+                <p class="section-sub">Production-grade skills organized by domain expertise.</p>
+            </div>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <div class="cat-icon">⚛️</div>
+                    <h3>UI & Frontend Architecture</h3>
+                    <p>React/Next.js, Angular, Vue/Nuxt, design systems, accessibility, CSP hardening, streaming UI, GraphQL clients, and realtime patterns.</p>
+                </div>
+                <div class="skill-category">
+                    <div class="cat-icon">⚡</div>
+                    <h3>Backend & Microservices</h3>
+                    <p>Node.js/NestJS, Java Spring Boot, .NET/ASP.NET Core, DDD, saga patterns, outbox/CDC, service mesh, CQRS, and protocol selection.</p>
+                </div>
+                <div class="skill-category">
+                    <div class="cat-icon">🔒</div>
+                    <h3>Identity & Security</h3>
+                    <p>OAuth2/OIDC, Okta integration, AWS Cognito, token lifecycle, CSP, XSS hardening, and fullstack auth patterns.</p>
+                </div>
+                <div class="skill-category">
+                    <div class="cat-icon">🌐</div>
+                    <h3>Edge & Delivery</h3>
+                    <p>NGINX routing, load balancing, CDN acceleration, API gateways, global delivery, autoscaling, and cost guardrails.</p>
+                </div>
+                <div class="skill-category">
+                    <div class="cat-icon">☁️</div>
+                    <h3>Cloud & Serverless</h3>
+                    <p>AWS, Azure, GCP serverless architectures, Kubernetes platform engineering, Terraform IaC, and Vercel edge delivery.</p>
+                </div>
+                <div class="skill-category">
+                    <div class="cat-icon">🚨</div>
+                    <h3>Reliability & Operations</h3>
+                    <p>Observability, distributed tracing, feature flags, progressive delivery, incident triage, database migrations, and release engineering.</p>
+                </div>
+                <div class="skill-category">
+                    <div class="cat-icon">💳</div>
+                    <h3>Payments & Integration</h3>
+                    <p>Webhook reliability, BFF architecture, API aggregation, distributed caching, and contract-first development.</p>
+                </div>
+                <div class="skill-category">
+                    <div class="cat-icon">🔬</div>
+                    <h3>Testing & Quality</h3>
+                    <p>Fullstack testing strategies, quality gates, contract testing, E2E validation, and progressive verification.</p>
+                </div>
+                <div class="skill-category">
+                    <div class="cat-icon">🛠️</div>
+                    <h3>Migration & Modernization</h3>
+                    <p>Monolith to microservices, distributed monolith detection, domain-driven decomposition, and resilience patterns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agent Adapters -->
+    <section id="platforms" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Multi-Agent Adapters</h2>
+                <p class="section-sub">Works with every major AI coding assistant.</p>
+            </div>
+            <div class="adapters-grid">
+                <div class="adapter-card">
+                    <div class="adapter-icon">▶️</div>
+                    <span>Cursor</span>
+                    <small>.cursor/commands/</small>
+                </div>
+                <div class="adapter-card">
+                    <div class="adapter-icon">🤖</div>
+                    <span>Claude</span>
+                    <small>CLAUDE.md + commands</small>
+                </div>
+                <div class="adapter-card">
+                    <div class="adapter-icon">✨</div>
+                    <span>Gemini</span>
+                    <small>.gemini/commands/</small>
+                </div>
+                <div class="adapter-card">
+                    <div class="adapter-icon">⚡</div>
+                    <span>Kiro</span>
+                    <small>.kiro/steering/</small>
+                </div>
+                <div class="adapter-card">
+                    <div class="adapter-icon">💻</div>
+                    <span>OpenCode</span>
+                    <small>.opencode/</small>
+                </div>
+                <div class="adapter-card">
+                    <div class="adapter-icon">🌊</div>
+                    <span>Windsurf</span>
+                    <small>.windsurfrules</small>
+                </div>
+                <div class="adapter-card">
+                    <div class="adapter-icon">🐙</div>
+                    <span>Copilot</span>
+                    <small>copilot-instructions</small>
+                </div>
+                <div class="adapter-card">
+                    <div class="adapter-icon">📦</div>
+                    <span>Codex</span>
+                    <small>AGENTS.md</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud Platforms -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cloud Platform Presets</h2>
+                <p class="section-sub">Fullstack and serverless presets with cloud-specific checklists.</p>
+            </div>
+            <div class="cloud-grid">
+                <div class="cloud-card">
+                    <div class="cloud-badge aws">AWS</div>
+                    <span>Amazon Web Services</span>
+                    <small>Lambda, API Gateway, CloudFront, Cognito, DynamoDB</small>
+                </div>
+                <div class="cloud-card">
+                    <div class="cloud-badge azure">Azure</div>
+                    <span>Microsoft Azure</span>
+                    <small>Functions, APIM, Static Web Apps, Entra ID, Cosmos DB</small>
+                </div>
+                <div class="cloud-card">
+                    <div class="cloud-badge gcp">GCP</div>
+                    <span>Google Cloud Platform</span>
+                    <small>Cloud Run, Pub/Sub, Firebase Auth, Firestore</small>
+                </div>
+                <div class="cloud-card">
+                    <div class="cloud-badge k8s">K8s</div>
+                    <span>Kubernetes</span>
+                    <small>Helm, ArgoCD, Service Mesh, Platform Engineering</small>
+                </div>
+                <div class="cloud-card">
+                    <div class="cloud-badge vercel">▲</div>
+                    <span>Vercel / Jamstack</span>
+                    <small>Edge Functions, ISR, Serverless, CDN-first</small>
+                </div>
+                <div class="cloud-card">
+                    <div class="cloud-badge terraform">TF</div>
+                    <span>Terraform</span>
+                    <small>Multi-cloud IaC, modules, state management</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hooks -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Operational Hooks</h2>
+                <p class="section-sub">Guardrails that run before risky operations to catch problems early.</p>
+            </div>
+            <div class="hooks-grid">
+                <div class="hook-item">
+                    <span class="hook-icon">📌</span>
+                    <div class="hook-info">
+                        <strong>session-start</strong>
+                        <p>Detects repo type, recommends preset, starter pack, and next command</p>
+                    </div>
+                </div>
+                <div class="hook-item">
+                    <span class="hook-icon">🛡️</span>
+                    <div class="hook-info">
+                        <strong>release-guard</strong>
+                        <p>Validates reconciliation, publish control, observability, and rollback evidence</p>
+                    </div>
+                </div>
+                <div class="hook-item">
+                    <span class="hook-icon">🔍</span>
+                    <div class="hook-info">
+                        <strong>review-gate</strong>
+                        <p>Checks for tests, contracts, rollback notes, and quality gates before merge</p>
+                    </div>
+                </div>
+                <div class="hook-item">
+                    <span class="hook-icon">⚠️</span>
+                    <div class="hook-info">
+                        <strong>breaking-change-guard</strong>
+                        <p>Detects risky API changes, contract violations, and consumer-breaking modifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples -->
+    <section id="examples" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Architecture Examples</h2>
+                <p class="section-sub">End-to-end runnable scaffolds for real-world architectures.</p>
+            </div>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <div class="example-tag">Monorepo</div>
+                    <h4>React + Next.js + NestJS</h4>
+                    <p>Full TypeScript monorepo with shared contracts, API layer, and deployment pipeline.</p>
+                </div>
+                <div class="example-card">
+                    <div class="example-tag">SaaS</div>
+                    <h4>Multi-Tenant BFF</h4>
+                    <p>Backend-for-frontend with tenant isolation, API aggregation, and auth flows.</p>
+                </div>
+                <div class="example-card">
+                    <div class="example-tag">Payments</div>
+                    <h4>Webhook Platform</h4>
+                    <p>Reliable payment processing with webhook delivery, retry logic, and reconciliation.</p>
+                </div>
+                <div class="example-card">
+                    <div class="example-tag">AWS</div>
+                    <h4>Edge Fullstack Delivery</h4>
+                    <p>Lambda@Edge + CloudFront + S3 with global delivery and auth at the edge.</p>
+                </div>
+                <div class="example-card">
+                    <div class="example-tag">AWS</div>
+                    <h4>Lambda API + CloudFront SPA</h4>
+                    <p>Serverless API with CloudFront-distributed single-page application.</p>
+                </div>
+                <div class="example-card">
+                    <div class="example-tag">Azure</div>
+                    <h4>APIM + Functions + Static Web</h4>
+                    <p>Azure Functions behind API Management with Static Web App frontend.</p>
+                </div>
+                <div class="example-card">
+                    <div class="example-tag">GCP</div>
+                    <h4>Cloud Run + Pub/Sub + Next.js</h4>
+                    <p>Event-driven backend on Cloud Run with Next.js frontend and Pub/Sub messaging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Case Studies</h2>
+                <p class="section-sub">Real-world delivery scenarios from idea to production.</p>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-icon">🏢</div>
+                    <h4>SaaS Multi-Tenant Platform Launch</h4>
+                    <p>End-to-end delivery of a multi-tenant SaaS platform with tenant isolation, billing integration, and progressive rollout.</p>
+                </div>
+                <div class="case-card">
+                    <div class="case-icon">💳</div>
+                    <h4>Payments Subscription Reliability</h4>
+                    <p>Building reliable subscription billing with webhook processing, retry logic, and reconciliation checks.</p>
+                </div>
+                <div class="case-card">
+                    <div class="case-icon">🔀</div>
+                    <h4>Monolith to Microservices Cutover</h4>
+                    <p>Staged migration from monolith to microservices with dual-run validation and consumer cutover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Level Up Your<br><span class="hero-highlight">Fullstack Delivery?</span></h2>
+                <p>Give your AI agents the discipline of a strong engineering team. Open source, MIT licensed, production-ready.</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/vaquarkhan/Fullstack-development-agent-skills" class="btn btn-primary">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .2l2.5 5 5.5.8-4 3.9.9 5.5L8 13l-4.9 2.4.9-5.5-4-3.9 5.5-.8L8 .2z"/></svg>
+                        Star on GitHub
+                    </a>
+                    <a href="https://github.com/vaquarkhan/Fullstack-development-agent-skills/releases" class="btn btn-outline">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 1v10M4 8l4 4 4-4M2 14h12"/></svg>
+                        Download Latest
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>MIT License • Built for the AI-assisted development community</p>
+                <div class="footer-links">
+                    <a href="https://github.com/vaquarkhan/Fullstack-development-agent-skills">GitHub</a>
+                    <a href="#">Contributing</a>
+                    <a href="#">Docs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

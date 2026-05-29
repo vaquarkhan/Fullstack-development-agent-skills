@@ -1,0 +1,21 @@
+name: data-platform-and-events-starter
+description: Event-driven fullstack delivery with Postgres, Redis, Kafka, and reliable async processing.
+use_when:
+  - building event-driven backends
+  - scaling read paths with cache and search
+include_skills:
+  - postgres-and-relational-data-modeling
+  - redis-caching-and-session-store-patterns
+  - kafka-event-backbone-patterns
+  - microservice-patterns-outbox-and-cdc
+  - search-and-discovery-experience
+include_presets:
+  - nodejs-microservices
+  - aws-fullstack-development
+include_references:
+  - microservice-patterns-checklist.md
+  - microservice-reliability-checklist.md
+success_evidence:
+  - event contracts versioned with compatibility rules
+  - consumer idempotency and DLQ paths verified
+  - cache invalidation mapped to write operations

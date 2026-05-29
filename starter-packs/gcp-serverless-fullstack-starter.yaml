@@ -1,0 +1,13 @@
+name: gcp-serverless-fullstack-starter
+description: GCP serverless fullstack starter for Cloud Run, Pub/Sub, Cloud CDN, and managed identity patterns.
+include_skills:
+  - gcp-serverless-fullstack-architecture
+  - serverless-event-driven-and-workflow-orchestration
+  - cdn-caching-and-edge-acceleration-patterns
+  - terraform-fullstack-infrastructure-as-code
+include_presets:
+  - gcp-serverless-fullstack
+  - gcp-fullstack-development
+include_references:
+  - gcp-fullstack-checklist.md
+  - cloud-serverless-patterns-checklist.md

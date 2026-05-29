@@ -6,6 +6,11 @@ disable-model-invocation: true
 
 # Cloud Fullstack Development
 
+## Use When
+
+- Planning or delivering fullstack systems on AWS, Azure, or GCP
+- Environment strategy, security, observability, or CI/CD needs definition
+
 ## Workflow
 
 1. Define frontend, API, and data architecture for the target cloud.

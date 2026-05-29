@@ -6,6 +6,11 @@ disable-model-invocation: true
 
 # Java Spring Boot Microservices
 
+## Use When
+
+- Building Java Spring Boot services or APIs
+- Contract-first delivery or production reliability improvements are needed
+
 ## Workflow
 
 1. Define bounded context and service ownership.

@@ -1,0 +1,41 @@
+{
+  "name": "fullstack-agent-skills",
+  "displayName": "Fullstack Agent Skills",
+  "description": "Install and manage Fullstack Development Agent Skills in your workspace.",
+  "version": "0.1.0",
+  "publisher": "vaquarkhan",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:fullstackAgentSkills.installAll",
+    "onCommand:fullstackAgentSkills.openSkillsIndex"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "fullstackAgentSkills.installAll",
+        "title": "Fullstack Agent Skills: Install Full Toolkit"
+      },
+      {
+        "command": "fullstackAgentSkills.openSkillsIndex",
+        "title": "Fullstack Agent Skills: Open Skills Index"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p .",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.0",
+    "@vscode/vsce": "^2.24.0"
+  }
+}

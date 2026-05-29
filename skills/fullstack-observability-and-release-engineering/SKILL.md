@@ -29,7 +29,7 @@ disable-model-invocation: true
 - Queue depth and retry metrics for asynchronous pipelines
 - Alert routes and escalation paths for on-call responders
 
-## Release Safety Checks
+## Required Checks
 
 - Feature flags have default fallback and kill switch
 - Database changes are backward compatible with previous app version

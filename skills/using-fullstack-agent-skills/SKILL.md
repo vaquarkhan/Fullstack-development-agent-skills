@@ -6,6 +6,11 @@ disable-model-invocation: true
 
 # Using Fullstack Agent Skills
 
+## Use When
+
+- Starting any fullstack task that spans UI and backend
+- You need routing to the correct skill, preset, reference, or template
+
 ## Workflow
 
 1. Define the change request and scope boundaries.
@@ -13,6 +18,12 @@ disable-model-invocation: true
 3. Select one or more matching skills from `skills/`.
 4. Start from a template in `templates/`.
 5. Validate with `references/` checklists before implementation.
+
+## Required Checks
+
+- Scope and preset selected before implementation
+- Matching skills and references identified for the change type
+- Validation checklists from `references/` planned before ship
 
 ## Routing Guide
 

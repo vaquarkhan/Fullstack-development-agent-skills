@@ -6,6 +6,11 @@ disable-model-invocation: true
 
 # Angular Enterprise Frontend
 
+## Use When
+
+- Building or refactoring Angular enterprise UIs
+- Module boundaries, accessibility, or bundle performance need review
+
 ## Workflow
 
 1. Define page and component responsibilities.

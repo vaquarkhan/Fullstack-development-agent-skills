@@ -13,7 +13,8 @@ This repository is structured as an open skill registry:
 - Fullstack-first workflows that tie UI architecture, backend contracts, auth, and release safety together
 - Reviewer personas specialized for frontend quality, backend reliability, and threat-focused security reviews
 - Starter packs for MVP delivery, enterprise modernization, and reliability hardening
-- Built-in lifecycle command routing (`/spec`, `/plan`, `/build`, `/validate`, `/review`, `/ship`) for consistent execution
+- Built-in lifecycle command routing (`/spec`, `/plan`, `/build`, `/validate`, `/review`, `/ship`, `/migrate`, `/harden`, `/incident`, `/optimize`) for consistent execution
+- **72** workflow skills, **15** stack presets, **20** starter packs — see [`skills-index.md`](skills-index.md) and [`registry/assets.json`](registry/assets.json)
 - Multi-agent adapter surfaces for `Cursor`, `Claude`, `Gemini`, `Kiro`, `OpenCode`, `Windsurf`, `Copilot`, and generic `AGENTS.md` consumers
 
 ## Quick Start
@@ -25,59 +26,21 @@ This repository is structured as an open skill registry:
 
 ## Skill Pack
 
-- `using-fullstack-agent-skills`
-- `fullstack-product-specification`
-- `ui-engineering-and-design-systems`
-- `react-nextjs-frontend-architecture`
-- `angular-enterprise-frontend`
-- `vue-nuxt-frontend`
-- `backend-microservices-architecture`
-- `nodejs-nestjs-backend-microservices`
-- `java-spring-boot-microservices`
-- `dotnet-aspnet-core-microservices`
-- `api-contract-first-development`
-- `authentication-and-authorization-fullstack`
-- `fullstack-testing-and-quality-gates`
-- `fullstack-observability-and-release-engineering`
-- `feature-flags-and-progressive-delivery`
-- `database-migrations-zero-downtime`
-- `distributed-caching-and-invalidation`
-- `bff-architecture-and-api-aggregation`
-- `payments-and-webhook-reliability`
-- `incident-triage-and-oncall-runbooks`
-- `microservice-patterns-saga-and-compensation`
-- `microservice-patterns-outbox-and-cdc`
-- `microservice-patterns-service-mesh-and-traffic-management`
-- `resilience-timeouts-retries-and-circuit-breakers`
-- `domain-driven-service-decomposition`
-- `distributed-monolith-detection-and-remediation`
-- `cqrs-and-event-sourcing-patterns`
-- `interservice-protocol-selection-rest-grpc-graphql`
-- `observability-distributed-tracing-and-ebpf-strategy`
-- `monolith-to-microservices-migration-strategy`
-- `oauth2-oidc-and-token-lifecycle`
-- `okta-identity-integration-patterns`
-- `aws-cognito-authentication-patterns`
-- `nginx-edge-routing-and-security`
-- `load-balancer-strategy-and-traffic-distribution`
-- `cdn-caching-and-edge-acceleration-patterns`
-- `api-gateway-and-edge-security`
-- `frontend-load-balancing-and-global-delivery`
-- `autoscaling-capacity-and-cost-guardrails`
-- `cloud-fullstack-development`
+All skills live under `skills/<name>/SKILL.md` with decision frameworks, evidence packs, and exit criteria. Browse the full catalog in [`skills-index.md`](skills-index.md).
+
+Categories include: product specification, UI/UX and design systems, React/Next.js/Angular/Vue, backend microservices (Node, Java, .NET), API contracts, auth, testing, observability, payments, incidents, microservice patterns (saga, outbox, mesh, CQRS), identity and edge (OAuth, Okta, Cognito, NGINX, CDN, API gateway), cloud and serverless (AWS, Azure, GCP, Kubernetes, Terraform, Vercel), UI production (CSP, WCAG, GraphQL BFF, realtime), and platform operations (Postgres, Redis, Kafka, GDPR, GitOps, chaos, load testing, AI/LLM, multi-tenant, DR, cost optimization, mobile, E2E).
 
 ## Presets
 
-- `react-nextjs-frontend`
-- `fullstack-typescript-monorepo`
-- `angular-frontend`
-- `vue-nuxt-frontend`
-- `nodejs-microservices`
-- `java-spring-boot-microservices`
-- `dotnet-aspnet-core-microservices`
-- `aws-fullstack-development`
-- `azure-fullstack-development`
-- `gcp-fullstack-development`
+- `react-nextjs-frontend`, `fullstack-typescript-monorepo`, `angular-frontend`, `vue-nuxt-frontend`
+- `nodejs-microservices`, `java-spring-boot-microservices`, `dotnet-aspnet-core-microservices`
+- `aws-fullstack-development`, `azure-fullstack-development`, `gcp-fullstack-development`
+- `aws-serverless-fullstack`, `azure-serverless-fullstack`, `gcp-serverless-fullstack`
+- `vercel-nextjs-jamstack`, `kubernetes-fullstack-platform`
+
+## Starter Packs
+
+Twenty YAML bundles under `starter-packs/` — MVP, enterprise modernization, SaaS multi-tenant, payments, incidents, microservices, identity/edge, UI excellence, per-cloud serverless, multi-cloud platform, data/events, compliance, AI features, mobile, chaos/SRE, and GitOps CI/CD.
 
 ## Project Structure
 
@@ -110,6 +73,20 @@ fullstack-development-agent-skills/
 - `/validate` run lint, tests, and checklist-driven verification
 - `/review` evaluate architecture, security, performance, and operability risks
 - `/ship` roll out with staged deployment, observability checks, and rollback readiness
+- `/migrate` plan zero-downtime schema, API, and platform migrations
+- `/harden` apply security, reliability, and performance hardening
+- `/incident` triage production issues with runbook discipline
+- `/optimize` improve performance, cost, and capacity
+
+## Bootstrap and Validation
+
+```bash
+./bootstrap.sh          # or bootstrap.ps1 on Windows
+python scripts/validate-skills.py
+python scripts/validate-assets.py
+python scripts/sync-registry.py      # refresh registry after adding assets
+python scripts/sync-skills-index.py  # refresh skills-index.md
+```
 
 ## Contributing
 

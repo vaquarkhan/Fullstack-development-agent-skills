@@ -6,6 +6,11 @@ disable-model-invocation: true
 
 # API Contract-First Development
 
+## Use When
+
+- Designing or changing REST, GraphQL, or event contracts between UI and services
+- Backward compatibility or versioning decisions are required
+
 ## Workflow
 
 1. Capture consumer needs and edge cases.
@@ -14,15 +19,12 @@ disable-model-invocation: true
 4. Implement provider and consumer validation.
 5. Release with deprecation timeline when needed.
 
-## Contract Rules
+## Required Checks
 
 - Include required and optional fields explicitly
 - Define error envelope and status mapping
 - Publish examples for happy and failure paths
 - Avoid breaking changes without a migration path
-
-## Verification
-
 - Contract tests run in CI
 - Existing consumers remain compatible
 - Deprecations are documented and announced

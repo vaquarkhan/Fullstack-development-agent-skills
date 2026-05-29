@@ -6,6 +6,11 @@ disable-model-invocation: true
 
 # .NET ASP.NET Core Microservices
 
+## Use When
+
+- Implementing .NET ASP.NET Core APIs or microservices
+- Resilience, observability, or safe release patterns are required
+
 ## Workflow
 
 1. Define service boundary and ownership.
