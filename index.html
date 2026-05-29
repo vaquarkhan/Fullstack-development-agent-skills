@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack Agent Skills — Production-Grade AI Workflow Registry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">AgentSkills</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#lifecycle">Lifecycle</a></li>
+                <li><a href="#presets">Presets</a></li>
+                <li><a href="#cloud">Cloud</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+            <a href="https://github.com" class="nav-cta">Get Started</a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+            <div class="glow glow-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Open Skill Registry • v0.2.0</div>
+            <h1 class="hero-title">
+                Fullstack Development<br>
+                <span class="gradient-text">Agent Skills</span>
+            </h1>
+            <p class="hero-subtitle">
+                53+ production-grade workflow skills for AI agents. UI, backend, microservices, 
+                identity, edge, and cloud delivery — all wired into a consistent lifecycle.
+            </p>
+            <div class="hero-actions">
+                <a href="#quick-start" class="btn btn-primary">
+                    <span class="btn-icon">→</span> Quick Start
+                </a>
+                <a href="#skills" class="btn btn-secondary">Browse Skills</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">53+</span>
+                    <span class="stat-label">Skills</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">Presets</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">14</span>
+                    <span class="stat-label">Starter Packs</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Agent Adapters</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Agent Adapters Strip -->
+    <section class="adapters-strip">
+        <div class="container">
+            <p class="adapters-label">Works with</p>
+            <div class="adapters-list">
+                <span class="adapter-chip">Cursor</span>
+                <span class="adapter-chip">Claude</span>
+                <span class="adapter-chip">Gemini</span>
+                <span class="adapter-chip">Kiro</span>
+                <span class="adapter-chip">OpenCode</span>
+                <span class="adapter-chip">Windsurf</span>
+                <span class="adapter-chip">Copilot</span>
+                <span class="adapter-chip">Codex</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start -->
+    <section id="quick-start" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get Started</span>
+                <h2>Up and running in 4 steps</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Load the entry skill</h3>
+                    <code class="step-code">skills/using-fullstack-agent-skills/SKILL.md</code>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Pick a preset</h3>
+                    <p>Choose from <code>presets/</code> based on your stack — React, Angular, Vue, .NET, Java, Node, or cloud-specific.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Choose a starter pack</h3>
+                    <p>Opinionated bundles for MVP, SaaS, payments, reliability, microservices, and more.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h3>Follow the lifecycle</h3>
+                    <p>Use <code>/spec → /plan → /build → /validate → /review → /ship</code> for consistent delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifecycle -->
+    <section id="lifecycle" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Workflow</span>
+                <h2>Fullstack Delivery Lifecycle</h2>
+                <p class="section-desc">Six commands. One consistent flow from idea to production.</p>
+            </div>
+            <div class="lifecycle-pipeline">
+                <div class="lifecycle-step">
+                    <div class="lc-icon">📋</div>
+                    <div class="lc-command">/spec</div>
+                    <p>Define business outcome, UI states, API contracts, NFRs</p>
+                </div>
+                <div class="lifecycle-arrow">→</div>
+                <div class="lifecycle-step">
+                    <div class="lc-icon">🗂️</div>
+                    <div class="lc-command">/plan</div>
+                    <p>Split into frontend, backend, data, and release-safe slices</p>
+                </div>
+                <div class="lifecycle-arrow">→</div>
+                <div class="lifecycle-step">
+                    <div class="lc-icon">🔨</div>
+                    <div class="lc-command">/build</div>
+                    <p>Implement with contract and compatibility discipline</p>
+                </div>
+                <div class="lifecycle-arrow">→</div>
+                <div class="lifecycle-step">
+                    <div class="lc-icon">✅</div>
+                    <div class="lc-command">/validate</div>
+                    <p>Run lint, tests, and checklist-driven verification</p>
+                </div>
+                <div class="lifecycle-arrow">→</div>
+                <div class="lifecycle-step">
+                    <div class="lc-icon">🔍</div>
+                    <div class="lc-command">/review</div>
+                    <p>Evaluate architecture, security, performance, operability</p>
+                </div>
+                <div class="lifecycle-arrow">→</div>
+                <div class="lifecycle-step">
+                    <div class="lc-icon">🚀</div>
+                    <div class="lc-command">/ship</div>
+                    <p>Staged rollout, observability checks, rollback readiness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Grid -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Registry</span>
+                <h2>Skill Categories</h2>
+                <p class="section-desc">Production-grade skills organized by domain.</p>
+            </div>
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="core">Core Fullstack</button>
+                <button class="tab-btn" data-tab="cloud">Cloud & Serverless</button>
+                <button class="tab-btn" data-tab="ui">UI Excellence</button>
+                <button class="tab-btn" data-tab="micro">Microservices</button>
+                <button class="tab-btn" data-tab="identity">Identity & Edge</button>
+            </div>
+            <div class="skills-content">
+                <div class="tab-panel active" id="tab-core">
+                    <div class="skill-list">
+                        <div class="skill-item"><span class="skill-dot"></span>Fullstack Product Specification</div>
+                        <div class="skill-item"><span class="skill-dot"></span>React / Next.js Frontend Architecture</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Node.js / NestJS Backend Microservices</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Authentication & Authorization Fullstack</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Fullstack Testing & Quality Gates</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Observability & Release Engineering</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Feature Flags & Progressive Delivery</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Database Migrations Zero-Downtime</div>
+                        <div class="skill-item"><span class="skill-dot"></span>BFF Architecture & API Aggregation</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Payments & Webhook Reliability</div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-cloud">
+                    <div class="skill-list">
+                        <div class="skill-item"><span class="skill-dot dot-aws"></span>AWS Serverless Fullstack Architecture</div>
+                        <div class="skill-item"><span class="skill-dot dot-azure"></span>Azure Serverless Fullstack Architecture</div>
+                        <div class="skill-item"><span class="skill-dot dot-gcp"></span>GCP Serverless Fullstack Architecture</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Serverless Event-Driven & Workflow Orchestration</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Kubernetes Fullstack Platform Engineering</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Terraform Fullstack Infrastructure as Code</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Vercel Edge & Jamstack Delivery</div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-ui">
+                    <div class="skill-list">
+                        <div class="skill-item"><span class="skill-dot"></span>Next.js App Router & Streaming UI</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Design System Governance & Tokens</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Frontend Security — CSP & XSS Hardening</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Web Accessibility WCAG Compliance</div>
+                        <div class="skill-item"><span class="skill-dot"></span>GraphQL Client & BFF Integration</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Realtime UI — WebSockets & SSE</div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-micro">
+                    <div class="skill-list">
+                        <div class="skill-item"><span class="skill-dot"></span>Saga & Compensation Patterns</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Outbox & CDC Patterns</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Service Mesh & Traffic Management</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Resilience — Timeouts, Retries, Circuit Breakers</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Domain-Driven Service Decomposition</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Distributed Monolith Detection & Remediation</div>
+                        <div class="skill-item"><span class="skill-dot"></span>CQRS & Event Sourcing</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Interservice Protocol Selection</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Distributed Tracing & eBPF Strategy</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Monolith to Microservices Migration</div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-identity">
+                    <div class="skill-list">
+                        <div class="skill-item"><span class="skill-dot"></span>OAuth2 / OIDC & Token Lifecycle</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Okta Identity Integration</div>
+                        <div class="skill-item"><span class="skill-dot"></span>AWS Cognito Authentication Patterns</div>
+                        <div class="skill-item"><span class="skill-dot"></span>NGINX Edge Routing & Security</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Load Balancer Strategy & Traffic Distribution</div>
+                        <div class="skill-item"><span class="skill-dot"></span>CDN Caching & Edge Acceleration</div>
+                        <div class="skill-item"><span class="skill-dot"></span>API Gateway & Edge Security</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Frontend Load Balancing & Global Delivery</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Autoscaling, Capacity & Cost Guardrails</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presets -->
+    <section id="presets" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Presets</span>
+                <h2>Stack-Specific Defaults</h2>
+                <p class="section-desc">Pre-configured skill bundles for your technology stack.</p>
+            </div>
+            <div class="presets-grid">
+                <div class="preset-card">
+                    <div class="preset-icon">⚛️</div>
+                    <h3>React / Next.js</h3>
+                    <p>App Router, RSC, streaming, Tailwind, testing</p>
+                </div>
+                <div class="preset-card">
+                    <div class="preset-icon">🅰️</div>
+                    <h3>Angular</h3>
+                    <p>Enterprise patterns, signals, standalone components</p>
+                </div>
+                <div class="preset-card">
+                    <div class="preset-icon">💚</div>
+                    <h3>Vue / Nuxt</h3>
+                    <p>Composition API, Nuxt 3, auto-imports, Pinia</p>
+                </div>
+                <div class="preset-card">
+                    <div class="preset-icon">🟢</div>
+                    <h3>Node.js Microservices</h3>
+                    <p>NestJS, Express, event-driven, DDD</p>
+                </div>
+                <div class="preset-card">
+                    <div class="preset-icon">☕</div>
+                    <h3>Java Spring Boot</h3>
+                    <p>Spring Cloud, reactive, Kafka, observability</p>
+                </div>
+                <div class="preset-card">
+                    <div class="preset-icon">🔷</div>
+                    <h3>.NET / ASP.NET Core</h3>
+                    <p>Minimal APIs, MediatR, EF Core, Azure-ready</p>
+                </div>
+                <div class="preset-card">
+                    <div class="preset-icon">☸️</div>
+                    <h3>Kubernetes Platform</h3>
+                    <p>Helm, ArgoCD, service mesh, platform eng</p>
+                </div>
+                <div class="preset-card">
+                    <div class="preset-icon">▲</div>
+                    <h3>Vercel / Jamstack</h3>
+                    <p>Edge functions, ISR, serverless, CDN-first</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud Section -->
+    <section id="cloud" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Cloud</span>
+                <h2>Multi-Cloud Ready</h2>
+                <p class="section-desc">Fullstack and serverless presets with cloud-specific checklists.</p>
+            </div>
+            <div class="cloud-grid">
+                <div class="cloud-card cloud-aws">
+                    <div class="cloud-logo">AWS</div>
+                    <h3>Amazon Web Services</h3>
+                    <ul>
+                        <li>Lambda + API Gateway + CloudFront</li>
+                        <li>Cognito authentication patterns</li>
+                        <li>DynamoDB, SQS, EventBridge</li>
+                        <li>CDK / SAM infrastructure</li>
+                    </ul>
+                </div>
+                <div class="cloud-card cloud-azure">
+                    <div class="cloud-logo">Azure</div>
+                    <h3>Microsoft Azure</h3>
+                    <ul>
+                        <li>Functions + APIM + Static Web Apps</li>
+                        <li>Entra ID / Azure AD B2C</li>
+                        <li>Cosmos DB, Service Bus</li>
+                        <li>Bicep / ARM templates</li>
+                    </ul>
+                </div>
+                <div class="cloud-card cloud-gcp">
+                    <div class="cloud-logo">GCP</div>
+                    <h3>Google Cloud Platform</h3>
+                    <ul>
+                        <li>Cloud Run + Pub/Sub + CDN</li>
+                        <li>Firebase Auth / Identity Platform</li>
+                        <li>Firestore, Cloud Tasks</li>
+                        <li>Terraform / Pulumi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources -->
+    <section id="resources" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Resources</span>
+                <h2>Adoption Surfaces</h2>
+            </div>
+            <div class="resources-grid">
+                <a href="#" class="resource-card">
+                    <div class="resource-icon">📖</div>
+                    <h3>Tutorials</h3>
+                    <p>Guided adoption walkthroughs for teams</p>
+                </a>
+                <a href="#" class="resource-card">
+                    <div class="resource-icon">🏗️</div>
+                    <h3>Examples</h3>
+                    <p>Architecture-oriented runnable scaffolds</p>
+                </a>
+                <a href="#" class="resource-card">
+                    <div class="resource-icon">📑</div>
+                    <h3>Case Studies</h3>
+                    <p>End-to-end delivery scenarios</p>
+                </a>
+                <a href="#" class="resource-card">
+                    <div class="resource-icon">🧩</div>
+                    <h3>VS Code Extension</h3>
+                    <p>IDE installer scaffold</p>
+                </a>
+                <a href="#" class="resource-card">
+                    <div class="resource-icon">📚</div>
+                    <h3>Setup Guides</h3>
+                    <p>Tool-specific onboarding docs</p>
+                </a>
+                <a href="#" class="resource-card">
+                    <div class="resource-icon">🔗</div>
+                    <h3>MCP Templates</h3>
+                    <p>GitHub and cloud integration starters</p>
+                </a>
+                <a href="#" class="resource-card">
+                    <div class="resource-icon">🪝</div>
+                    <h3>Hooks</h3>
+                    <p>Session and release guardrails</p>
+                </a>
+                <a href="#" class="resource-card">
+                    <div class="resource-icon">✅</div>
+                    <h3>Checklists</h3>
+                    <p>Operational readiness references</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Install Section -->
+    <section class="section install-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Install</span>
+                <h2>One Command Setup</h2>
+            </div>
+            <div class="install-blocks">
+                <div class="install-block">
+                    <div class="install-label">macOS / Linux</div>
+                    <pre class="install-code"><code>./scripts/install.sh cursor /path/to/project</code></pre>
+                </div>
+                <div class="install-block">
+                    <div class="install-label">Windows (PowerShell)</div>
+                    <pre class="install-code"><code>.\scripts\install.ps1 -Tool cursor -Target C:\project</code></pre>
+                </div>
+            </div>
+            <p class="install-note">Supported tools: <code>cursor</code>, <code>claude</code>, <code>gemini</code>, <code>kiro</code>, <code>opencode</code>, <code>windsurf</code>, <code>copilot</code>, <code>codex</code>, <code>all</code></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">AgentSkills</span>
+                    <p>Production-grade fullstack workflow skills for AI agents.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Skills</h4>
+                    <ul>
+                        <li><a href="#">Core Fullstack</a></li>
+                        <li><a href="#">Cloud & Serverless</a></li>
+                        <li><a href="#">UI Excellence</a></li>
+                        <li><a href="#">Microservices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Examples</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Contributing</a></li>
+                        <li><a href="#">License</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>MIT License • Built for the AI-assisted development community</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
