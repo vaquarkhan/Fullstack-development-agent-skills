@@ -1,0 +1,85 @@
+<idea-plugin>
+    <id>com.vaquarkhan.fullstack-development-agent-skills</id>
+    <name>Fullstack Development Agent Skills</name>
+    <vendor email="vaquarkhan@gmail.com" url="https://github.com/vaquarkhan">Viquar Khan</vendor>
+
+    <description><![CDATA[
+        <h2>Fullstack Development Agent Skills</h2>
+        <p>Production-grade UI, backend microservice, and cloud fullstack skills for AI agents.</p>
+
+        <h3>Features</h3>
+        <ul>
+            <li><b>53+ workflow skills</b> — UI, backend, microservices, identity, edge, cloud</li>
+            <li><b>15 platform presets</b> — React, Angular, Vue, Node.js, Java, .NET, AWS, Azure, GCP, K8s</li>
+            <li><b>14 starter packs</b> — MVP, SaaS, payments, reliability, microservices</li>
+            <li><b>8 agent adapters</b> — Cursor, Claude, Gemini, Kiro, Copilot, Windsurf, OpenCode, Codex</li>
+            <li><b>Delivery lifecycle</b> — /spec → /plan → /build → /validate → /review → /ship</li>
+            <li><b>Operational hooks</b> — session start, release guard, review gates</li>
+        </ul>
+
+        <h3>Commands</h3>
+        <p>Access via <b>Tools > Fullstack Agent Skills</b> menu:</p>
+        <ul>
+            <li>Install Full Toolkit</li>
+            <li>Install Core Skills</li>
+            <li>Install Platform Preset</li>
+            <li>Install Starter Pack</li>
+            <li>Install Agent Adapters</li>
+            <li>Install MCP Templates</li>
+            <li>Run Session Hook</li>
+        </ul>
+
+        <h3>Supported IDEs</h3>
+        <p>IntelliJ IDEA, PyCharm, WebStorm, DataGrip, GoLand, PhpStorm, Rider, CLion, RubyMine</p>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Fullstack Skills"
+                    anchor="right"
+                    factoryClass="com.vaquarkhan.fullstackskills.SkillsToolWindowFactory"
+                    icon="/icons/toolwindow.svg"/>
+    </extensions>
+
+    <actions>
+        <group id="FullstackSkills.Menu" text="Fullstack Agent Skills" description="Fullstack Agent Skills commands">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+
+            <action id="FullstackSkills.InstallFullToolkit"
+                    class="com.vaquarkhan.fullstackskills.actions.InstallFullToolkitAction"
+                    text="Install Full Toolkit"
+                    description="Install all skills, presets, starter packs, and adapters"/>
+
+            <action id="FullstackSkills.InstallCoreSkills"
+                    class="com.vaquarkhan.fullstackskills.actions.InstallCoreSkillsAction"
+                    text="Install Core Skills"
+                    description="Install essential fullstack workflow skills"/>
+
+            <action id="FullstackSkills.InstallPreset"
+                    class="com.vaquarkhan.fullstackskills.actions.InstallPresetAction"
+                    text="Install Platform Preset"
+                    description="Choose and install a stack-specific preset"/>
+
+            <action id="FullstackSkills.InstallStarterPack"
+                    class="com.vaquarkhan.fullstackskills.actions.InstallStarterPackAction"
+                    text="Install Starter Pack"
+                    description="Choose and install an opinionated starter bundle"/>
+
+            <action id="FullstackSkills.InstallAdapters"
+                    class="com.vaquarkhan.fullstackskills.actions.InstallAdaptersAction"
+                    text="Install Agent Adapters"
+                    description="Install multi-agent configuration files"/>
+
+            <action id="FullstackSkills.InstallMCP"
+                    class="com.vaquarkhan.fullstackskills.actions.InstallMCPAction"
+                    text="Install MCP Templates"
+                    description="Install Model Context Protocol configurations"/>
+
+            <action id="FullstackSkills.RunSessionHook"
+                    class="com.vaquarkhan.fullstackskills.actions.RunSessionHookAction"
+                    text="Run Session Hook"
+                    description="Execute session-start detection hook"/>
+        </group>
+    </actions>
+</idea-plugin>

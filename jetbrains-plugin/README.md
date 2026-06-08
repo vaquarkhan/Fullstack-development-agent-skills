@@ -1,20 +1,63 @@
-# JetBrains Plugin (Scaffold)
+# Fullstack Development Agent Skills — JetBrains Plugin
 
-This directory documents how to consume Fullstack Development Agent Skills in JetBrains IDEs (IntelliJ IDEA, WebStorm, Rider).
+Native plugin for IntelliJ-platform IDEs. Install the fullstack skill toolkit directly into your JetBrains workflow.
 
-## Recommended Setup
+## Supported IDEs
 
-1. Clone or install this repository into your project or global skills path.
-2. Point your AI assistant integration (GitHub Copilot, Junie, or third-party agents) at `AGENTS.md` and `skills-index.md`.
-3. Pin `skills/using-fullstack-agent-skills/SKILL.md` as the entry skill for new sessions.
+- IntelliJ IDEA
+- PyCharm
+- WebStorm
+- DataGrip
+- GoLand
+- PhpStorm
+- Rider
+- CLion
+- RubyMine
 
-## Lifecycle Commands
+## Commands
 
-Map IDE slash commands or run configurations to the markdown files in `.cursor/commands/` (spec, plan, build, validate, review, ship, migrate, harden, incident, optimize).
+Access via **Tools > Fullstack Agent Skills** menu:
 
-## Presets and Starter Packs
+| Command | Description |
+|---------|-------------|
+| Install Full Toolkit | Install all skills, presets, adapters, and templates |
+| Install Core Skills | Install essential workflow skills |
+| Install Platform Preset | Choose and install a stack-specific preset |
+| Install Starter Pack | Choose and install a starter bundle |
+| Install Agent Adapters | Install multi-agent configuration files |
+| Install MCP Templates | Install Model Context Protocol configs |
+| Run Session Hook | Execute session-start detection hook |
 
-- Choose a stack preset under `presets/`.
-- Load a starter pack YAML from `starter-packs/` for guided skill bundles.
+## Build
 
-See `docs/jetbrains-setup.md` for detailed steps.
+```bash
+cd jetbrains-plugin
+./gradlew buildPlugin
+```
+
+The `.zip` plugin file will be in `build/distributions/`.
+
+## Install from ZIP
+
+1. Open your JetBrains IDE
+2. **Settings > Plugins > ⚙️ > Install Plugin from Disk...**
+3. Select the `.zip` file from `build/distributions/`
+
+## Development
+
+```bash
+# Run in sandbox IDE for testing
+./gradlew runIde
+
+# Build plugin ZIP
+./gradlew buildPlugin
+```
+
+## Links
+
+- [GitHub Repository](https://github.com/vaquarkhan/Fullstack-development-agent-skills)
+- [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ViquarKhan.fullstack-development-agent-skills)
+
+## License
+
+MIT

@@ -1,0 +1,7 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="Fullstack Agent Skills"
+                           displayType="BALLOON"
+                           isLogByDefault="true"/>
+    </extensions>
+</idea-plugin>
