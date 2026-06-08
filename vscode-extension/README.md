@@ -47,7 +47,7 @@ Access via Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`):
 
 The toolkit provides a consistent 6-command lifecycle:
 
-```
+```text
 /spec  → Define business outcome, UI states, API contracts, NFRs
 /plan  → Split into frontend, backend, data, release-safe slices
 /build → Implement with contract and compatibility discipline

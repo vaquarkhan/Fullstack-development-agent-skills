@@ -3,6 +3,7 @@
 ## [0.2.0] - 2026-06-07
 
 ### Added
+
 - Command: Install Full Toolkit
 - Command: Install Core Pack
 - Command: Install Agent Adapters
@@ -13,10 +14,11 @@
 - Command: Open Skills Index
 - Command: Run Session Hook
 - Support for 15 platform presets
-- Support for 14 starter packs
-- 53+ workflow skills included
+- Support for 20 starter packs
+- 72 workflow skills included
 
 ### Changed
+
 - Updated publisher to ViquarKhan
 - Restructured command naming to `FS Skills:` prefix
 - Added gallery banner and icon metadata
@@ -24,4 +26,5 @@
 ## [0.1.0] - 2025-01-01
 
 ### Added
+
 - Initial release with basic install and index commands
