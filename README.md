@@ -1,7 +1,7 @@
 # Fullstack Development Agent Skills
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-72-brightgreen.svg)](#skills-catalog)
+[![Skills](https://img.shields.io/badge/Skills-72-brightgreen.svg)](#skills-catalog-72)
 [![Presets](https://img.shields.io/badge/Presets-15-blue.svg)](#platform-presets)
 [![Examples](https://img.shields.io/badge/Examples-7-purple.svg)](#end-to-end-examples)
 [![Starter Packs](https://img.shields.io/badge/Starter%20Packs-20-red.svg)](#starter-packs)
@@ -504,3 +504,6 @@ MIT
 ---
 
 Inspired by [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills).
+
+ 
+ 
