@@ -94,6 +94,13 @@ Contributions should be specific, verifiable, and workflow-focused.
 
 Use `docs/skill-anatomy.md` for required skill structure and quality gates.
 
+## IDE Plugins
+
+| IDE | Link |
+| --- | --- |
+| VS Code / Cursor / Windsurf | [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ViquarKhan.fullstack-development-agent-skills) |
+| IntelliJ / PyCharm / WebStorm | [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/32167-fullstack-development-agent-skills) |
+
 ## Install Scripts
 
 - `scripts/install.sh <tool|all> <target-path>`

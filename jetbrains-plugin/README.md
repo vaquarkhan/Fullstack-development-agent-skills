@@ -56,7 +56,9 @@ The `.zip` plugin file will be in `build/distributions/`.
 ## Links
 
 - [GitHub Repository](https://github.com/vaquarkhan/Fullstack-development-agent-skills)
+- [Website](https://vaquarkhan.github.io/Fullstack-development-agent-skills/)
 - [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ViquarKhan.fullstack-development-agent-skills)
+- [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/32167-fullstack-development-agent-skills)
 
 ## License
 

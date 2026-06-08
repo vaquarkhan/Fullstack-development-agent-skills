@@ -4,15 +4,15 @@ Production-grade UI, backend microservice, and cloud fullstack skills for AI age
 
 ## Features
 
-**53+ workflow skills** covering UI architecture, backend microservices, identity, edge delivery, and cloud infrastructure — all wired into a consistent delivery lifecycle.
+**72 workflow skills** covering UI architecture, backend microservices, identity, edge delivery, and cloud infrastructure — all wired into a consistent delivery lifecycle.
 
 ### What's Included
 
 | Asset | Count | Description |
 |-------|-------|-------------|
-| Skills | 53+ | Structured SKILL.md files with progressive disclosure |
+| Skills | 72 | Structured SKILL.md files with progressive disclosure |
 | Presets | 15 | Stack-specific defaults (React, Angular, Vue, .NET, Java, Node, AWS, Azure, GCP) |
-| Starter Packs | 14 | Opinionated bundles for MVP, SaaS, payments, reliability, microservices |
+| Starter Packs | 20 | Opinionated bundles for MVP, SaaS, payments, reliability, microservices |
 | Agent Adapters | 8 | Cursor, Claude, Gemini, Kiro, OpenCode, Windsurf, Copilot, Codex |
 | Examples | 7 | End-to-end architecture scaffolds |
 | Case Studies | 3 | Real-world delivery scenarios |
@@ -105,7 +105,8 @@ npx vsce publish
 ## Links
 
 - [GitHub Repository](https://github.com/vaquarkhan/Fullstack-development-agent-skills)
-- [Documentation](https://vaquarkhan.github.io/Fullstack-development-agent-skills/)
+- [Website](https://vaquarkhan.github.io/Fullstack-development-agent-skills/)
+- [JetBrains Plugin](https://plugins.jetbrains.com/plugin/32167-fullstack-development-agent-skills)
 - [Issues](https://github.com/vaquarkhan/Fullstack-development-agent-skills/issues)
 
 ## License
