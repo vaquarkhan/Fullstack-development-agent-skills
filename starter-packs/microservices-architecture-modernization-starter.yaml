@@ -1,0 +1,23 @@
+name: microservices-architecture-modernization-starter
+description: Comprehensive starter for architecture modernization using domain decomposition, anti-pattern remediation, protocol governance, and incremental migration.
+include_skills:
+  - domain-driven-service-decomposition
+  - distributed-monolith-detection-and-remediation
+  - monolith-to-microservices-migration-strategy
+  - microservice-patterns-saga-and-compensation
+  - microservice-patterns-outbox-and-cdc
+  - cqrs-and-event-sourcing-patterns
+  - interservice-protocol-selection-rest-grpc-graphql
+  - observability-distributed-tracing-and-ebpf-strategy
+include_presets:
+  - nodejs-microservices
+  - java-spring-boot-microservices
+  - dotnet-aspnet-core-microservices
+include_references:
+  - microservices-architecture-patterns-checklist.md
+  - microservice-patterns-checklist.md
+  - microservice-reliability-checklist.md
+success_evidence:
+  - distributed monolith hotspots reduced
+  - migration roadmap approved with rollback controls
+  - protocol and observability standards adopted

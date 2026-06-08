@@ -1,0 +1,14 @@
+name: azure-serverless-fullstack-starter
+description: Azure serverless fullstack starter for APIM, Functions, Entra ID, Static Web Apps, and Service Bus workflows.
+include_skills:
+  - azure-serverless-fullstack-architecture
+  - oauth2-oidc-and-token-lifecycle
+  - okta-identity-integration-patterns
+  - serverless-event-driven-and-workflow-orchestration
+  - terraform-fullstack-infrastructure-as-code
+include_presets:
+  - azure-serverless-fullstack
+  - azure-fullstack-development
+include_references:
+  - azure-fullstack-checklist.md
+  - cloud-serverless-patterns-checklist.md

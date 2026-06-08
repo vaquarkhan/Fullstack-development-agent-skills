@@ -1,0 +1,14 @@
+name: aws-serverless-fullstack-starter
+description: AWS serverless fullstack starter for API Gateway, Lambda, Cognito, CloudFront, and event-driven workflows.
+include_skills:
+  - aws-serverless-fullstack-architecture
+  - aws-cognito-authentication-patterns
+  - serverless-event-driven-and-workflow-orchestration
+  - api-gateway-and-edge-security
+  - terraform-fullstack-infrastructure-as-code
+include_presets:
+  - aws-serverless-fullstack
+  - aws-fullstack-development
+include_references:
+  - aws-fullstack-checklist.md
+  - cloud-serverless-patterns-checklist.md

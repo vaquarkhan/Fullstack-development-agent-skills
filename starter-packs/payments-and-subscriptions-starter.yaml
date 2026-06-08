@@ -1,0 +1,19 @@
+name: payments-and-subscriptions-starter
+description: Starter pack for subscription billing, payment event reliability, reconciliation, and secure release operations.
+include_skills:
+  - fullstack-product-specification
+  - api-contract-first-development
+  - payments-and-webhook-reliability
+  - authentication-and-authorization-fullstack
+  - fullstack-testing-and-quality-gates
+  - incident-triage-and-oncall-runbooks
+include_presets:
+  - fullstack-typescript-monorepo
+  - nodejs-microservices
+include_references:
+  - fullstack-auth-security-checklist.md
+  - microservice-reliability-checklist.md
+success_evidence:
+  - webhook signature verification in place
+  - reconciliation job tested
+  - duplicate charge protections validated

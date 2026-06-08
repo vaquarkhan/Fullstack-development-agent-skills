@@ -1,0 +1,25 @@
+name: microservice-patterns-and-edge-security-starter
+description: One-stop starter for resilient microservice architecture, edge gateway security, global frontend delivery, and scaling guardrails.
+include_skills:
+  - backend-microservices-architecture
+  - microservice-patterns-saga-and-compensation
+  - microservice-patterns-outbox-and-cdc
+  - microservice-patterns-service-mesh-and-traffic-management
+  - resilience-timeouts-retries-and-circuit-breakers
+  - api-gateway-and-edge-security
+  - frontend-load-balancing-and-global-delivery
+  - autoscaling-capacity-and-cost-guardrails
+  - fullstack-observability-and-release-engineering
+include_presets:
+  - nodejs-microservices
+  - aws-fullstack-development
+  - azure-fullstack-development
+  - gcp-fullstack-development
+include_references:
+  - microservice-patterns-checklist.md
+  - frontend-scaling-and-edge-security-checklist.md
+  - microservice-reliability-checklist.md
+success_evidence:
+  - gateway and service resilience policies validated
+  - regional frontend failover test passed
+  - autoscaling and cost thresholds approved

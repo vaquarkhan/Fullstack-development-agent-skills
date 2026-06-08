@@ -1,0 +1,18 @@
+name: chaos-sre-starter
+description: Reliability engineering with SLOs, chaos experiments, load testing, and incident readiness.
+use_when:
+  - hardening production reliability before scale
+  - recurring incidents under dependency failure
+include_skills:
+  - chaos-engineering-and-failure-injection
+  - performance-and-load-testing-fullstack
+  - incident-triage-and-oncall-runbooks
+  - fullstack-observability-and-release-engineering
+include_presets:
+  - kubernetes-fullstack-platform
+include_references:
+  - microservice-reliability-checklist.md
+success_evidence:
+  - SLOs defined with error budgets and alerts
+  - chaos or game-day outcomes documented with remediations
+  - load tests meet targets under expected peak

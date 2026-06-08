@@ -1,0 +1,25 @@
+service:
+  name: "service-name"
+  owner: "team-name"
+  domain_boundary: "What this service owns"
+api:
+  protocol: "http|grpc|event"
+  version: "v1"
+  compatibility_policy: "backward-compatible within major version"
+  endpoints_or_events: []
+resilience:
+  timeout_ms: 1000
+  retry_policy: "bounded exponential backoff"
+  idempotency_strategy: "idempotency key or natural key"
+observability:
+  logs: "structured with correlation id"
+  metrics: []
+  tracing: true
+operations:
+  health_checks: true
+  rollout_strategy: "canary or phased rollout"
+  rollback_strategy: "documented and tested"
+verification:
+  contract_tests: []
+  load_tests: []
+  failure_mode_tests: []

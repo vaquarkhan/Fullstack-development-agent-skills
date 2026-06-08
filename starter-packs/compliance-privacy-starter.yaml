@@ -1,0 +1,19 @@
+name: compliance-privacy-starter
+description: GDPR-oriented privacy controls across UI, APIs, notifications, and data stores.
+use_when:
+  - EU users or regulated personal data
+  - data subject rights must be supported
+include_skills:
+  - compliance-gdpr-and-data-privacy-fullstack
+  - authentication-and-authorization-fullstack
+  - email-and-notification-delivery
+  - secrets-vault-and-key-rotation
+include_presets:
+  - fullstack-typescript-monorepo
+include_references:
+  - fullstack-auth-security-checklist.md
+  - fullstack-architecture-review-checklist.md
+success_evidence:
+  - personal data inventory updated
+  - export and erasure flows tested end-to-end
+  - consent changes propagate to downstream systems

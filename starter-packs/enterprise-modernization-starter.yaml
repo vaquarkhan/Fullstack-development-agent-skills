@@ -1,0 +1,26 @@
+name: enterprise-modernization-starter
+description: Structured migration starter for legacy UI and backend modernization with compatibility and phased rollout controls.
+use_when:
+  - monolith to microservice migration
+  - frontend rewrite or design system modernization
+  - strict uptime and compatibility constraints
+include_skills:
+  - fullstack-product-specification
+  - ui-engineering-and-design-systems
+  - backend-microservices-architecture
+  - api-contract-first-development
+  - fullstack-testing-and-quality-gates
+  - fullstack-observability-and-release-engineering
+include_presets:
+  - fullstack-typescript-monorepo
+  - aws-fullstack-development
+  - azure-fullstack-development
+  - gcp-fullstack-development
+include_references:
+  - cloud-fullstack-readiness-checklist.md
+  - microservice-reliability-checklist.md
+  - fullstack-architecture-review-checklist.md
+success_evidence:
+  - dual-run or phased migration plan documented
+  - backward compatibility strategy approved
+  - rollback tests executed in staging

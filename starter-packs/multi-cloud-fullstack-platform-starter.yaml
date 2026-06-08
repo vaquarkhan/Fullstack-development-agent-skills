@@ -1,0 +1,20 @@
+name: multi-cloud-fullstack-platform-starter
+description: Multi-cloud fullstack platform starter spanning AWS, Azure, and GCP with shared reliability and release patterns.
+include_skills:
+  - cloud-fullstack-development
+  - aws-serverless-fullstack-architecture
+  - azure-serverless-fullstack-architecture
+  - gcp-serverless-fullstack-architecture
+  - kubernetes-fullstack-platform-engineering
+  - terraform-fullstack-infrastructure-as-code
+  - fullstack-observability-and-release-engineering
+include_presets:
+  - aws-fullstack-development
+  - azure-fullstack-development
+  - gcp-fullstack-development
+  - kubernetes-fullstack-platform
+include_references:
+  - aws-fullstack-checklist.md
+  - azure-fullstack-checklist.md
+  - gcp-fullstack-checklist.md
+  - cloud-serverless-patterns-checklist.md

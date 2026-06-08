@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "gcp-docs": {
+      "comment": "Replace with your GCP MCP server configuration and service account setup."
+    }
+  }
+}

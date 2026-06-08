@@ -1,0 +1,25 @@
+name: fullstack-mvp-starter
+description: Fast path for MVP delivery with safe defaults for UI, API, auth, testing, and release checks.
+use_when:
+  - new product or module launch
+  - small team needs strong delivery discipline
+include_skills:
+  - using-fullstack-agent-skills
+  - fullstack-product-specification
+  - react-nextjs-frontend-architecture
+  - nodejs-nestjs-backend-microservices
+  - api-contract-first-development
+  - authentication-and-authorization-fullstack
+  - fullstack-testing-and-quality-gates
+  - fullstack-observability-and-release-engineering
+include_presets:
+  - fullstack-typescript-monorepo
+  - react-nextjs-frontend
+  - nodejs-microservices
+include_references:
+  - fullstack-architecture-review-checklist.md
+  - fullstack-auth-security-checklist.md
+success_evidence:
+  - API contract approved and versioned
+  - user critical flows pass end-to-end tests
+  - release runbook includes rollback and owner

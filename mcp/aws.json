@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "aws-docs": {
+      "comment": "Replace with your AWS MCP server configuration and credentials strategy."
+    }
+  }
+}

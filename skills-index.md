@@ -1,0 +1,181 @@
+# Skills Index
+
+**72** skills · **15** presets · **20** starter packs
+
+## Entry
+
+- `skills/using-fullstack-agent-skills/SKILL.md`
+
+## Skills
+
+- `skills/ai-llm-integration-in-fullstack-apps/SKILL.md`
+- `skills/angular-enterprise-frontend/SKILL.md`
+- `skills/api-contract-first-development/SKILL.md`
+- `skills/api-gateway-and-edge-security/SKILL.md`
+- `skills/authentication-and-authorization-fullstack/SKILL.md`
+- `skills/autoscaling-capacity-and-cost-guardrails/SKILL.md`
+- `skills/aws-cognito-authentication-patterns/SKILL.md`
+- `skills/aws-serverless-fullstack-architecture/SKILL.md`
+- `skills/azure-serverless-fullstack-architecture/SKILL.md`
+- `skills/backend-microservices-architecture/SKILL.md`
+- `skills/bff-architecture-and-api-aggregation/SKILL.md`
+- `skills/cdn-caching-and-edge-acceleration-patterns/SKILL.md`
+- `skills/chaos-engineering-and-failure-injection/SKILL.md`
+- `skills/cicd-gitops-and-progressive-deployment/SKILL.md`
+- `skills/cloud-cost-optimization/SKILL.md`
+- `skills/cloud-fullstack-development/SKILL.md`
+- `skills/compliance-gdpr-and-data-privacy-fullstack/SKILL.md`
+- `skills/cqrs-and-event-sourcing-patterns/SKILL.md`
+- `skills/database-migrations-zero-downtime/SKILL.md`
+- `skills/design-system-governance-and-tokens/SKILL.md`
+- `skills/distributed-caching-and-invalidation/SKILL.md`
+- `skills/distributed-monolith-detection-and-remediation/SKILL.md`
+- `skills/domain-driven-service-decomposition/SKILL.md`
+- `skills/dotnet-aspnet-core-microservices/SKILL.md`
+- `skills/e2e-testing-playwright-cypress/SKILL.md`
+- `skills/email-and-notification-delivery/SKILL.md`
+- `skills/feature-flags-and-progressive-delivery/SKILL.md`
+- `skills/file-storage-and-media-delivery/SKILL.md`
+- `skills/frontend-load-balancing-and-global-delivery/SKILL.md`
+- `skills/frontend-security-csp-and-xss-hardening/SKILL.md`
+- `skills/fullstack-observability-and-release-engineering/SKILL.md`
+- `skills/fullstack-product-specification/SKILL.md`
+- `skills/fullstack-testing-and-quality-gates/SKILL.md`
+- `skills/gcp-serverless-fullstack-architecture/SKILL.md`
+- `skills/graphql-client-and-bff-integration/SKILL.md`
+- `skills/incident-triage-and-oncall-runbooks/SKILL.md`
+- `skills/internationalization-and-localization/SKILL.md`
+- `skills/interservice-protocol-selection-rest-grpc-graphql/SKILL.md`
+- `skills/java-spring-boot-microservices/SKILL.md`
+- `skills/kafka-event-backbone-patterns/SKILL.md`
+- `skills/kubernetes-fullstack-platform-engineering/SKILL.md`
+- `skills/load-balancer-strategy-and-traffic-distribution/SKILL.md`
+- `skills/microservice-patterns-outbox-and-cdc/SKILL.md`
+- `skills/microservice-patterns-saga-and-compensation/SKILL.md`
+- `skills/microservice-patterns-service-mesh-and-traffic-management/SKILL.md`
+- `skills/mobile-api-and-offline-sync-patterns/SKILL.md`
+- `skills/monolith-to-microservices-migration-strategy/SKILL.md`
+- `skills/multi-cloud-disaster-recovery/SKILL.md`
+- `skills/multi-tenant-data-isolation-patterns/SKILL.md`
+- `skills/nextjs-app-router-and-streaming-ui/SKILL.md`
+- `skills/nginx-edge-routing-and-security/SKILL.md`
+- `skills/nodejs-nestjs-backend-microservices/SKILL.md`
+- `skills/oauth2-oidc-and-token-lifecycle/SKILL.md`
+- `skills/observability-distributed-tracing-and-ebpf-strategy/SKILL.md`
+- `skills/okta-identity-integration-patterns/SKILL.md`
+- `skills/payments-and-webhook-reliability/SKILL.md`
+- `skills/performance-and-load-testing-fullstack/SKILL.md`
+- `skills/postgres-and-relational-data-modeling/SKILL.md`
+- `skills/react-native-fullstack-integration/SKILL.md`
+- `skills/react-nextjs-frontend-architecture/SKILL.md`
+- `skills/realtime-ui-websockets-and-sse/SKILL.md`
+- `skills/redis-caching-and-session-store-patterns/SKILL.md`
+- `skills/resilience-timeouts-retries-and-circuit-breakers/SKILL.md`
+- `skills/search-and-discovery-experience/SKILL.md`
+- `skills/secrets-vault-and-key-rotation/SKILL.md`
+- `skills/serverless-event-driven-and-workflow-orchestration/SKILL.md`
+- `skills/terraform-fullstack-infrastructure-as-code/SKILL.md`
+- `skills/ui-engineering-and-design-systems/SKILL.md`
+- `skills/using-fullstack-agent-skills/SKILL.md`
+- `skills/vercel-edge-and-jamstack-delivery/SKILL.md`
+- `skills/vue-nuxt-frontend/SKILL.md`
+- `skills/web-accessibility-wcag-compliance/SKILL.md`
+
+## Presets
+
+- `presets/angular-frontend/SKILL.md`
+- `presets/aws-fullstack-development/SKILL.md`
+- `presets/aws-serverless-fullstack/SKILL.md`
+- `presets/azure-fullstack-development/SKILL.md`
+- `presets/azure-serverless-fullstack/SKILL.md`
+- `presets/dotnet-aspnet-core-microservices/SKILL.md`
+- `presets/fullstack-typescript-monorepo/SKILL.md`
+- `presets/gcp-fullstack-development/SKILL.md`
+- `presets/gcp-serverless-fullstack/SKILL.md`
+- `presets/java-spring-boot-microservices/SKILL.md`
+- `presets/kubernetes-fullstack-platform/SKILL.md`
+- `presets/nodejs-microservices/SKILL.md`
+- `presets/react-nextjs-frontend/SKILL.md`
+- `presets/vercel-nextjs-jamstack/SKILL.md`
+- `presets/vue-nuxt-frontend/SKILL.md`
+
+## References
+
+- `references/aws-fullstack-checklist.md`
+- `references/azure-fullstack-checklist.md`
+- `references/cloud-fullstack-readiness-checklist.md`
+- `references/cloud-serverless-patterns-checklist.md`
+- `references/frontend-review-checklist.md`
+- `references/frontend-scaling-and-edge-security-checklist.md`
+- `references/fullstack-anti-patterns.md`
+- `references/fullstack-architecture-review-checklist.md`
+- `references/fullstack-auth-security-checklist.md`
+- `references/gcp-fullstack-checklist.md`
+- `references/identity-edge-and-delivery-checklist.md`
+- `references/microservice-patterns-checklist.md`
+- `references/microservice-reliability-checklist.md`
+- `references/microservices-architecture-patterns-checklist.md`
+- `references/README.md`
+- `references/ui-production-readiness-checklist.md`
+
+## Starter Packs
+
+- `starter-packs/ai-features-starter.yaml`
+- `starter-packs/aws-serverless-fullstack-starter.yaml`
+- `starter-packs/azure-serverless-fullstack-starter.yaml`
+- `starter-packs/chaos-sre-starter.yaml`
+- `starter-packs/compliance-privacy-starter.yaml`
+- `starter-packs/data-platform-and-events-starter.yaml`
+- `starter-packs/enterprise-modernization-starter.yaml`
+- `starter-packs/fullstack-mvp-starter.yaml`
+- `starter-packs/gcp-serverless-fullstack-starter.yaml`
+- `starter-packs/gitops-cicd-starter.yaml`
+- `starter-packs/identity-edge-and-global-delivery-starter.yaml`
+- `starter-packs/incident-hardening-and-slo-starter.yaml`
+- `starter-packs/microservice-patterns-and-edge-security-starter.yaml`
+- `starter-packs/microservices-architecture-modernization-starter.yaml`
+- `starter-packs/mobile-fullstack-starter.yaml`
+- `starter-packs/multi-cloud-fullstack-platform-starter.yaml`
+- `starter-packs/payments-and-subscriptions-starter.yaml`
+- `starter-packs/platform-reliability-starter.yaml`
+- `starter-packs/saas-multi-tenant-starter.yaml`
+- `starter-packs/ui-production-excellence-starter.yaml`
+
+## Review Agents
+
+- `agents/backend-reliability-reviewer.md`
+- `agents/frontend-quality-reviewer.md`
+- `agents/platform-engineering-reviewer.md`
+- `agents/privacy-compliance-reviewer.md`
+- `agents/security-threat-reviewer.md`
+- `agents/sre-reliability-reviewer.md`
+
+## Tutorials
+
+- `tutorials/aws-serverless-fullstack-delivery.md`
+- `tutorials/azure-serverless-fullstack-delivery.md`
+- `tutorials/e2e-testing-in-ci.md`
+- `tutorials/fullstack-architecture-patterns.md`
+- `tutorials/gcp-serverless-fullstack-delivery.md`
+- `tutorials/identity-oauth-oidc-and-provider-integration.md`
+- `tutorials/microservice-resilience-and-edge-delivery.md`
+- `tutorials/postgres-redis-and-kafka-fullstack.md`
+- `tutorials/progressive-release-and-incident-readiness.md`
+- `tutorials/README.md`
+- `tutorials/ui-production-excellence.md`
+- `tutorials/using-fullstack-agent-skills.md`
+
+## Lifecycle Commands
+
+- `.cursor/commands/spec.md`
+- `.cursor/commands/plan.md`
+- `.cursor/commands/build.md`
+- `.cursor/commands/validate.md`
+- `.cursor/commands/review.md`
+- `.cursor/commands/ship.md`
+- `.cursor/commands/migrate.md`
+- `.cursor/commands/harden.md`
+- `.cursor/commands/incident.md`
+- `.cursor/commands/optimize.md`
+
+See `registry/assets.json` for the full machine-readable index.

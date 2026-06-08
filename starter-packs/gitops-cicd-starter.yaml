@@ -1,0 +1,19 @@
+name: gitops-cicd-starter
+description: GitOps and progressive deployment for fullstack teams with automated quality gates.
+use_when:
+  - standardizing release automation
+  - reducing manual deploy drift
+include_skills:
+  - cicd-gitops-and-progressive-deployment
+  - feature-flags-and-progressive-delivery
+  - terraform-fullstack-infrastructure-as-code
+  - e2e-testing-playwright-cypress
+include_presets:
+  - kubernetes-fullstack-platform
+  - aws-fullstack-development
+include_references:
+  - cloud-fullstack-readiness-checklist.md
+success_evidence:
+  - pipeline blocks on failed quality gates
+  - progressive deployment and rollback tested
+  - deployment artifacts immutable and traceable

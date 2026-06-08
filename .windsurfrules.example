@@ -1,0 +1,6 @@
+# Fullstack Agent Skills - Windsurf Rules Example
+
+1) Start with `skills/using-fullstack-agent-skills/SKILL.md`
+2) Route by lifecycle command: spec, plan, build, validate, review, ship
+3) Use `starter-packs/` for use-case bundles
+4) Verify with `references/` checklists before ship

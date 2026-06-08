@@ -1,0 +1,20 @@
+name: ai-features-starter
+description: Safe LLM integration in fullstack apps with guardrails, observability, and cost controls.
+use_when:
+  - adding AI-assisted product features
+  - need measurable quality and safety gates
+include_skills:
+  - ai-llm-integration-in-fullstack-apps
+  - api-contract-first-development
+  - fullstack-observability-and-release-engineering
+  - secrets-vault-and-key-rotation
+include_presets:
+  - react-nextjs-frontend
+  - nodejs-microservices
+include_references:
+  - fullstack-auth-security-checklist.md
+  - ui-production-readiness-checklist.md
+success_evidence:
+  - prompt templates versioned and reviewed
+  - guardrails tested for injection and unsafe output
+  - cost and latency budgets configured with alerts
