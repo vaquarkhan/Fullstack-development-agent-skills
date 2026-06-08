@@ -38,22 +38,26 @@ Access via Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`):
 
 ### Supported Editors
 
-- ✅ Visual Studio Code
-- ✅ Cursor
-- ✅ Windsurf
-- ✅ VSCodium
+- VS Code
+- Cursor
+- Windsurf
+- VSCodium
 
 ### Delivery Lifecycle
 
-The toolkit provides a consistent 6-command lifecycle:
+The toolkit provides a consistent 10-command lifecycle:
 
 ```text
-/spec  → Define business outcome, UI states, API contracts, NFRs
-/plan  → Split into frontend, backend, data, release-safe slices
-/build → Implement with contract and compatibility discipline
-/validate → Run lint, tests, and checklist-driven verification
-/review → Evaluate architecture, security, performance risks
-/ship  → Staged rollout, observability checks, rollback readiness
+/spec     - Define business outcome, UI states, API contracts, NFRs
+/plan     - Split into frontend, backend, data, release-safe slices
+/build    - Implement with contract and compatibility discipline
+/validate - Run lint, tests, and checklist-driven verification
+/review   - Evaluate architecture, security, performance risks
+/ship     - Staged rollout, observability checks, rollback readiness
+/migrate  - Zero-downtime schema, API, platform migrations
+/harden   - Security, reliability, performance hardening
+/incident - Triage, runbooks, postmortems
+/optimize - Performance, cost, capacity improvements
 ```
 
 ### Platform Presets
@@ -65,9 +69,9 @@ The toolkit provides a consistent 6-command lifecycle:
 - Node.js Microservices
 - Java Spring Boot Microservices
 - .NET / ASP.NET Core Microservices
-- AWS Fullstack & Serverless
-- Azure Fullstack & Serverless
-- GCP Fullstack & Serverless
+- AWS Fullstack and Serverless
+- Azure Fullstack and Serverless
+- GCP Fullstack and Serverless
 - Kubernetes Fullstack Platform
 - Vercel / Jamstack
 
@@ -77,11 +81,20 @@ The toolkit provides a consistent 6-command lifecycle:
 - Enterprise Modernization
 - Platform Reliability
 - SaaS Multi-Tenant
-- Payments & Subscriptions
-- Incident Hardening & SLO
-- Microservice Patterns & Edge Security
+- Payments and Subscriptions
+- Incident Hardening and SLO
+- Microservice Patterns and Edge Security
 - Microservices Architecture Modernization
-- Identity, Edge & Global Delivery
+- Identity, Edge and Global Delivery
+- UI Production Excellence
+- AWS / Azure / GCP Serverless
+- Multi-Cloud Platform
+- Data Platform and Events
+- Compliance and Privacy
+- AI Features
+- Mobile Fullstack
+- Chaos and SRE
+- GitOps CI/CD
 
 ## Development
 
@@ -92,7 +105,7 @@ npm run compile
 npm run package
 ```
 
-## Build & Publish
+## Build and Publish
 
 ```bash
 # Package the extension
