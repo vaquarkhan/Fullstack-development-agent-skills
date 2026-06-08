@@ -501,9 +501,3 @@ See `docs/skill-anatomy.md` for required skill structure and quality gates.
 
 MIT
 
----
-
-Inspired by [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills).
-
-
-
