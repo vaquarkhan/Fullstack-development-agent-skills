@@ -1,41 +1,103 @@
 {
-  "name": "fullstack-agent-skills",
-  "displayName": "Fullstack Agent Skills",
-  "description": "Install and manage Fullstack Development Agent Skills in your workspace.",
-  "version": "0.1.0",
-  "publisher": "vaquarkhan",
+  "name": "fullstack-development-agent-skills",
+  "displayName": "Fullstack Development Agent Skills",
+  "description": "Production-grade UI, backend microservice, and cloud fullstack skills for AI agents. 53+ workflow skills, 15 presets, 14 starter packs, and multi-agent adapters for Cursor, Claude, Gemini, Kiro, Copilot, and more.",
+  "version": "0.2.0",
+  "publisher": "ViquarKhan",
+  "author": {
+    "name": "Viquar Khan"
+  },
+  "license": "MIT",
+  "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#0b0d11",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vaquarkhan/Fullstack-development-agent-skills"
+  },
+  "homepage": "https://vaquarkhan.github.io/Fullstack-development-agent-skills/",
+  "bugs": {
+    "url": "https://github.com/vaquarkhan/Fullstack-development-agent-skills/issues"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Snippets",
+    "Education"
   ],
-  "activationEvents": [
-    "onCommand:fullstackAgentSkills.installAll",
-    "onCommand:fullstackAgentSkills.openSkillsIndex"
+  "keywords": [
+    "fullstack",
+    "agent",
+    "skills",
+    "ai",
+    "microservices",
+    "react",
+    "nextjs",
+    "aws",
+    "azure",
+    "gcp",
+    "cursor",
+    "claude",
+    "copilot",
+    "kiro"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "fullstackAgentSkills.installAll",
-        "title": "Fullstack Agent Skills: Install Full Toolkit"
+        "command": "fullstackSkills.installFullToolkit",
+        "title": "FS Skills: Install Full Toolkit"
       },
       {
-        "command": "fullstackAgentSkills.openSkillsIndex",
-        "title": "Fullstack Agent Skills: Open Skills Index"
+        "command": "fullstackSkills.installCorePack",
+        "title": "FS Skills: Install Core Pack"
+      },
+      {
+        "command": "fullstackSkills.installAgentAdapters",
+        "title": "FS Skills: Install Agent Adapters"
+      },
+      {
+        "command": "fullstackSkills.installStarterPack",
+        "title": "FS Skills: Install Starter Pack"
+      },
+      {
+        "command": "fullstackSkills.installMCPTemplates",
+        "title": "FS Skills: Install MCP Templates"
+      },
+      {
+        "command": "fullstackSkills.installExamples",
+        "title": "FS Skills: Install Examples"
+      },
+      {
+        "command": "fullstackSkills.installPreset",
+        "title": "FS Skills: Install Platform Preset"
+      },
+      {
+        "command": "fullstackSkills.openSkillsIndex",
+        "title": "FS Skills: Open Skills Index"
+      },
+      {
+        "command": "fullstackSkills.runSessionHook",
+        "title": "FS Skills: Run Session Hook"
       }
     ]
   },
   "scripts": {
-    "compile": "tsc -p .",
-    "watch": "tsc -watch -p .",
-    "package": "vsce package"
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts",
+    "package": "vsce package",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
     "@types/vscode": "^1.85.0",
-    "typescript": "^5.4.0",
-    "@vscode/vsce": "^2.24.0"
+    "@vscode/vsce": "^2.24.0",
+    "typescript": "^5.4.0"
   }
 }
