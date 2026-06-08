@@ -505,5 +505,5 @@ MIT
 
 Inspired by [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills).
 
- 
- 
+
+
