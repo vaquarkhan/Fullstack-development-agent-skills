@@ -1,0 +1,47 @@
+name: Package VS Code Extension
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'vscode-extension/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: vscode-extension
+        run: npm install
+
+      - name: Compile
+        working-directory: vscode-extension
+        run: npm run compile
+
+      - name: Package VSIX
+        working-directory: vscode-extension
+        run: npx vsce package --no-dependencies
+
+      - name: Upload VSIX artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: fullstack-development-agent-skills.vsix
+          path: vscode-extension/*.vsix
+
+      - name: Create Release
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: vscode-v${{ github.run_number }}
+          name: VS Code Extension v0.3.0 (Build ${{ github.run_number }})
+          files: vscode-extension/*.vsix
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

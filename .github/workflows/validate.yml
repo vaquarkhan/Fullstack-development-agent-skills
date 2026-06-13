@@ -17,3 +17,11 @@ jobs:
         run: |
           test -f README.md
           test -f skills-index.md
+      - name: Validate skills structure
+        run: python scripts/validate-skills.py
+      - name: Check skill boilerplate
+        run: python scripts/check-skill-boilerplate.py
+      - name: Validate registry assets
+        run: python scripts/validate-assets.py
+      - name: Validate version sync
+        run: python scripts/validate-version-sync.py
