@@ -32,6 +32,13 @@ disable-model-invocation: true
 - Duplicate and out-of-order events do not corrupt state
 - Saga progress is traceable by correlation ID
 
+## Decision Framework
+
+- Prefer choreography when domain ownership is clear and event contracts are mature.
+- Prefer orchestration when visibility, sequencing, and centralized recovery are required.
+- Use compensation for business reversal, not technical rollback assumptions.
+- Model irreversibility explicitly for steps like external settlement or notifications.
+
 ## Common Rationalizations And Rebuttals
 
 - "A single DB transaction is easier." -> It does not scale across services; use saga for distributed consistency.
@@ -44,26 +51,6 @@ disable-model-invocation: true
 - Compensation matrix by step and side effect
 - Replay test evidence with duplicate and out-of-order event scenarios
 - Operational playbook for stuck or poisoned saga execution
-
-## Decision Framework
-
-- Prefer explicit contracts and compatibility rules before implementation.
-- If dependency risk is high, require timeout, retry, and fallback strategy per call path.
-- If async messaging is used, require idempotency, replay, and dead-letter handling.
-- If traffic patterns are volatile, require load, failover, and scaling validation before ship.
-
-## Common Rationalizations And Rebuttals
-
-- "Retries will handle failures automatically." -> Unbounded retries can amplify outages; use budgets.
-- "We can skip runbooks for now." -> Operational ambiguity delays incident recovery.
-- "Contract changes are minor." -> Small breaking changes cause broad downstream regressions.
-
-## Evidence Pack
-
-- Contract compatibility note and migration strategy (if applicable)
-- Failure-mode test evidence for dependency degradation and recovery
-- Observability snapshot (latency, error, saturation, or queue health)
-- Rollout and rollback steps with clear trigger thresholds
 
 ## Exit Criteria
 

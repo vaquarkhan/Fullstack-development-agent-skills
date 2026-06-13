@@ -69,23 +69,23 @@ disable-model-invocation: true
 
 ## Decision Framework
 
-- Start with clear scope and ownership boundaries.
-- Prefer incremental, testable slices over broad rewrites.
-- Define compatibility and rollback expectations before release.
-- Require evidence for reliability and operability outcomes.
+- Route to the narrowest skill that matches the change type before expanding scope.
+- If UI and backend both change, start with fullstack-product-specification before implementation skills.
+- Prefer one preset plus one starter pack to reduce conflicting guidance.
+- Block /build until scope, contracts, and rollback expectations are documented.
 
 ## Common Rationalizations And Rebuttals
 
-- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
-- "This change is too small for process." -> Small changes still need clear validation criteria.
-- "Docs can wait." -> Missing context increases future delivery and incident cost.
+- "Any skill is close enough." -> Wrong skill loads wrong gates; match routing guide entries first.
+- "We can skip the preset." -> Presets encode stack defaults that prevent rework.
+- "References are optional." -> Checklists catch gaps that skills assume are already handled.
 
 ## Evidence Pack
 
-- Scope and acceptance criteria with owner
-- Test or validation evidence for changed behavior
-- Compatibility and rollback notes
-- Operational visibility requirements for production impact
+- Selected preset and skills list with rationale
+- Reference checklists identified for the change type
+- Scope boundary note (in/out of scope)
+- Lifecycle command chosen (/spec, /plan, etc.) with owner
 
 ## Exit Criteria
 

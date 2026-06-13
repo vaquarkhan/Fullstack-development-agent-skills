@@ -31,23 +31,23 @@ disable-model-invocation: true
 
 ## Decision Framework
 
-- Start with clear scope and ownership boundaries.
-- Prefer incremental, testable slices over broad rewrites.
-- Define compatibility and rollback expectations before release.
-- Require evidence for reliability and operability outcomes.
+- Draft OpenAPI, GraphQL, or event schema before provider or consumer code merges.
+- Classify every field change as safe additive, breaking, or deprecated-with-timeline.
+- Consumer-driven contract tests must run in CI for every published schema revision.
+- Version endpoints or use compatibility headers when multiple consumer generations coexist.
 
 ## Common Rationalizations And Rebuttals
 
-- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
-- "This change is too small for process." -> Small changes still need clear validation criteria.
-- "Docs can wait." -> Missing context increases future delivery and incident cost.
+- "We can document the API after shipping." -> Undocumented contracts drift; consumers embed assumptions that break silently.
+- "Breaking changes are fine if we own all clients." -> Mobile, partner, and async consumers lag deploys; assume external consumers exist.
+- "Examples in code comments are enough." -> CI cannot validate comments; publish machine-readable schemas and examples.
 
 ## Evidence Pack
 
-- Scope and acceptance criteria with owner
-- Test or validation evidence for changed behavior
-- Compatibility and rollback notes
-- Operational visibility requirements for production impact
+- Published schema artifact with diff against previous version
+- Consumer contract test results (provider and consumer suites)
+- Deprecation timeline and migration guide for breaking changes
+- Error envelope examples for validation, auth, and not-found paths
 
 ## Exit Criteria
 

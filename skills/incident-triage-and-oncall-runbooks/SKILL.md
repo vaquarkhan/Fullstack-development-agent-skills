@@ -27,23 +27,23 @@ disable-model-invocation: true
 
 ## Decision Framework
 
-- Start with clear scope and ownership boundaries.
-- Prefer incremental, testable slices over broad rewrites.
-- Define compatibility and rollback expectations before release.
-- Require evidence for reliability and operability outcomes.
+- Classify severity by customer impact and blast radius before deep debugging; stabilize first.
+- Prefer rollback, flag disable, or traffic shift over forward-fix during active user impact.
+- Preserve timeline, hypothesis, and decision log in real time—not reconstructed post hoc.
+- Assign explicit comms owner separate from technical mitigator.
 
 ## Common Rationalizations And Rebuttals
 
-- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
-- "This change is too small for process." -> Small changes still need clear validation criteria.
-- "Docs can wait." -> Missing context increases future delivery and incident cost.
+- "We need root cause before acting." -> Mitigate impact first; root cause follows stabilization.
+- "Hotfix is faster than rollback." -> Hotfixes under pressure add risk; rollback has known-good state.
+- "Status page can wait." -> Silence erodes trust; communicate impact window and next checkpoint.
 
 ## Evidence Pack
 
-- Scope and acceptance criteria with owner
-- Test or validation evidence for changed behavior
-- Compatibility and rollback notes
-- Operational visibility requirements for production impact
+- Incident timeline with severity, mitigations, and decision rationale
+- Dashboard snapshots showing user-impact metrics at detection and mitigation
+- Runbook steps executed with gaps noted for post-incident follow-up
+- Customer/stakeholder comms record with update timestamps
 
 ## Exit Criteria
 

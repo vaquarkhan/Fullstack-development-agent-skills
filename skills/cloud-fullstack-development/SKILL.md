@@ -28,23 +28,23 @@ disable-model-invocation: true
 
 ## Decision Framework
 
-- Start with clear scope and ownership boundaries.
-- Prefer incremental, testable slices over broad rewrites.
-- Define compatibility and rollback expectations before release.
-- Require evidence for reliability and operability outcomes.
+- Separate dev/staging/prod accounts or subscriptions with least-privilege IAM per environment.
+- Define frontend hosting, API compute, data tier, and secrets vault before first deploy script.
+- Correlate UI telemetry with backend trace IDs across the cloud boundary.
+- Validate DR, cost guardrails, and rollback paths in a staging environment that mirrors prod topology.
 
 ## Common Rationalizations And Rebuttals
 
-- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
-- "This change is too small for process." -> Small changes still need clear validation criteria.
-- "Docs can wait." -> Missing context increases future delivery and incident cost.
+- "Console clicks are fine for v1." -> Undocumented console state blocks reproducibility; use IaC from day one.
+- "Same IAM role everywhere speeds delivery." -> Shared roles expand blast radius; scope roles per service and environment.
+- "Observability can follow launch." -> Blind launches extend incidents; wire metrics and alerts before traffic.
 
 ## Evidence Pack
 
-- Scope and acceptance criteria with owner
-- Test or validation evidence for changed behavior
-- Compatibility and rollback notes
-- Operational visibility requirements for production impact
+- IaC plan or module layout with environment matrix
+- IAM policy summary showing least-privilege per service
+- Correlated trace or log example from browser through cloud API to data tier
+- Staging deploy proof with rollback or blue-green switch evidence
 
 ## Exit Criteria
 

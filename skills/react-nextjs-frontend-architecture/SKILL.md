@@ -21,13 +21,6 @@ disable-model-invocation: true
 5. Enforce interaction resilience with suspense boundaries, skeletons, and retry UX.
 6. Validate accessibility, bundle size, and Core Web Vitals before merge.
 
-## Decision Framework
-
-- Prefer server components for static or cacheable content; use client components for interactivity only.
-- Prefer URL state for shareable filters and pagination; avoid hidden in-memory state for navigable views.
-- Prefer colocated feature modules over centralized "mega" folders when team ownership is clear.
-- If route latency exceeds targets, evaluate streaming, prefetch, and cache revalidation before new libraries.
-
 ## Architecture Rules
 
 - Keep data fetching close to route boundaries
@@ -43,6 +36,13 @@ disable-model-invocation: true
 - Slow network behavior is acceptable for key user journeys
 - Client bundle additions are reviewed and justified
 - Visual regression coverage exists for high-traffic pages
+
+## Decision Framework
+
+- Prefer server components for static or cacheable content; use client components for interactivity only.
+- Prefer URL state for shareable filters and pagination; avoid hidden in-memory state for navigable views.
+- Prefer colocated feature modules over centralized "mega" folders when team ownership is clear.
+- If route latency exceeds targets, evaluate streaming, prefetch, and cache revalidation before new libraries.
 
 ## Common Rationalizations And Rebuttals
 

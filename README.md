@@ -10,11 +10,13 @@
 
 > **🌐 [Project Website](https://vaquarkhan.github.io/Fullstack-development-agent-skills/)** | **📦 [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ViquarKhan.fullstack-development-agent-skills)** | **🔌 [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/32167-fullstack-development-agent-skills)** | **⬇️ [GitHub Releases](https://github.com/vaquarkhan/Fullstack-development-agent-skills/releases/latest)**
 
+![Fullstack Development Skills](images/frontend-skills.png)
+
 Production-grade fullstack development skills for AI agents.
 
 The open skill registry and execution toolkit for fullstack delivery agents.
 
-This repository packages repeatable workflows, quality gates, hooks, installer surfaces, and runnable examples so agents can build fullstack applications with the same discipline used by strong engineering teams.
+This repository packages repeatable workflows, quality gates, hooks, installer surfaces, and architecture blueprints so agents can build fullstack applications with the same discipline used by strong engineering teams.
 
 The goal is not to give agents generic prompts. The goal is to give them operating procedures for specifying, planning, implementing, validating, reviewing, and shipping reliable fullstack products.
 
@@ -98,7 +100,7 @@ Supported tools: `cursor`, `claude`, `gemini`, `kiro`, `opencode`, `windsurf`, `
 - 20 starter packs for MVP, SaaS, payments, reliability, microservices, identity/edge, per-cloud serverless, AI features, mobile, chaos/SRE, and GitOps
 - Multi-agent packaging for `Cursor`, `Claude`, `Copilot`, `Gemini`, `Codex`, `Kiro`, `OpenCode`, `Windsurf`, and generic `AGENTS.md` consumers
 - Plugin delivery for `VS Code` family editors and `JetBrains` IDEs with release downloads and marketplace publishing
-- Runnable architecture examples with specs, implementation guides, and proof paths
+- Architecture blueprints with specs, implementation guides, and proof paths
 - Structured operational templates, checklists, and reviewer personas
 
 ## Feature Coverage
@@ -287,7 +289,7 @@ Use the starter packs in `starter-packs/` to adopt the repository by problem are
 
 ## End-To-End Examples
 
-Example architecture packs are available in `examples/`:
+Architecture blueprints (README-only design packs) are available in `examples/`:
 
 - `react-nextjs-nestjs-monorepo` — Full TypeScript monorepo with shared contracts
 - `saas-multi-tenant-bff` — Multi-tenant BFF with tenant isolation and auth flows
@@ -339,7 +341,7 @@ It provides command-palette installers for:
 - starter packs
 - MCP templates
 - platform presets
-- runnable examples
+- architecture blueprints
 
 Supported editors: `VS Code`, `Cursor`, `Windsurf`, `VSCodium`
 
@@ -371,7 +373,7 @@ fullstack-development-agent-skills/
 ├── starter-packs/             # 20 opinionated YAML bundles
 ├── references/                # 16 operational checklists
 ├── tutorials/                 # 12 guided walkthroughs
-├── examples/                  # 7 architecture scaffolds
+├── examples/                  # 7 architecture blueprints (README-only)
 ├── case-studies/              # 3 delivery scenarios
 ├── agents/                    # 6 reviewer personas
 ├── mcp/                       # 8 MCP template configs

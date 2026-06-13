@@ -27,23 +27,23 @@ disable-model-invocation: true
 
 ## Decision Framework
 
-- Start with clear scope and ownership boundaries.
-- Prefer incremental, testable slices over broad rewrites.
-- Define compatibility and rollback expectations before release.
-- Require evidence for reliability and operability outcomes.
+- Prefer expand-migrate-contract over big-bang DDL; never drop old columns until all readers and writers are migrated.
+- For constraint changes use NOT VALID then VALIDATE CONSTRAINT to avoid long locks on hot tables.
+- Run dual-write or dual-read windows when application versions overlap during rollout.
+- Use resumable batch backfills with keyed cursors; set lock_timeout and statement_timeout on migration sessions.
 
 ## Common Rationalizations And Rebuttals
 
-- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
-- "This change is too small for process." -> Small changes still need clear validation criteria.
-- "Docs can wait." -> Missing context increases future delivery and incident cost.
+- "We can run the ALTER in a maintenance window." -> Maintenance windows still hurt SLOs; expand/contract avoids hard downtime.
+- "Shadow reads are overkill." -> Shadow reads catch semantic drift before cutover; skip them only for low-risk columns.
+- "Rollback is just restore backup." -> Backups miss in-flight writes; document expand-phase rollback that preserves data.
 
 ## Evidence Pack
 
-- Scope and acceptance criteria with owner
-- Test or validation evidence for changed behavior
-- Compatibility and rollback notes
-- Operational visibility requirements for production impact
+- Expand/migrate/contract plan with phase gates and app version matrix
+- Backfill job config: batch size, cursor key, idempotency proof, resume test
+- Shadow-read or dual-write validation results with mismatch counts
+- DDL scripts with lock_timeout/statement_timeout settings and estimated row impact
 
 ## Exit Criteria
 

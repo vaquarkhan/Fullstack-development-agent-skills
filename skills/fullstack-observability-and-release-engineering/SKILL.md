@@ -38,23 +38,23 @@ disable-model-invocation: true
 
 ## Decision Framework
 
-- Start with clear scope and ownership boundaries.
-- Prefer incremental, testable slices over broad rewrites.
-- Define compatibility and rollback expectations before release.
-- Require evidence for reliability and operability outcomes.
+- Define SLIs on user journeys (checkout, login, search)—not only server CPU.
+- Propagate correlation IDs from browser through BFF to all downstream services.
+- Choose rollout mechanism (canary, blue-green, feature flag) based on blast radius and rollback speed.
+- Set rollback triggers on SLO burn, error budget, or business KPI regression before deploy starts.
 
 ## Common Rationalizations And Rebuttals
 
-- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
-- "This change is too small for process." -> Small changes still need clear validation criteria.
-- "Docs can wait." -> Missing context increases future delivery and incident cost.
+- "Monitoring infra is enough." -> Infra metrics miss user-visible failures; instrument journey SLIs.
+- "Deploy Friday if tests pass." -> Release engineering includes rollback readiness and on-call coverage, not only tests.
+- "Rollback is redeploy previous tag." -> Data migrations and feature flags may block naive redeploy; document full rollback path.
 
 ## Evidence Pack
 
-- Scope and acceptance criteria with owner
-- Test or validation evidence for changed behavior
-- Compatibility and rollback notes
-- Operational visibility requirements for production impact
+- SLI/SLO definitions linked to dashboards and alert routes
+- Correlation ID trace capture from UI action through backend graph
+- Rollout runbook with trigger thresholds and rollback steps
+- Post-release verification checklist results within defined window
 
 ## Exit Criteria
 

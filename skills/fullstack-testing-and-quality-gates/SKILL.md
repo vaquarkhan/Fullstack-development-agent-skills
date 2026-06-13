@@ -38,23 +38,23 @@ disable-model-invocation: true
 
 ## Decision Framework
 
-- Start with clear scope and ownership boundaries.
-- Prefer incremental, testable slices over broad rewrites.
-- Define compatibility and rollback expectations before release.
-- Require evidence for reliability and operability outcomes.
+- Map tests to risk: unit for rules, contract for APIs, integration for boundaries, E2E only for revenue-critical journeys.
+- Block merge on lint, typecheck, unit, and contract suites; gate release on smoke and migration compatibility tests.
+- Quarantine flaky tests with owner and SLA; never silently retry without tracking flake rate.
+- Require backward-compatibility proof when contracts or schemas change.
 
 ## Common Rationalizations And Rebuttals
 
-- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
-- "This change is too small for process." -> Small changes still need clear validation criteria.
-- "Docs can wait." -> Missing context increases future delivery and incident cost.
+- "E2E covers everything." -> E2E is slow and brittle; lean on contracts and integration for breadth.
+- "Coverage percentage is the goal." -> Covered nonsense tests provide false confidence; assert behavior and contracts.
+- "We can skip gates for hotfixes." -> Hotfixes cause most regressions; expedite with scoped gates, don't remove them.
 
 ## Evidence Pack
 
-- Scope and acceptance criteria with owner
-- Test or validation evidence for changed behavior
-- Compatibility and rollback notes
-- Operational visibility requirements for production impact
+- Test pyramid plan mapped to changed modules and user journeys
+- CI gate configuration diff showing required jobs for merge vs release
+- Contract test output for changed API surfaces
+- Flake quarantine register or explicit zero-flake attestation for touched suites
 
 ## Exit Criteria
 

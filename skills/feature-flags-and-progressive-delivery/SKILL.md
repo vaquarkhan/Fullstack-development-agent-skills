@@ -27,23 +27,23 @@ disable-model-invocation: true
 
 ## Decision Framework
 
-- Start with clear scope and ownership boundaries.
-- Prefer incremental, testable slices over broad rewrites.
-- Define compatibility and rollback expectations before release.
-- Require evidence for reliability and operability outcomes.
+- Default flags to off/safe path; disabled state must match pre-change production behavior.
+- Use cohort, percentage, and kill-switch flags with explicit rollout and rollback thresholds.
+- Instrument flagged vs unflagged cohorts on error rate, latency, and business KPIs.
+- Schedule flag retirement after stable full rollout to avoid debt and stale branches.
 
 ## Common Rationalizations And Rebuttals
 
-- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
-- "This change is too small for process." -> Small changes still need clear validation criteria.
-- "Docs can wait." -> Missing context increases future delivery and incident cost.
+- "Flags are only for experiments." -> Flags are production safety valves for risky fullstack releases.
+- "We will remove the flag later." -> Unremoved flags multiply code paths and test matrices; set retirement date at creation.
+- "100% rollout means delete checks." -> Keep kill switch until post-release verification window closes.
 
 ## Evidence Pack
 
-- Scope and acceptance criteria with owner
-- Test or validation evidence for changed behavior
-- Compatibility and rollback notes
-- Operational visibility requirements for production impact
+- Flag lifecycle doc: owner, default, cohort rules, retirement date
+- Rollout dashboard comparing flagged vs baseline metrics
+- Kill-switch test proving disable without redeploy
+- Removal PR or ticket scheduled after stability window
 
 ## Exit Criteria
 

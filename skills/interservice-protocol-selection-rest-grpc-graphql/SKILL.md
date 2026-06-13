@@ -27,23 +27,23 @@ disable-model-invocation: true
 
 ## Decision Framework
 
-- Start with clear scope and ownership boundaries.
-- Prefer incremental, testable slices over broad rewrites.
-- Define compatibility and rollback expectations before release.
-- Require evidence for reliability and operability outcomes.
+- Prefer REST for public, cache-friendly CRUD; gRPC for low-latency internal sync; GraphQL when consumers need shaped reads with strict query cost limits.
+- Document error models, schema evolution rules, and breaking-change policy per protocol.
+- Measure gateway translation overhead when mixing protocols at the edge.
+- Avoid protocol proliferation without governance—standardize defaults per interaction class.
 
 ## Common Rationalizations And Rebuttals
 
-- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
-- "This change is too small for process." -> Small changes still need clear validation criteria.
-- "Docs can wait." -> Missing context increases future delivery and incident cost.
+- "GraphQL everywhere simplifies clients." -> Unbounded queries and N+1 resolver paths hurt reliability; use where fan-out shaping pays off.
+- "gRPC is always faster." -> Operational complexity (schema, proxies, browser incompatibility) has cost; use internally unless justified externally.
+- "REST versioning in URLs is enough." -> Explicit compatibility tests and deprecation timelines still required.
 
 ## Evidence Pack
 
-- Scope and acceptance criteria with owner
-- Test or validation evidence for changed behavior
-- Compatibility and rollback notes
-- Operational visibility requirements for production impact
+- Protocol decision record per interaction type with latency and operability rationale
+- Schema governance doc with backward-compatibility rules
+- Load or latency comparison when gateway translates between protocols
+- Observability config per protocol (trace propagation, error taxonomy)
 
 ## Exit Criteria
 

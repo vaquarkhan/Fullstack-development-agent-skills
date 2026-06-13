@@ -27,23 +27,23 @@ disable-model-invocation: true
 
 ## Decision Framework
 
-- Start with clear scope and ownership boundaries.
-- Prefer incremental, testable slices over broad rewrites.
-- Define compatibility and rollback expectations before release.
-- Require evidence for reliability and operability outcomes.
+- Derive boundaries from business capabilities and language, not technical layers or CRUD tables.
+- One bounded context owns each aggregate's write model; reads may be replicated with explicit lag tolerance.
+- Size services for team cognitive load and independent release cadence—not maximal micro-granularity.
+- Use anti-corruption layers when integrating legacy or external contexts.
 
 ## Common Rationalizations And Rebuttals
 
-- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
-- "This change is too small for process." -> Small changes still need clear validation criteria.
-- "Docs can wait." -> Missing context increases future delivery and incident cost.
+- "Split by database table." -> Table splits ignore domain language and create chatty cross-service joins.
+- "One service per developer." -> Too-fine services multiply operational cost without autonomy gains.
+- "Shared kernel is faster." -> Shared mutable models reintroduce monolith coupling; share only published contracts.
 
 ## Evidence Pack
 
-- Scope and acceptance criteria with owner
-- Test or validation evidence for changed behavior
-- Compatibility and rollback notes
-- Operational visibility requirements for production impact
+- Context map with bounded contexts, upstream/downstream relationships, and ownership
+- Aggregate ownership matrix (write vs read models per context)
+- Extraction slice plan with strangler milestones and anti-corruption layer notes
+- Team ownership alignment confirming deploy independence per slice
 
 ## Exit Criteria
 

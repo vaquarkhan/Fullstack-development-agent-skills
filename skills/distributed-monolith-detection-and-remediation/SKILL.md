@@ -27,23 +27,23 @@ disable-model-invocation: true
 
 ## Decision Framework
 
-- Start with clear scope and ownership boundaries.
-- Prefer incremental, testable slices over broad rewrites.
-- Define compatibility and rollback expectations before release.
-- Require evidence for reliability and operability outcomes.
+- Measure coupling by release independence, synchronous call depth, and shared mutable state—not folder layout.
+- Prioritize breaking synchronous chains before splitting services; async boundaries reduce lockstep deploy pressure.
+- Extract along bounded contexts with anti-corruption layers; avoid shared-database writes across services.
+- Track decoupling metrics release-over-release (deploy coupling index, blast-radius score).
 
 ## Common Rationalizations And Rebuttals
 
-- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
-- "This change is too small for process." -> Small changes still need clear validation criteria.
-- "Docs can wait." -> Missing context increases future delivery and incident cost.
+- "We already have microservices." -> Shared DBs and chatty sync RPC still form a distributed monolith.
+- "Big-bang decomposition is faster." -> Big-bang cutovers fail on hidden dependencies; extract incrementally with strangler patterns.
+- "Team structure can follow later." -> Conway's law will re-couple services; align ownership with extraction slices.
 
 ## Evidence Pack
 
-- Scope and acceptance criteria with owner
-- Test or validation evidence for changed behavior
-- Compatibility and rollback notes
-- Operational visibility requirements for production impact
+- Coupling heatmap: sync call graph depth, shared schema writes, co-deploy frequency
+- Target boundary map with anti-corruption layer design per extraction slice
+- Contract stabilization plan with versioning policy for extracted services
+- Before/after deploy independence metrics with baseline and target
 
 ## Exit Criteria
 

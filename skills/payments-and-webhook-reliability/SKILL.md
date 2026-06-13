@@ -27,23 +27,23 @@ disable-model-invocation: true
 
 ## Decision Framework
 
-- Start with clear scope and ownership boundaries.
-- Prefer incremental, testable slices over broad rewrites.
-- Define compatibility and rollback expectations before release.
-- Require evidence for reliability and operability outcomes.
+- Model payments as a state machine with idempotency keys on every mutation path.
+- Verify webhook signatures before persistence; store raw payloads for audit and replay.
+- Run reconciliation jobs for missing, delayed, or out-of-order provider events.
+- Never double-apply financial state on duplicate webhook delivery.
 
 ## Common Rationalizations And Rebuttals
 
-- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
-- "This change is too small for process." -> Small changes still need clear validation criteria.
-- "Docs can wait." -> Missing context increases future delivery and incident cost.
+- "Provider guarantees exactly-once." -> All major providers retry; design for at-least-once delivery.
+- "We can reconcile manually." -> Manual reconciliation does not scale and misses subtle drift; automate daily diffs.
+- "Refunds can reuse charge handlers." -> Refunds have distinct states and idempotency rules; separate handlers and tests.
 
 ## Evidence Pack
 
-- Scope and acceptance criteria with owner
-- Test or validation evidence for changed behavior
-- Compatibility and rollback notes
-- Operational visibility requirements for production impact
+- Payment state diagram with terminal states and idempotency key placement
+- Webhook signature verification and replay test results (duplicate delivery scenarios)
+- Reconciliation job output showing matched, missing, and disputed events
+- Audit log samples for charge, refund, and dispute transitions
 
 ## Exit Criteria
 

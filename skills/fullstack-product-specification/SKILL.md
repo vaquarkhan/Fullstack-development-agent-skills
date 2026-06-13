@@ -21,13 +21,6 @@ disable-model-invocation: true
 5. Set non-functional requirements (latency, throughput, accessibility, security, auditability).
 6. Record rollout strategy, migration or backfill needs, and rollback criteria.
 
-## Decision Framework
-
-- If requirements are UI-only, force API and data impact review before build starts.
-- If the change touches auth or money flow, require security and failure-mode scenarios.
-- If migration is needed, choose expand-migrate-contract unless a stronger alternative is justified.
-- If performance SLO is unknown, add a baseline measurement task before implementation.
-
 ## Required Checks
 
 - Feature brief includes testable acceptance criteria
@@ -50,6 +43,13 @@ disable-model-invocation: true
 - Backend assumptions are embedded in frontend code comments only
 - API errors and edge cases are not defined
 - No migration story for schema or contract changes
+
+## Decision Framework
+
+- If requirements are UI-only, force API and data impact review before build starts.
+- If the change touches auth or money flow, require security and failure-mode scenarios.
+- If migration is needed, choose expand-migrate-contract unless a stronger alternative is justified.
+- If performance SLO is unknown, add a baseline measurement task before implementation.
 
 ## Common Rationalizations And Rebuttals
 

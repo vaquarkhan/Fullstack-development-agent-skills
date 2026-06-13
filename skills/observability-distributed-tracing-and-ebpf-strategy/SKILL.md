@@ -27,23 +27,23 @@ disable-model-invocation: true
 
 ## Decision Framework
 
-- Start with clear scope and ownership boundaries.
-- Prefer incremental, testable slices over broad rewrites.
-- Define compatibility and rollback expectations before release.
-- Require evidence for reliability and operability outcomes.
+- Propagate W3C trace context through every sync hop, async queue, and browser-initiated request.
+- Instrument RED metrics per service and USE metrics per resource; cap label cardinality before production.
+- Adopt eBPF for kernel/network visibility only where root cause spans logs and metrics cannot explain latency.
+- Tie alerts to SLO burn rates and user journeys, not raw infrastructure thresholds.
 
 ## Common Rationalizations And Rebuttals
 
-- "We can fill gaps after merge." -> Critical gaps are harder and riskier to fix in production.
-- "This change is too small for process." -> Small changes still need clear validation criteria.
-- "Docs can wait." -> Missing context increases future delivery and incident cost.
+- "Logs are enough for debugging." -> Cross-service failures need span correlation; logs alone multiply MTTR.
+- "Trace everything at max detail." -> Unsampled full fidelity blows cost and storage; sample with tail-based retention for errors.
+- "eBPF replaces application instrumentation." -> eBPF sees network/kernel; business spans still need app-level attributes.
 
 ## Evidence Pack
 
-- Scope and acceptance criteria with owner
-- Test or validation evidence for changed behavior
-- Compatibility and rollback notes
-- Operational visibility requirements for production impact
+- Trace propagation test across UI, API gateway, and downstream services
+- Dashboard links for SLO-aligned RED/USE panels with on-call runbook mapping
+- Sampling and retention policy with cost estimate
+- eBPF deployment scope note (if used): what visibility gap it closes
 
 ## Exit Criteria
 

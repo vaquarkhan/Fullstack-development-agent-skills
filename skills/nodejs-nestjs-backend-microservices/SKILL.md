@@ -21,13 +21,6 @@ disable-model-invocation: true
 5. Add telemetry (structured logs, metrics, traces) with correlation IDs.
 6. Verify with unit, integration, contract, and failure-mode tests.
 
-## Decision Framework
-
-- If endpoint is customer-critical, require explicit SLO, retry budget, and circuit policy.
-- If processing is asynchronous, require dead-letter and replay strategy before release.
-- If schema changes are non-trivial, require expand-migrate-contract or dual-read/write plan.
-- If service has more than one external dependency, require fallback behavior per dependency class.
-
 ## Runtime Guardrails
 
 - Timeouts and retries are explicit and bounded
@@ -42,6 +35,13 @@ disable-model-invocation: true
 - Schema migrations are reversible or dual-read/write safe
 - P95 latency and error budgets are known for critical endpoints
 - Incident triage notes include dashboard, logs, and rollback commands
+
+## Decision Framework
+
+- If endpoint is customer-critical, require explicit SLO, retry budget, and circuit policy.
+- If processing is asynchronous, require dead-letter and replay strategy before release.
+- If schema changes are non-trivial, require expand-migrate-contract or dual-read/write plan.
+- If service has more than one external dependency, require fallback behavior per dependency class.
 
 ## Common Rationalizations And Rebuttals
 

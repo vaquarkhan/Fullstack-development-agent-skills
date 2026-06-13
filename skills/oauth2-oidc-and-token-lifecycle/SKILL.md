@@ -32,6 +32,13 @@ disable-model-invocation: true
 - Scope and claim checks are enforced per protected endpoint
 - Token refresh and revocation paths are deterministic
 
+## Decision Framework
+
+- Prefer authorization code with PKCE for browser and mobile clients.
+- Keep access tokens short-lived; use refresh tokens with rotation for longer sessions.
+- Validate tokens at every trust boundary; never trust client-side checks alone.
+- Map scopes to business actions, not broad technical group names.
+
 ## Common Rationalizations And Rebuttals
 
 - "Client already checked auth." -> Client checks are bypassable; enforce authorization server-side.
@@ -44,26 +51,6 @@ disable-model-invocation: true
 - Negative test evidence for invalid issuer, expired token, wrong audience, and missing scope
 - Key rotation or JWKS failure handling notes
 - Security alert dashboard for auth anomalies
-
-## Decision Framework
-
-- Enforce server-side authorization as the source of truth for access decisions.
-- Use least-privilege scopes and role mappings by default.
-- If tokens are used, define validation, rotation, and revocation behavior explicitly.
-- If external identity providers are involved, define outage and fallback behavior.
-
-## Common Rationalizations And Rebuttals
-
-- "Client checks are enough." -> Client logic is bypassable; enforce checks on backend boundaries.
-- "Broad scopes are easier to manage." -> Broad scopes increase blast radius and compliance risk.
-- "We can add audit logs later." -> Missing audit evidence blocks incident and compliance response.
-
-## Evidence Pack
-
-- Negative test cases for unauthorized and malformed access attempts
-- Scope-to-permission mapping with owner approval
-- Token/session lifecycle flow and revocation behavior proof
-- Audit and security monitoring evidence for sensitive operations
 
 ## Exit Criteria
 
