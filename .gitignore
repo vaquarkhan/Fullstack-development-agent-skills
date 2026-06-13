@@ -3,5 +3,6 @@ out/
 dist/
 *.vsix
 *.zip
+jetbrains-plugin/build/
 .DS_Store
 Thumbs.db
