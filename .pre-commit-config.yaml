@@ -1,0 +1,23 @@
+repos:
+  - repo: local
+    hooks:
+      - id: validate-skills
+        name: validate skills
+        entry: python scripts/validate-skills.py
+        language: system
+        pass_filenames: false
+      - id: check-skill-boilerplate
+        name: check skill boilerplate
+        entry: python scripts/check-skill-boilerplate.py
+        language: system
+        pass_filenames: false
+      - id: validate-assets
+        name: validate assets
+        entry: python scripts/validate-assets.py
+        language: system
+        pass_filenames: false
+      - id: run-skill-routing-benchmark
+        name: run skill routing benchmark
+        entry: python scripts/run-skill-routing-benchmark.py
+        language: system
+        pass_filenames: false

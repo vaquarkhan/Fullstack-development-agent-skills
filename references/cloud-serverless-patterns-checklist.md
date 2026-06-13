@@ -6,3 +6,8 @@
 - [ ] Environment promotion is automated and auditable
 - [ ] Cost guardrails and autoscaling limits configured
 - [ ] Multi-region or failover strategy documented where required
+
+## Provenance
+
+- Sources: AWS/Azure/GCP serverless reference architectures
+- Last reviewed: 2026-06

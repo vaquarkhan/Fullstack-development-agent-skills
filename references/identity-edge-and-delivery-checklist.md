@@ -27,3 +27,8 @@ Use this checklist for OAuth/OIDC identity, edge security, load balancing, and C
 - [ ] Weighted rollout/failover strategy is validated
 - [ ] CDN cache policy and purge flow support safe releases
 - [ ] Sensitive responses are excluded from shared caching
+
+## Provenance
+
+- Sources: OAuth 2.0/OIDC specs, OWASP API Security Top 10, CDN best practices
+- Last reviewed: 2026-06

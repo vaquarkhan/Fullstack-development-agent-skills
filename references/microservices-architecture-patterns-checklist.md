@@ -31,3 +31,8 @@ Use this checklist when designing or reviewing large microservice estates.
 - [ ] Monolith modernization uses strangler-style incremental cutover
 - [ ] Rollback paths exist for each migration slice
 - [ ] Architectural fitness metrics are reviewed continuously
+
+## Provenance
+
+- Sources: Domain-Driven Design, microservices architecture guides
+- Last reviewed: 2026-06

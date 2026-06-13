@@ -6,3 +6,8 @@
 - [ ] Static Web Apps or CDN release and rollback tested
 - [ ] Service Bus/Event Grid failure drills completed
 - [ ] Application Insights dashboards and alerts updated
+
+## Provenance
+
+- Sources: Azure Well-Architected Framework, Microsoft Cloud Adoption Framework
+- Last reviewed: 2026-06

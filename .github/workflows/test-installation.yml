@@ -6,14 +6,35 @@ on:
     branches: [main]
 
 jobs:
-  test-install:
+  test-install-linux:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Test shell installer
         run: |
           chmod +x scripts/install.sh
-          mkdir -p /tmp/fullstack-skill-install
-          ./scripts/install.sh all /tmp/fullstack-skill-install
-          test -d /tmp/fullstack-skill-install/skills
-          test -f /tmp/fullstack-skill-install/skills/using-fullstack-agent-skills/SKILL.md
+          TARGET=/tmp/fullstack-skill-install
+          ./scripts/install.sh all "$TARGET"
+          python scripts/verify-install-output.py "$TARGET"
+
+  test-install-macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test shell installer
+        run: |
+          chmod +x scripts/install.sh
+          TARGET=/tmp/fullstack-skill-install
+          ./scripts/install.sh all "$TARGET"
+          python3 scripts/verify-install-output.py "$TARGET"
+
+  test-install-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test PowerShell installer
+        shell: pwsh
+        run: |
+          $target = Join-Path $env:RUNNER_TEMP "fullstack-skill-install"
+          ./scripts/install.ps1 -Tool all -Target $target
+          python scripts/verify-install-output.py $target

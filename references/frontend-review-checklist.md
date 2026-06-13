@@ -6,3 +6,8 @@
 - Responsive layout for core breakpoints
 - Performance and bundle impact reviewed
 - Test coverage for primary user journey
+
+## Provenance
+
+- Sources: WCAG 2.2, web.dev performance guidance, React documentation
+- Last reviewed: 2026-06

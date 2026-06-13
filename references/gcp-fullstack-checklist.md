@@ -6,3 +6,8 @@
 - [ ] Cloud CDN cache invalidation during release validated
 - [ ] Cloud Monitoring SLOs and alert policies configured
 - [ ] Terraform state and rollback plan documented
+
+## Provenance
+
+- Sources: Google Cloud Architecture Framework, GCP security foundations
+- Last reviewed: 2026-06

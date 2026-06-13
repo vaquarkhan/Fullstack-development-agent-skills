@@ -25,3 +25,21 @@ jobs:
         run: python scripts/validate-assets.py
       - name: Validate version sync
         run: python scripts/validate-version-sync.py
+      - name: Run skill routing benchmark
+        run: python scripts/run-skill-routing-benchmark.py
+      - name: Validate reference provenance
+        run: python scripts/validate-reference-provenance.py
+
+  validate-vscode-extension:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install extension dependencies
+        working-directory: vscode-extension
+        run: npm ci
+      - name: Compile TypeScript
+        working-directory: vscode-extension
+        run: npm run compile

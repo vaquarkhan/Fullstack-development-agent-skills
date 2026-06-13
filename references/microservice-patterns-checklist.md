@@ -25,3 +25,8 @@ Use this checklist when introducing distributed architecture patterns.
 - [ ] Dashboards and alerts cover each critical dependency
 - [ ] Rollback and incident runbooks are versioned and owned
 - [ ] Canary and progressive rollout strategies are tested
+
+## Provenance
+
+- Sources: Microservices.io patterns, enterprise integration patterns
+- Last reviewed: 2026-06

@@ -19,3 +19,8 @@ Use this checklist for global frontend delivery and edge hardening.
 - [ ] Core Web Vitals and latency SLOs are tracked by region
 - [ ] Autoscaling limits and cost guardrails are in place
 - [ ] Rollback plan includes cache purge and route fallback steps
+
+## Provenance
+
+- Sources: OWASP Top 10, CDN and edge security guidance
+- Last reviewed: 2026-06

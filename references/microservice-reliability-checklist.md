@@ -6,3 +6,8 @@
 - Idempotency is proven for write paths
 - Logging, metrics, and tracing are available
 - Rollout and rollback plans are documented
+
+## Provenance
+
+- Sources: Google SRE workbook, release engineering resilience practices
+- Last reviewed: 2026-06

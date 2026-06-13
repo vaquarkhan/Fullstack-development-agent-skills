@@ -1,6 +1,4 @@
-# Examples
-
-Runnable-style example packs that map skills to concrete fullstack architectures.
+# Architecture blueprints (README-only design packs) for fullstack agent workflows.
 
 | Example | Stack |
 | --- | --- |
@@ -12,4 +10,4 @@ Runnable-style example packs that map skills to concrete fullstack architectures
 | azure-apim-functions-static-web-app | Azure APIM + Functions + Static Web Apps |
 | gcp-cloud-run-pubsub-nextjs | GCP Cloud Run + Pub/Sub + Next.js |
 
-Each example includes architecture notes, skill routing, and validation commands.
+Each example is an architecture blueprint with routing notes and validation guidance. These are not runnable scaffolds; use them to choose skills, presets, and proof paths before implementation.

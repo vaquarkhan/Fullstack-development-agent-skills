@@ -6,3 +6,8 @@
 - [ ] S3/CloudFront cache and purge strategy validated
 - [ ] EventBridge/SQS DLQ and replay procedures documented
 - [ ] CloudWatch alarms and X-Ray traces cover critical paths
+
+## Provenance
+
+- Sources: AWS Well-Architected Framework, AWS Security Best Practices
+- Last reviewed: 2026-06

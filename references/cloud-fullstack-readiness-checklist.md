@@ -6,3 +6,8 @@
 - API contracts are versioned and validated in CI
 - Logs, metrics, traces, and alerts are wired end to end
 - Rollback and disaster recovery procedures are documented
+
+## Provenance
+
+- Sources: 12-Factor App, cloud-native foundations
+- Last reviewed: 2026-06

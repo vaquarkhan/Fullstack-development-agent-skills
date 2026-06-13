@@ -6,3 +6,8 @@
 - [ ] CSP and XSS hardening validated
 - [ ] Design system tokens and components used consistently
 - [ ] Realtime fallback behavior tested when applicable
+
+## Provenance
+
+- Sources: WCAG 2.2, Core Web Vitals, design system governance practices
+- Last reviewed: 2026-06

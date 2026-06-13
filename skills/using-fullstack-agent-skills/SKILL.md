@@ -65,6 +65,11 @@ disable-model-invocation: true
 - Edge gateway security and abuse protection -> `api-gateway-and-edge-security`
 - Global frontend load balancing and CDN failover design -> `frontend-load-balancing-and-global-delivery`
 - Autoscaling policy and cost guardrail engineering -> `autoscaling-capacity-and-cost-guardrails`
+- AWS serverless Lambda, API Gateway, and CloudFront SPA delivery -> `aws-serverless-fullstack-architecture`
+- GDPR, EU data privacy, and user data deletion workflows -> `compliance-gdpr-and-data-privacy-fullstack`
+- Kafka consumer lag, throughput, and event backbone reliability -> `kafka-event-backbone-patterns`
+- Playwright or Cypress end-to-end CI coverage -> `e2e-testing-playwright-cypress`
+- Multi-tenant data isolation and tenant boundary audits -> `multi-tenant-data-isolation-patterns`
 - Cloud-specific fullstack architecture and release workflow -> `cloud-fullstack-development`
 
 ## Decision Framework

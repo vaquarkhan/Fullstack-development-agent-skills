@@ -34,3 +34,8 @@ Use this checklist when implementing or reviewing authentication and authorizati
 - [ ] Backward compatibility exists during auth rollout
 - [ ] Feature flags or staged release controls are in place
 - [ ] Rollback plan is documented and rehearsed
+
+## Provenance
+
+- Sources: OWASP ASVS, OAuth 2.0 RFC 6749, NIST SP 800-63
+- Last reviewed: 2026-06

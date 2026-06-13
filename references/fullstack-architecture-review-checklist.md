@@ -39,3 +39,8 @@ Use this checklist to validate whether a fullstack design is production-ready be
 - [ ] SLOs, dashboards, and alerts are planned before launch
 - [ ] Rollout strategy (flag, canary, phased) is selected
 - [ ] Incident and rollback owner is assigned
+
+## Provenance
+
+- Sources: 12-Factor App, architecture review best practices
+- Last reviewed: 2026-06

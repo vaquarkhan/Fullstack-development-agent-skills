@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: Fullstack Development Agent Skills
+message: >-
+  If you use this repository in research or tooling, please cite it using the metadata below.
+type: software
+authors:
+  - family-names: Khan
+    given-names: Viquar
+repository-code: "https://github.com/vaquarkhan/Fullstack-development-agent-skills"
+url: "https://vaquarkhan.github.io/Fullstack-development-agent-skills/"
+license: MIT
+version: 0.3.0
