@@ -9,7 +9,7 @@ jobs:
   test-install-linux:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Test shell installer
         run: |
           chmod +x scripts/install.sh
@@ -20,7 +20,7 @@ jobs:
   test-install-macos:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Test shell installer
         run: |
           chmod +x scripts/install.sh
@@ -31,7 +31,7 @@ jobs:
   test-install-windows:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Test PowerShell installer
         shell: pwsh
         run: |

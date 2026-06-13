@@ -9,7 +9,7 @@ jobs:
   validate-markdown-and-json:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Validate JSON files
         run: |
           python -m json.tool registry/assets.json > /dev/null
@@ -33,7 +33,7 @@ jobs:
   validate-vscode-extension:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
