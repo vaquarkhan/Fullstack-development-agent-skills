@@ -78,6 +78,7 @@ Load from `skill-packs/` when the task is implementation-deep on a specific stac
 
 ### Java Spring Boot (`skill-packs/java/spring-boot/`)
 
+- Enterprise backend entry point -> `spring-boot-enterprise-foundation`
 - Spring AI, ChatClient, RAG, embeddings -> `spring-ai-integration`
 - MCP server, agent tool registration -> `mcp-server`
 - AI token/latency observability -> `ai-observability`
@@ -101,7 +102,12 @@ Load from `skill-packs/` when the task is implementation-deep on a specific stac
 ### Other JVM, Python, Go, PHP, Ruby
 
 - Quarkus native/cloud APIs -> `skill-packs/java/quarkus/quarkus-cloud-native-apis`
+- Quarkus Kubernetes container-first deploy -> `skill-packs/java/quarkus/quarkus-kubernetes-native`
 - Micronaut reactive services -> `skill-packs/java/micronaut/micronaut-reactive-microservices`
+- Micronaut compile-time DI (no runtime reflection) -> `skill-packs/java/micronaut/micronaut-compile-time-di`
+- Jakarta EE standards platform -> `skill-packs/java/jakarta-ee/jakarta-ee-enterprise-platform`
+- Hibernate ORM advanced persistence -> `skill-packs/java/hibernate/hibernate-orm-persistence`
+- Vaadin Java full-stack UI -> `skill-packs/java/vaadin/vaadin-java-fullstack-ui`
 - FastAPI async Python -> `skill-packs/python/fastapi/fastapi-async-backend`
 - Django DRF enterprise -> `skill-packs/python/django/django-enterprise-backend`
 - Go Gin microservices -> `skill-packs/go/gin/go-gin-rest-microservices`

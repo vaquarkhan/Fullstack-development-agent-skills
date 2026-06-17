@@ -1,8 +1,8 @@
 # Fullstack Development Agent Skills
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-100-brightgreen.svg)](#skills-catalog)
-[![Skill Packs](https://img.shields.io/badge/Skill%20Packs-28-orange.svg)](#skill-packs-by-stack)
+[![Skills](https://img.shields.io/badge/Skills-106-brightgreen.svg)](#skills-catalog)
+[![Skill Packs](https://img.shields.io/badge/Skill%20Packs-34-orange.svg)](#skill-packs-by-stack)
 [![Presets](https://img.shields.io/badge/Presets-15-blue.svg)](#platform-presets)
 [![Examples](https://img.shields.io/badge/Examples-7-purple.svg)](#end-to-end-examples)
 [![Starter Packs](https://img.shields.io/badge/Starter%20Packs-20-red.svg)](#starter-packs)
@@ -96,7 +96,7 @@ Supported tools: `cursor`, `claude`, `gemini`, `kiro`, `opencode`, `windsurf`, `
 ## Feature Highlights
 
 - Spec-first lifecycle with `/spec`, `/plan`, `/build`, `/validate`, `/review`, `/ship`, `/migrate`, `/harden`, `/incident`, and `/optimize`
-- 100 workflow skills (72 core + 28 stack-specific packs) covering UI architecture, backend microservices, identity, edge delivery, cloud infrastructure, testing, observability, payments, and platform operations
+- 106 workflow skills (72 core + 34 stack-specific packs) covering UI architecture, backend microservices, identity, edge delivery, cloud infrastructure, testing, observability, payments, and platform operations
 - 15 platform presets spanning React, Angular, Vue, Node.js, Java, .NET, AWS, Azure, GCP, Kubernetes, Vercel, and fullstack TypeScript
 - 20 starter packs for MVP, SaaS, payments, reliability, microservices, identity/edge, per-cloud serverless, AI features, mobile, chaos/SRE, and GitOps
 - Multi-agent packaging for `Cursor`, `Claude`, `Copilot`, `Gemini`, `Codex`, `Kiro`, `OpenCode`, `Windsurf`, and generic `AGENTS.md` consumers
@@ -168,7 +168,7 @@ Use these hooks when you want the repository to behave more like a workflow syst
 
 ## Skills Catalog
 
-72 core cross-stack skills in `skills/`. See `skills-index.md` for the complete list.
+72 core cross-stack skills in `skills/`. See `skills-index.md` for the complete list (106 total with 34 stack packs).
 
 ## Skill Packs By Stack
 
@@ -176,9 +176,12 @@ Segregated deep-dive skills in `skill-packs/` — one folder per language/framew
 
 | Stack | Path | Highlights |
 | --- | --- | --- |
-| **Java Spring Boot** | `skill-packs/java/spring-boot/` | Spring AI, MCP servers, JPA, Flyway, JWT, agent core (21 skills) |
-| **Java Quarkus** | `skill-packs/java/quarkus/` | Cloud-native APIs, native image |
-| **Java Micronaut** | `skill-packs/java/micronaut/` | Reactive microservices |
+| **Java Spring Boot** | `skill-packs/java/spring-boot/` | Enterprise backend, Spring AI, MCP, auto-config (22 skills) |
+| **Java Quarkus** | `skill-packs/java/quarkus/` | Kubernetes-native, fast startup, native image |
+| **Java Micronaut** | `skill-packs/java/micronaut/` | Compile-time DI, reactive microservices |
+| **Java Jakarta EE** | `skill-packs/java/jakarta-ee/` | Standards-based enterprise (regulated industries) |
+| **Java Hibernate** | `skill-packs/java/hibernate/` | ORM, fetch tuning, persistence patterns |
+| **Java Vaadin** | `skill-packs/java/vaadin/` | Full-stack Java UI without client-side JavaScript |
 | **Python FastAPI** | `skill-packs/python/fastapi/` | Async APIs, Pydantic, OpenAPI |
 | **Python Django** | `skill-packs/python/django/` | DRF, Celery, enterprise patterns |
 | **Go Gin** | `skill-packs/go/gin/` | REST microservices |
@@ -316,7 +319,7 @@ Each template is a starting point. Use `mcp/README.md` for environment-variable 
 ```text
 fullstack-development-agent-skills/
 ├── skills/                    # 72 core cross-stack workflow skills
-├── skill-packs/               # 28 stack-specific skills (Java, Python, Go, PHP, Ruby)
+├── skill-packs/               # 34 stack-specific skills (Java, Python, Go, PHP, Ruby)
 ├── presets/                   # 15 stack-specific configurations
 ├── starter-packs/             # 20 opinionated YAML bundles
 ├── references/                # 16 operational checklists

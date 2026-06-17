@@ -4,14 +4,14 @@
 
 ### Added
 
-- `skill-packs/` segregated catalog: Java Spring Boot (21), Quarkus, Micronaut, Python FastAPI/Django, Go Gin, PHP Laravel, Ruby Rails
+- `skill-packs/` segregated catalog: Java Spring Boot (22), Quarkus (2), Micronaut (2), Jakarta EE, Hibernate, Vaadin, Python, Go, PHP, Ruby
 - Spring Boot pack adapted from [spring-boot-skills](https://github.com/rrezartprebreza/spring-boot-skills) (MIT): Spring AI, MCP server, JPA, Flyway, security, testing
 - `java-agent-core` skill for JVM agent orchestration and tool registries
 - `scripts/import-spring-boot-skills.py` and `scripts/skill_discovery.py` for multi-root skill validation
 
 ### Changed
 
-- Registry v0.4.0: 100 total skills (72 core + 28 packs)
+- Registry v0.4.0: 106 total skills (72 core + 34 packs)
 - Validators and sync scripts scan both `skills/` and `skill-packs/`
 
 ## 0.3.0

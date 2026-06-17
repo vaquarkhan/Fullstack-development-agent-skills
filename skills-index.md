@@ -1,6 +1,6 @@
 # Skills Index
 
-**100** total skills (72 core + 28 packs) · **15** presets · **20** starter packs
+**106** total skills (72 core + 34 packs) · **15** presets · **20** starter packs
 
 ## Entry
 
@@ -84,8 +84,12 @@
 ## Skill Packs (by stack)
 
 - `skill-packs/go/gin/go-gin-rest-microservices/SKILL.md`
+- `skill-packs/java/hibernate/hibernate-orm-persistence/SKILL.md`
+- `skill-packs/java/jakarta-ee/jakarta-ee-enterprise-platform/SKILL.md`
+- `skill-packs/java/micronaut/micronaut-compile-time-di/SKILL.md`
 - `skill-packs/java/micronaut/micronaut-reactive-microservices/SKILL.md`
 - `skill-packs/java/quarkus/quarkus-cloud-native-apis/SKILL.md`
+- `skill-packs/java/quarkus/quarkus-kubernetes-native/SKILL.md`
 - `skill-packs/java/spring-boot/ai-observability/SKILL.md`
 - `skill-packs/java/spring-boot/domain-driven-design/SKILL.md`
 - `skill-packs/java/spring-boot/flyway-migrations/SKILL.md`
@@ -100,6 +104,7 @@
 - `skill-packs/java/spring-boot/problem-details-rfc9457/SKILL.md`
 - `skill-packs/java/spring-boot/rest-api-conventions/SKILL.md`
 - `skill-packs/java/spring-boot/spring-ai-integration/SKILL.md`
+- `skill-packs/java/spring-boot/spring-boot-enterprise-foundation/SKILL.md`
 - `skill-packs/java/spring-boot/spring-cloud-gateway-routing/SKILL.md`
 - `skill-packs/java/spring-boot/spring-data-jpa/SKILL.md`
 - `skill-packs/java/spring-boot/spring-data-redis/SKILL.md`
@@ -107,6 +112,7 @@
 - `skill-packs/java/spring-boot/spring-webflux-reactive/SKILL.md`
 - `skill-packs/java/spring-boot/testing-pyramid/SKILL.md`
 - `skill-packs/java/spring-boot/transactional-patterns/SKILL.md`
+- `skill-packs/java/vaadin/vaadin-java-fullstack-ui/SKILL.md`
 - `skill-packs/php/laravel/laravel-api-platform/SKILL.md`
 - `skill-packs/python/django/django-enterprise-backend/SKILL.md`
 - `skill-packs/python/fastapi/fastapi-async-backend/SKILL.md`

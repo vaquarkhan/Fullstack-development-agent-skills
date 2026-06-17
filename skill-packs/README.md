@@ -9,9 +9,12 @@ Use **`skill-packs/`** for deep, stack-specific implementation playbooks.
 
 | Pack | Path | Skills | Focus |
 | --- | --- | --- | --- |
-| Java Spring Boot | `skill-packs/java/spring-boot/` | 20 | Spring AI, MCP servers, JPA, Flyway, security, testing, agent core |
-| Java Quarkus | `skill-packs/java/quarkus/` | 1 | Cloud-native APIs, native image, Kubernetes |
-| Java Micronaut | `skill-packs/java/micronaut/` | 1 | Reactive microservices, compile-time DI |
+| Java Spring Boot | `skill-packs/java/spring-boot/` | 22 | Enterprise backend, Spring AI, MCP, JPA, security |
+| Java Quarkus | `skill-packs/java/quarkus/` | 2 | Kubernetes-native, fast startup, native image |
+| Java Micronaut | `skill-packs/java/micronaut/` | 2 | Compile-time DI, reactive microservices |
+| Java Jakarta EE | `skill-packs/java/jakarta-ee/` | 1 | Standards-based enterprise (JAX-RS, CDI, JPA) |
+| Java Hibernate | `skill-packs/java/hibernate/` | 1 | ORM modeling, fetch plans, caching |
+| Java Vaadin | `skill-packs/java/vaadin/` | 1 | Full-stack Java UI (no client-side JS) |
 | Python FastAPI | `skill-packs/python/fastapi/` | 1 | Async APIs, Pydantic, OpenAPI |
 | Python Django | `skill-packs/python/django/` | 1 | DRF, Celery, enterprise patterns |
 | Go Gin | `skill-packs/go/gin/` | 1 | REST microservices, clean architecture |
