@@ -1,0 +1,9 @@
+{
+  "bsonType": "object",
+  "required": ["tenantId", "status", "createdAt"],
+  "properties": {
+    "tenantId": { "bsonType": "string" },
+    "status": { "enum": ["open", "paid", "cancelled"] },
+    "totalCents": { "bsonType": "int" }
+  }
+}

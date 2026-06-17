@@ -1,6 +1,6 @@
 # References Index
 
-High-signal checklists for architecture, reliability, security, and delivery.
+High-signal checklists for architecture, reliability, security, and delivery. Each file includes provenance footers validated by `scripts/validate-reference-provenance.py`.
 
 | Reference | Use for |
 | --- | --- |
@@ -18,3 +18,6 @@ High-signal checklists for architecture, reliability, security, and delivery.
 | gcp-fullstack-checklist.md | GCP fullstack and serverless readiness |
 | ui-production-readiness-checklist.md | UI production quality gates |
 | cloud-serverless-patterns-checklist.md | Cross-cloud serverless patterns |
+| fullstack-anti-patterns.md | Common pitfalls to avoid during review |
+
+Pair references with core skills in `skills/` and stack playbooks in `skill-packs/` during `/review` and `/validate`.

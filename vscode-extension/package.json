@@ -1,7 +1,7 @@
 {
   "name": "fullstack-development-agent-skills",
   "displayName": "Fullstack Development Agent Skills",
-  "description": "Production-grade UI, backend microservice, and cloud fullstack skills for AI agents. 72 workflow skills, 15 presets, 20 starter packs, and multi-agent adapters for Cursor, Claude, Gemini, Kiro, Copilot, and more.",
+  "description": "Production-grade UI, backend microservice, and cloud fullstack skills for AI agents. 117 skills (72 core + 45 packs), 15 presets, 20 starter packs, and multi-agent adapters for Cursor, Claude, Gemini, Kiro, Copilot, and more.",
   "version": "0.4.0",
   "publisher": "ViquarKhan",
   "author": {

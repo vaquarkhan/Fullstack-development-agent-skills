@@ -1,0 +1,12 @@
+// GOOD — explicit mappings, bulk index, search with filters + pagination
+PUT orders-v1
+{
+  "mappings": {
+    "properties": {
+      "tenantId": { "type": "keyword" },
+      "status": { "type": "keyword" },
+      "createdAt": { "type": "date" },
+      "customerEmail": { "type": "text", "fields": { "raw": { "type": "keyword" } } }
+    }
+  }
+}

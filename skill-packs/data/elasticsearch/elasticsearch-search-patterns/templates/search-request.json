@@ -1,0 +1,11 @@
+{
+  "from": 0,
+  "size": 20,
+  "query": {
+    "bool": {
+      "filter": [{ "term": { "tenantId": "{{tenantId}}" } }],
+      "must": [{ "match": { "customerEmail": "{{q}}" } }]
+    }
+  },
+  "sort": [{ "createdAt": "desc" }]
+}

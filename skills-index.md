@@ -1,6 +1,6 @@
 # Skills Index
 
-**106** total skills (72 core + 34 packs) · **15** presets · **20** starter packs
+**117** total skills (72 core + 45 packs) · **15** presets · **20** starter packs
 
 ## Entry
 
@@ -83,6 +83,13 @@
 
 ## Skill Packs (by stack)
 
+- `skill-packs/ai/langchain/langchain-agent-orchestration/SKILL.md`
+- `skill-packs/ai/vercel-ai-sdk/vercel-ai-sdk-streaming/SKILL.md`
+- `skill-packs/data/elasticsearch/elasticsearch-search-patterns/SKILL.md`
+- `skill-packs/data/mongodb/mongodb-document-modeling/SKILL.md`
+- `skill-packs/dotnet/aspnetcore/aspnetcore-minimal-apis/SKILL.md`
+- `skill-packs/dotnet/efcore/ef-core-persistence/SKILL.md`
+- `skill-packs/flutter/flutter-fullstack-mobile/SKILL.md`
 - `skill-packs/go/gin/go-gin-rest-microservices/SKILL.md`
 - `skill-packs/java/hibernate/hibernate-orm-persistence/SKILL.md`
 - `skill-packs/java/jakarta-ee/jakarta-ee-enterprise-platform/SKILL.md`
@@ -113,10 +120,14 @@
 - `skill-packs/java/spring-boot/testing-pyramid/SKILL.md`
 - `skill-packs/java/spring-boot/transactional-patterns/SKILL.md`
 - `skill-packs/java/vaadin/vaadin-java-fullstack-ui/SKILL.md`
+- `skill-packs/kotlin/ktor/kotlin-ktor-apis/SKILL.md`
+- `skill-packs/kotlin/spring/kotlin-spring-boot/SKILL.md`
 - `skill-packs/php/laravel/laravel-api-platform/SKILL.md`
 - `skill-packs/python/django/django-enterprise-backend/SKILL.md`
 - `skill-packs/python/fastapi/fastapi-async-backend/SKILL.md`
 - `skill-packs/ruby/rails/rails-api-backend/SKILL.md`
+- `skill-packs/rust/axum/rust-axum-microservices/SKILL.md`
+- `skill-packs/typescript/nestjs/nestjs-enterprise-backend/SKILL.md`
 
 ## Presets
 

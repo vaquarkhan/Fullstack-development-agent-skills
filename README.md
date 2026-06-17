@@ -1,8 +1,8 @@
 # Fullstack Development Agent Skills
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-106-brightgreen.svg)](#skills-catalog)
-[![Skill Packs](https://img.shields.io/badge/Skill%20Packs-34-orange.svg)](#skill-packs-by-stack)
+[![Skills](https://img.shields.io/badge/Skills-117-brightgreen.svg)](#skills-catalog)
+[![Skill Packs](https://img.shields.io/badge/Skill%20Packs-45-orange.svg)](#skill-packs-by-stack)
 [![Presets](https://img.shields.io/badge/Presets-15-blue.svg)](#platform-presets)
 [![Examples](https://img.shields.io/badge/Examples-10-purple.svg)](#end-to-end-examples)
 [![Starter Packs](https://img.shields.io/badge/Starter%20Packs-20-red.svg)](#starter-packs)
@@ -96,7 +96,7 @@ Supported tools: `cursor`, `claude`, `gemini`, `kiro`, `opencode`, `windsurf`, `
 ## Feature Highlights
 
 - Spec-first lifecycle with `/spec`, `/plan`, `/build`, `/validate`, `/review`, `/ship`, `/migrate`, `/harden`, `/incident`, and `/optimize`
-- 106 workflow skills (72 core + 34 stack-specific packs) covering UI architecture, backend microservices, identity, edge delivery, cloud infrastructure, testing, observability, payments, and platform operations
+- 117 workflow skills (72 core + 45 stack-specific packs) covering UI architecture, backend microservices, identity, edge delivery, cloud infrastructure, testing, observability, payments, and platform operations
 - 15 platform presets spanning React, Angular, Vue, Node.js, Java, .NET, AWS, Azure, GCP, Kubernetes, Vercel, and fullstack TypeScript
 - 20 starter packs for MVP, SaaS, payments, reliability, microservices, identity/edge, per-cloud serverless, AI features, mobile, chaos/SRE, and GitOps
 - Multi-agent packaging for `Cursor`, `Claude`, `Copilot`, `Gemini`, `Codex`, `Kiro`, `OpenCode`, `Windsurf`, and generic `AGENTS.md` consumers
@@ -168,7 +168,7 @@ Use these hooks when you want the repository to behave more like a workflow syst
 
 ## Skills Catalog
 
-72 core cross-stack skills in `skills/`. See `skills-index.md` for the complete list (106 total with 34 stack packs).
+72 core cross-stack skills in `skills/`. See `skills-index.md` for the complete list (117 total with 45 stack packs).
 
 ## Skill Packs By Stack
 
@@ -187,6 +187,17 @@ Segregated deep-dive skills in `skill-packs/` — one folder per language/framew
 | **Go Gin** | `skill-packs/go/gin/` | REST microservices |
 | **PHP Laravel** | `skill-packs/php/laravel/` | API platform, Sanctum, queues |
 | **Ruby Rails** | `skill-packs/ruby/rails/` | API-only Rails, Sidekiq |
+| **TypeScript NestJS** | `skill-packs/typescript/nestjs/` | Enterprise NestJS modules, DTOs, guards |
+| **.NET Minimal APIs** | `skill-packs/dotnet/aspnetcore/` | ASP.NET Core minimal endpoints |
+| **EF Core** | `skill-packs/dotnet/efcore/` | Migrations, queries, configurations |
+| **Rust Axum** | `skill-packs/rust/axum/` | Tokio microservices, Tower middleware |
+| **Kotlin Ktor** | `skill-packs/kotlin/ktor/` | Coroutine-first JVM APIs |
+| **Kotlin Spring** | `skill-packs/kotlin/spring/` | Idiomatic Kotlin on Spring Boot |
+| **Flutter** | `skill-packs/flutter/` | Mobile client architecture, offline sync |
+| **MongoDB** | `skill-packs/data/mongodb/` | Document modeling, indexes, tenancy |
+| **Elasticsearch** | `skill-packs/data/elasticsearch/` | Search indexes, sync, secure queries |
+| **LangChain** | `skill-packs/ai/langchain/` | Python agent orchestration, tools |
+| **Vercel AI SDK** | `skill-packs/ai/vercel-ai-sdk/` | Next.js streaming AI, tool calling |
 
 Spring Boot pack includes skills adapted from [spring-boot-skills](https://github.com/rrezartprebreza/spring-boot-skills) (MIT) by @rrezartprebreza.
 
@@ -322,7 +333,7 @@ Each template is a starting point. Use `mcp/README.md` for environment-variable 
 ```text
 fullstack-development-agent-skills/
 ├── skills/                    # 72 core cross-stack workflow skills
-├── skill-packs/               # 34 stack-specific skills (Java, Python, Go, PHP, Ruby)
+├── skill-packs/               # 45 stack-specific skills (Java, Python, Go, .NET, Rust, etc.)
 ├── presets/                   # 15 stack-specific configurations
 ├── starter-packs/             # 20 opinionated YAML bundles
 ├── references/                # 16 operational checklists
@@ -354,6 +365,7 @@ fullstack-development-agent-skills/
 Agent-specific setup guides are available in `docs/`:
 
 - `docs/getting-started.md`
+- `docs/fullstack-skills-catalog.md`
 - `docs/cursor-setup.md`
 - `docs/claude-setup.md`
 - `docs/codex-setup.md`

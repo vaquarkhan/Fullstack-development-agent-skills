@@ -1,6 +1,6 @@
 # Fullstack Development Agent Skills — JetBrains Plugin
 
-Native plugin for IntelliJ-platform IDEs. Install the fullstack skill toolkit directly into your JetBrains workflow.
+Native plugin for IntelliJ-platform IDEs. Install the fullstack skill toolkit (117 skills: 72 core + 45 packs) directly into your JetBrains workflow.
 
 ## Supported IDEs
 
@@ -27,6 +27,17 @@ Access via **Tools > Fullstack Agent Skills** menu:
 | Install Agent Adapters | Install multi-agent configuration files |
 | Install MCP Templates | Install Model Context Protocol configs |
 | Run Session Hook | Execute session-start detection hook |
+
+## Skill Packs
+
+Stack-specific skills live in `skill-packs/`:
+
+- Java: Spring Boot (22), Quarkus, Micronaut, Jakarta EE, Hibernate, Vaadin
+- TypeScript: NestJS | .NET: Minimal APIs, EF Core | Rust: Axum
+- Kotlin: Ktor, Spring | Python: FastAPI, Django | Go: Gin | PHP: Laravel | Ruby: Rails
+- Flutter | Data: MongoDB, Elasticsearch | AI: LangChain, Vercel AI SDK
+
+See `skill-packs/README.md` and `docs/fullstack-skills-catalog.md`.
 
 ## Build
 
@@ -59,6 +70,7 @@ The `.zip` plugin file will be in `build/distributions/`.
 - [Website](https://vaquarkhan.github.io/Fullstack-development-agent-skills/)
 - [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ViquarKhan.fullstack-development-agent-skills)
 - [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/32167-fullstack-development-agent-skills)
+- [Skills Catalog](https://github.com/vaquarkhan/Fullstack-development-agent-skills/blob/main/docs/fullstack-skills-catalog.md)
 
 ## License
 

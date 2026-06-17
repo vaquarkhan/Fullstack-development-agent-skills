@@ -33,9 +33,9 @@ disable-model-invocation: true
 - Angular UI architecture and delivery -> `angular-enterprise-frontend`
 - Vue or Nuxt UI delivery -> `vue-nuxt-frontend`
 - Service boundaries, resiliency, and deployment-safe backend changes -> `backend-microservices-architecture`
-- Node.js or NestJS backend service implementation -> `nodejs-nestjs-backend-microservices`
+- Node.js or NestJS backend service implementation -> `nodejs-nestjs-backend-microservices` (deep NestJS: `skill-packs/typescript/nestjs/nestjs-enterprise-backend`)
 - Java Spring backend services -> `java-spring-boot-microservices`
-- .NET ASP.NET Core backend services -> `dotnet-aspnet-core-microservices`
+- .NET ASP.NET Core backend services -> `dotnet-aspnet-core-microservices` (minimal APIs: `skill-packs/dotnet/aspnetcore/aspnetcore-minimal-apis`, EF Core: `skill-packs/dotnet/efcore/ef-core-persistence`)
 - API shape and backward compatibility -> `api-contract-first-development`
 - Auth and access control across UI and backend -> `authentication-and-authorization-fullstack`
 - Fullstack quality gates and release test strategy -> `fullstack-testing-and-quality-gates`
@@ -113,6 +113,23 @@ Load from `skill-packs/` when the task is implementation-deep on a specific stac
 - Go Gin microservices -> `skill-packs/go/gin/go-gin-rest-microservices`
 - Laravel API platform -> `skill-packs/php/laravel/laravel-api-platform`
 - Rails API backend -> `skill-packs/ruby/rails/rails-api-backend`
+
+### TypeScript, .NET, Rust, Kotlin, Flutter
+
+- NestJS enterprise modules and DTOs -> `skill-packs/typescript/nestjs/nestjs-enterprise-backend`
+- ASP.NET Core minimal APIs -> `skill-packs/dotnet/aspnetcore/aspnetcore-minimal-apis`
+- EF Core persistence -> `skill-packs/dotnet/efcore/ef-core-persistence`
+- Rust Axum microservices -> `skill-packs/rust/axum/rust-axum-microservices`
+- Kotlin Ktor APIs -> `skill-packs/kotlin/ktor/kotlin-ktor-apis`
+- Kotlin Spring Boot -> `skill-packs/kotlin/spring/kotlin-spring-boot`
+- Flutter fullstack mobile -> `skill-packs/flutter/flutter-fullstack-mobile`
+
+### Data and AI SDKs
+
+- MongoDB document modeling -> `skill-packs/data/mongodb/mongodb-document-modeling`
+- Elasticsearch search patterns -> `skill-packs/data/elasticsearch/elasticsearch-search-patterns`
+- LangChain agent orchestration -> `skill-packs/ai/langchain/langchain-agent-orchestration`
+- Vercel AI SDK streaming -> `skill-packs/ai/vercel-ai-sdk/vercel-ai-sdk-streaming`
 
 See `skill-packs/README.md` for the full segregated catalog.
 

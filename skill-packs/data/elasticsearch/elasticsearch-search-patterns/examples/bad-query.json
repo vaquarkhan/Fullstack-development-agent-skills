@@ -1,0 +1,5 @@
+// BAD — dynamic mapping surprises, wildcard query on text field, no tenant filter
+GET orders/_search
+{
+  "query": { "query_string": { "query": "*"+ userInput +"*" } }
+}

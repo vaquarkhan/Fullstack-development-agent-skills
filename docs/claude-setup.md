@@ -8,11 +8,15 @@ scripts/install.sh claude /path/to/project
 
 ## What Gets Installed
 
-- `.claude/commands/`
-- `CLAUDE.md`
-- skills, presets, references, templates, starter packs
+- `.claude/commands/` — lifecycle commands
+- `CLAUDE.md` — project entry point
+- `skills/` (72 core) and `skill-packs/` (34 stack packs)
+- Presets, references, templates, starter packs
 
 ## Recommended Entry
 
-- `CLAUDE.md`
-- `skills/using-fullstack-agent-skills/SKILL.md`
+1. `CLAUDE.md`
+2. `skills/using-fullstack-agent-skills/SKILL.md`
+3. `docs/fullstack-skills-catalog.md` for stack-specific routing
+
+For Java/Spring Boot work, load packs from `skill-packs/java/spring-boot/`.

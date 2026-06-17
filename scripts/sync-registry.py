@@ -21,8 +21,9 @@ def rel(path: Path) -> str:
 def collect() -> dict:
     skills = sorted(rel_skill_path(p) for p in discover_skill_files())
     skill_packs = sorted(
-        rel_skill_path(p) for p in discover_skill_files() if "/skill-packs/" in rel_skill_path(p).replace("\\", "/")
+        rel_skill_path(p) for p in discover_skill_files() if "skill-packs/" in rel_skill_path(p).replace("\\", "/")
     )
+    core_skill_count = len(skills) - len(skill_packs)
     presets = sorted(rel(p) for p in (ROOT / "presets").glob("*/SKILL.md"))
     starter_packs = sorted(rel(p) for p in (ROOT / "starter-packs").glob("*.yaml"))
     commands = sorted(rel(p) for p in (ROOT / ".cursor" / "commands").glob("*.md"))
@@ -85,7 +86,7 @@ def collect() -> dict:
         "entry": {"skill": "skills/using-fullstack-agent-skills/SKILL.md"},
         "counts": {
             "skills": len(skills),
-            "coreSkills": len(skills) - len(skill_packs),
+            "coreSkills": core_skill_count,
             "skillPacks": len(skill_packs),
             "presets": len(presets),
             "starterPacks": len(starter_packs),

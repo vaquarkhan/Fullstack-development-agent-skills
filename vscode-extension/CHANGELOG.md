@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.4.0] - 2026-06-08
+
+### Added
+
+- **34 skill packs** in `skill-packs/` (Java Spring Boot, Quarkus, Micronaut, Jakarta EE, Hibernate, Vaadin, Python, Go, PHP, Ruby)
+- **10 architecture blueprints** in `examples/` (including Java Spring AI, Quarkus, Vaadin)
+- Skill pack examples and templates (good vs bad patterns)
+- Routing benchmark and expanded validation scripts
+
+### Changed
+
+- **106 total skills** (72 core + 34 packs), up from 72
+- Registry and skills index synced to v0.4.0
+- Examples relabeled as architecture blueprints (not runnable scaffolds)
+
 ## [0.2.0] - 2026-06-07
 
 ### Added

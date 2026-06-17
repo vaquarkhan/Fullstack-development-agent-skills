@@ -4,20 +4,21 @@ Production-grade UI, backend microservice, and cloud fullstack skills for AI age
 
 ## Features
 
-**72 workflow skills** covering UI architecture, backend microservices, identity, edge delivery, and cloud infrastructure — all wired into a consistent delivery lifecycle.
+**117 workflow skills** (72 core + 45 stack packs) covering UI architecture, backend microservices, identity, edge delivery, and cloud infrastructure — all wired into a consistent 10-command delivery lifecycle.
 
 ### What's Included
 
 | Asset | Count | Description |
 |-------|-------|-------------|
-| Skills | 72 | Structured SKILL.md files with progressive disclosure |
+| Core skills | 72 | Cross-stack SKILL.md workflows in `skills/` |
+| Skill packs | 45 | Stack-specific playbooks in `skill-packs/` (Java, NestJS, .NET, Rust, Flutter, AI, etc.) |
 | Presets | 15 | Stack-specific defaults (React, Angular, Vue, .NET, Java, Node, AWS, Azure, GCP) |
 | Starter Packs | 20 | Opinionated bundles for MVP, SaaS, payments, reliability, microservices |
 | Agent Adapters | 8 | Cursor, Claude, Gemini, Kiro, OpenCode, Windsurf, Copilot, Codex |
-| Examples | 7 | End-to-end architecture scaffolds |
+| Examples | 10 | Architecture blueprints (README-only design packs) |
 | Case Studies | 3 | Real-world delivery scenarios |
 | Hooks | 4 | Session start, release guard, review gate |
-| MCP Templates | 4 | GitHub, AWS, Azure, GCP integration |
+| MCP Templates | 5 | GitHub, Postgres, AWS, Azure, GCP integration |
 | References | 14 | Operational checklists |
 
 ### Commands
@@ -31,7 +32,7 @@ Access via Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`):
 | `FS Skills: Install Agent Adapters` | Install multi-agent configuration files |
 | `FS Skills: Install Starter Pack` | Pick and install an opinionated starter bundle |
 | `FS Skills: Install MCP Templates` | Install Model Context Protocol configs |
-| `FS Skills: Install Examples` | Install architecture example scaffolds |
+| `FS Skills: Install Examples` | Install architecture blueprints |
 | `FS Skills: Install Platform Preset` | Pick and install a stack-specific preset |
 | `FS Skills: Open Skills Index` | Browse the full skills catalog |
 | `FS Skills: Run Session Hook` | Execute session-start detection hook |
@@ -74,6 +75,20 @@ The toolkit provides a consistent 10-command lifecycle:
 - GCP Fullstack and Serverless
 - Kubernetes Fullstack Platform
 - Vercel / Jamstack
+
+### Skill Packs
+
+Stack-specific skills with `examples/` and `templates/`:
+
+- Java: Spring Boot (22), Quarkus, Micronaut, Jakarta EE, Hibernate, Vaadin
+- TypeScript: NestJS enterprise
+- .NET: Minimal APIs, EF Core
+- Rust: Axum | Kotlin: Ktor, Spring
+- Python: FastAPI, Django | Go: Gin | PHP: Laravel | Ruby: Rails
+- Flutter mobile | Data: MongoDB, Elasticsearch
+- AI: LangChain, Vercel AI SDK
+
+See `skill-packs/README.md` and `docs/fullstack-skills-catalog.md`.
 
 ### Starter Packs
 
@@ -120,6 +135,7 @@ npx vsce publish
 - [GitHub Repository](https://github.com/vaquarkhan/Fullstack-development-agent-skills)
 - [Website](https://vaquarkhan.github.io/Fullstack-development-agent-skills/)
 - [JetBrains Plugin](https://plugins.jetbrains.com/plugin/32167-fullstack-development-agent-skills)
+- [Skills Catalog](https://github.com/vaquarkhan/Fullstack-development-agent-skills/blob/main/docs/fullstack-skills-catalog.md)
 - [Issues](https://github.com/vaquarkhan/Fullstack-development-agent-skills/issues)
 
 ## License
