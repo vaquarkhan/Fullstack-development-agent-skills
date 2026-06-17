@@ -3,10 +3,15 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 REGISTRY = ROOT / "registry" / "assets.json"
+SCRIPTS_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPTS_DIR))
+
+from skill_discovery import discover_skill_files, rel_skill_path  # noqa: E402
 
 
 def rel(path: Path) -> str:
@@ -14,7 +19,10 @@ def rel(path: Path) -> str:
 
 
 def collect() -> dict:
-    skills = sorted(rel(p) for p in (ROOT / "skills").glob("*/SKILL.md"))
+    skills = sorted(rel_skill_path(p) for p in discover_skill_files())
+    skill_packs = sorted(
+        rel_skill_path(p) for p in discover_skill_files() if "/skill-packs/" in rel_skill_path(p).replace("\\", "/")
+    )
     presets = sorted(rel(p) for p in (ROOT / "presets").glob("*/SKILL.md"))
     starter_packs = sorted(rel(p) for p in (ROOT / "starter-packs").glob("*.yaml"))
     commands = sorted(rel(p) for p in (ROOT / ".cursor" / "commands").glob("*.md"))
@@ -72,17 +80,20 @@ def collect() -> dict:
         evals = sorted(rel(p) for p in eval_dir.rglob("*") if p.is_file())
 
     return {
-        "version": "0.3.0",
+        "version": "0.4.0",
         "description": "Machine-readable index for fullstack agent skill assets.",
         "entry": {"skill": "skills/using-fullstack-agent-skills/SKILL.md"},
         "counts": {
             "skills": len(skills),
+            "coreSkills": len(skills) - len(skill_packs),
+            "skillPacks": len(skill_packs),
             "presets": len(presets),
             "starterPacks": len(starter_packs),
             "commands": len(commands),
             "agents": len(agents),
         },
         "skills": skills,
+        "skillPacks": skill_packs,
         "presets": presets,
         "starterPacks": starter_packs,
         "commands": commands,

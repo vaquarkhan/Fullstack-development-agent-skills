@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.vaquarkhan.fullstack-development-agent-skills</id>
     <name>Fullstack Development Agent Skills</name>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <vendor email="vaquarkhan@gmail.com" url="https://github.com/vaquarkhan">Viquar Khan</vendor>
     <idea-version since-build="233" until-build="243.*"/>
 

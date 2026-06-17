@@ -26,6 +26,7 @@ def main() -> int:
 
     for key in [
         "skills",
+        "skillPacks",
         "presets",
         "starterPacks",
         "commands",

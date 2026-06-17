@@ -7,6 +7,11 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+SCRIPTS_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPTS_DIR))
+
+from skill_discovery import discover_skill_files, skill_name_from_path  # noqa: E402
+
 SKILLS_DIR = ROOT / "skills"
 
 REQUIRED_SECTIONS = [
@@ -111,7 +116,7 @@ def check_section_bodies(text: str) -> list[str]:
 def validate_skill(path: Path) -> list[str]:
     errors: list[str] = []
     text = path.read_text(encoding="utf-8")
-    folder_name = path.parent.name
+    folder_name = skill_name_from_path(path)
     frontmatter, _body = parse_frontmatter(text)
 
     if not frontmatter.get("name") or not frontmatter.get("description"):
@@ -140,11 +145,11 @@ def validate_skill(path: Path) -> list[str]:
 
 
 def main() -> int:
-    if not SKILLS_DIR.exists():
-        print("skills/ directory not found", file=sys.stderr)
+    if not SKILLS_DIR.exists() and not (ROOT / "skill-packs").exists():
+        print("skills/ and skill-packs/ not found", file=sys.stderr)
         return 1
 
-    skill_files = sorted(SKILLS_DIR.glob("*/SKILL.md"))
+    skill_files = discover_skill_files()
     if not skill_files:
         print("no skills found", file=sys.stderr)
         return 1

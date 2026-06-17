@@ -72,6 +72,44 @@ disable-model-invocation: true
 - Multi-tenant data isolation and tenant boundary audits -> `multi-tenant-data-isolation-patterns`
 - Cloud-specific fullstack architecture and release workflow -> `cloud-fullstack-development`
 
+## Skill Pack Routing (stack-specific)
+
+Load from `skill-packs/` when the task is implementation-deep on a specific stack:
+
+### Java Spring Boot (`skill-packs/java/spring-boot/`)
+
+- Spring AI, ChatClient, RAG, embeddings -> `spring-ai-integration`
+- MCP server, agent tool registration -> `mcp-server`
+- AI token/latency observability -> `ai-observability`
+- Agent orchestration, tool loops, memory -> `java-agent-core`
+- Layered Controller/Service/Repository -> `layered-architecture`
+- Hexagonal ports and adapters -> `hexagonal-architecture`
+- DDD aggregates and domain events -> `domain-driven-design`
+- REST envelopes, pagination, errors -> `rest-api-conventions`
+- OpenAPI codegen-first -> `openapi-first`
+- RFC 9457 ProblemDetail errors -> `problem-details-rfc9457`
+- JPA entities, N+1, projections -> `spring-data-jpa`
+- Flyway migrations -> `flyway-migrations`
+- Redis caching -> `spring-data-redis`
+- @Transactional and sagas -> `transactional-patterns`
+- JWT and Spring Security -> `spring-security-jwt`
+- OAuth2 resource server -> `oauth2-resource-server`
+- Spring Cloud Gateway routing -> `spring-cloud-gateway-routing`
+- WebFlux reactive APIs -> `spring-webflux-reactive`
+- Testing pyramid / Testcontainers -> `testing-pyramid`
+
+### Other JVM, Python, Go, PHP, Ruby
+
+- Quarkus native/cloud APIs -> `skill-packs/java/quarkus/quarkus-cloud-native-apis`
+- Micronaut reactive services -> `skill-packs/java/micronaut/micronaut-reactive-microservices`
+- FastAPI async Python -> `skill-packs/python/fastapi/fastapi-async-backend`
+- Django DRF enterprise -> `skill-packs/python/django/django-enterprise-backend`
+- Go Gin microservices -> `skill-packs/go/gin/go-gin-rest-microservices`
+- Laravel API platform -> `skill-packs/php/laravel/laravel-api-platform`
+- Rails API backend -> `skill-packs/ruby/rails/rails-api-backend`
+
+See `skill-packs/README.md` for the full segregated catalog.
+
 ## Decision Framework
 
 - Route to the narrowest skill that matches the change type before expanding scope.

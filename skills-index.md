@@ -1,12 +1,12 @@
 # Skills Index
 
-**72** skills · **15** presets · **20** starter packs
+**100** total skills (72 core + 28 packs) · **15** presets · **20** starter packs
 
 ## Entry
 
 - `skills/using-fullstack-agent-skills/SKILL.md`
 
-## Skills
+## Core Skills
 
 - `skills/ai-llm-integration-in-fullstack-apps/SKILL.md`
 - `skills/angular-enterprise-frontend/SKILL.md`
@@ -80,6 +80,37 @@
 - `skills/vercel-edge-and-jamstack-delivery/SKILL.md`
 - `skills/vue-nuxt-frontend/SKILL.md`
 - `skills/web-accessibility-wcag-compliance/SKILL.md`
+
+## Skill Packs (by stack)
+
+- `skill-packs/go/gin/go-gin-rest-microservices/SKILL.md`
+- `skill-packs/java/micronaut/micronaut-reactive-microservices/SKILL.md`
+- `skill-packs/java/quarkus/quarkus-cloud-native-apis/SKILL.md`
+- `skill-packs/java/spring-boot/ai-observability/SKILL.md`
+- `skill-packs/java/spring-boot/domain-driven-design/SKILL.md`
+- `skill-packs/java/spring-boot/flyway-migrations/SKILL.md`
+- `skill-packs/java/spring-boot/hateoas/SKILL.md`
+- `skill-packs/java/spring-boot/hexagonal-architecture/SKILL.md`
+- `skill-packs/java/spring-boot/java-agent-core/SKILL.md`
+- `skill-packs/java/spring-boot/layered-architecture/SKILL.md`
+- `skill-packs/java/spring-boot/mcp-server/SKILL.md`
+- `skill-packs/java/spring-boot/multi-module-maven/SKILL.md`
+- `skill-packs/java/spring-boot/oauth2-resource-server/SKILL.md`
+- `skill-packs/java/spring-boot/openapi-first/SKILL.md`
+- `skill-packs/java/spring-boot/problem-details-rfc9457/SKILL.md`
+- `skill-packs/java/spring-boot/rest-api-conventions/SKILL.md`
+- `skill-packs/java/spring-boot/spring-ai-integration/SKILL.md`
+- `skill-packs/java/spring-boot/spring-cloud-gateway-routing/SKILL.md`
+- `skill-packs/java/spring-boot/spring-data-jpa/SKILL.md`
+- `skill-packs/java/spring-boot/spring-data-redis/SKILL.md`
+- `skill-packs/java/spring-boot/spring-security-jwt/SKILL.md`
+- `skill-packs/java/spring-boot/spring-webflux-reactive/SKILL.md`
+- `skill-packs/java/spring-boot/testing-pyramid/SKILL.md`
+- `skill-packs/java/spring-boot/transactional-patterns/SKILL.md`
+- `skill-packs/php/laravel/laravel-api-platform/SKILL.md`
+- `skill-packs/python/django/django-enterprise-backend/SKILL.md`
+- `skill-packs/python/fastapi/fastapi-async-backend/SKILL.md`
+- `skill-packs/ruby/rails/rails-api-backend/SKILL.md`
 
 ## Presets
 
@@ -178,4 +209,5 @@
 - `.cursor/commands/incident.md`
 - `.cursor/commands/optimize.md`
 
+See `skill-packs/README.md` for segregated Java, Python, Go, PHP, and Ruby packs.
 See `registry/assets.json` for the full machine-readable index.

@@ -1,7 +1,8 @@
 # Fullstack Development Agent Skills
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-72-brightgreen.svg)](#skills-catalog-72)
+[![Skills](https://img.shields.io/badge/Skills-100-brightgreen.svg)](#skills-catalog)
+[![Skill Packs](https://img.shields.io/badge/Skill%20Packs-28-orange.svg)](#skill-packs-by-stack)
 [![Presets](https://img.shields.io/badge/Presets-15-blue.svg)](#platform-presets)
 [![Examples](https://img.shields.io/badge/Examples-7-purple.svg)](#end-to-end-examples)
 [![Starter Packs](https://img.shields.io/badge/Starter%20Packs-20-red.svg)](#starter-packs)
@@ -95,7 +96,7 @@ Supported tools: `cursor`, `claude`, `gemini`, `kiro`, `opencode`, `windsurf`, `
 ## Feature Highlights
 
 - Spec-first lifecycle with `/spec`, `/plan`, `/build`, `/validate`, `/review`, `/ship`, `/migrate`, `/harden`, `/incident`, and `/optimize`
-- 72 workflow skills covering UI architecture, backend microservices, identity, edge delivery, cloud infrastructure, testing, observability, payments, and platform operations
+- 100 workflow skills (72 core + 28 stack-specific packs) covering UI architecture, backend microservices, identity, edge delivery, cloud infrastructure, testing, observability, payments, and platform operations
 - 15 platform presets spanning React, Angular, Vue, Node.js, Java, .NET, AWS, Azure, GCP, Kubernetes, Vercel, and fullstack TypeScript
 - 20 starter packs for MVP, SaaS, payments, reliability, microservices, identity/edge, per-cloud serverless, AI features, mobile, chaos/SRE, and GitOps
 - Multi-agent packaging for `Cursor`, `Claude`, `Copilot`, `Gemini`, `Codex`, `Kiro`, `OpenCode`, `Windsurf`, and generic `AGENTS.md` consumers
@@ -165,80 +166,26 @@ The `hooks/` directory adds a lightweight operating layer:
 
 Use these hooks when you want the repository to behave more like a workflow system than a static library.
 
-## Skills Catalog (72)
+## Skills Catalog
 
-- `using-fullstack-agent-skills`
-- `fullstack-product-specification`
-- `react-nextjs-frontend-architecture`
-- `angular-enterprise-frontend`
-- `vue-nuxt-frontend`
-- `ui-engineering-and-design-systems`
-- `nextjs-app-router-and-streaming-ui`
-- `design-system-governance-and-tokens`
-- `frontend-security-csp-and-xss-hardening`
-- `web-accessibility-wcag-compliance`
-- `graphql-client-and-bff-integration`
-- `realtime-ui-websockets-and-sse`
-- `internationalization-and-localization`
-- `backend-microservices-architecture`
-- `nodejs-nestjs-backend-microservices`
-- `java-spring-boot-microservices`
-- `dotnet-aspnet-core-microservices`
-- `api-contract-first-development`
-- `bff-architecture-and-api-aggregation`
-- `interservice-protocol-selection-rest-grpc-graphql`
-- `microservice-patterns-saga-and-compensation`
-- `microservice-patterns-outbox-and-cdc`
-- `microservice-patterns-service-mesh-and-traffic-management`
-- `cqrs-and-event-sourcing-patterns`
-- `domain-driven-service-decomposition`
-- `distributed-monolith-detection-and-remediation`
-- `monolith-to-microservices-migration-strategy`
-- `resilience-timeouts-retries-and-circuit-breakers`
-- `kafka-event-backbone-patterns`
-- `authentication-and-authorization-fullstack`
-- `oauth2-oidc-and-token-lifecycle`
-- `okta-identity-integration-patterns`
-- `aws-cognito-authentication-patterns`
-- `secrets-vault-and-key-rotation`
-- `compliance-gdpr-and-data-privacy-fullstack`
-- `nginx-edge-routing-and-security`
-- `load-balancer-strategy-and-traffic-distribution`
-- `cdn-caching-and-edge-acceleration-patterns`
-- `api-gateway-and-edge-security`
-- `frontend-load-balancing-and-global-delivery`
-- `autoscaling-capacity-and-cost-guardrails`
-- `cloud-fullstack-development`
-- `aws-serverless-fullstack-architecture`
-- `azure-serverless-fullstack-architecture`
-- `gcp-serverless-fullstack-architecture`
-- `serverless-event-driven-and-workflow-orchestration`
-- `kubernetes-fullstack-platform-engineering`
-- `terraform-fullstack-infrastructure-as-code`
-- `vercel-edge-and-jamstack-delivery`
-- `cloud-cost-optimization`
-- `multi-cloud-disaster-recovery`
-- `database-migrations-zero-downtime`
-- `distributed-caching-and-invalidation`
-- `postgres-and-relational-data-modeling`
-- `redis-caching-and-session-store-patterns`
-- `multi-tenant-data-isolation-patterns`
-- `fullstack-observability-and-release-engineering`
-- `observability-distributed-tracing-and-ebpf-strategy`
-- `feature-flags-and-progressive-delivery`
-- `incident-triage-and-oncall-runbooks`
-- `cicd-gitops-and-progressive-deployment`
-- `chaos-engineering-and-failure-injection`
-- `performance-and-load-testing-fullstack`
-- `payments-and-webhook-reliability`
-- `email-and-notification-delivery`
-- `file-storage-and-media-delivery`
-- `search-and-discovery-experience`
-- `mobile-api-and-offline-sync-patterns`
-- `react-native-fullstack-integration`
-- `fullstack-testing-and-quality-gates`
-- `e2e-testing-playwright-cypress`
-- `ai-llm-integration-in-fullstack-apps`
+72 core cross-stack skills in `skills/`. See `skills-index.md` for the complete list.
+
+## Skill Packs By Stack
+
+Segregated deep-dive skills in `skill-packs/` — one folder per language/framework:
+
+| Stack | Path | Highlights |
+| --- | --- | --- |
+| **Java Spring Boot** | `skill-packs/java/spring-boot/` | Spring AI, MCP servers, JPA, Flyway, JWT, agent core (21 skills) |
+| **Java Quarkus** | `skill-packs/java/quarkus/` | Cloud-native APIs, native image |
+| **Java Micronaut** | `skill-packs/java/micronaut/` | Reactive microservices |
+| **Python FastAPI** | `skill-packs/python/fastapi/` | Async APIs, Pydantic, OpenAPI |
+| **Python Django** | `skill-packs/python/django/` | DRF, Celery, enterprise patterns |
+| **Go Gin** | `skill-packs/go/gin/` | REST microservices |
+| **PHP Laravel** | `skill-packs/php/laravel/` | API platform, Sanctum, queues |
+| **Ruby Rails** | `skill-packs/ruby/rails/` | API-only Rails, Sidekiq |
+
+Spring Boot pack includes skills adapted from [spring-boot-skills](https://github.com/rrezartprebreza/spring-boot-skills) (MIT) by @rrezartprebreza.
 
 ## Platform Presets
 
@@ -368,7 +315,8 @@ Each template is a starting point. Use `mcp/README.md` for environment-variable 
 
 ```text
 fullstack-development-agent-skills/
-├── skills/                    # 72 workflow skill playbooks
+├── skills/                    # 72 core cross-stack workflow skills
+├── skill-packs/               # 28 stack-specific skills (Java, Python, Go, PHP, Ruby)
 ├── presets/                   # 15 stack-specific configurations
 ├── starter-packs/             # 20 opinionated YAML bundles
 ├── references/                # 16 operational checklists

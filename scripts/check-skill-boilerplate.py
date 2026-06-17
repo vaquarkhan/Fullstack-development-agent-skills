@@ -6,7 +6,10 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SKILLS_DIR = ROOT / "skills"
+SCRIPTS_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPTS_DIR))
+
+from skill_discovery import discover_skill_files  # noqa: E402
 
 GENERIC_DECISION_MARKERS = (
     "Start with clear scope and ownership boundaries.",
@@ -29,12 +32,12 @@ def uses_generic_boilerplate(text: str) -> bool:
 
 
 def main() -> int:
-    if not SKILLS_DIR.exists():
-        print("skills/ directory not found", file=sys.stderr)
+    if not (ROOT / "skills").exists() and not (ROOT / "skill-packs").exists():
+        print("skills/ and skill-packs/ not found", file=sys.stderr)
         return 1
 
     flagged: list[str] = []
-    for skill_path in sorted(SKILLS_DIR.glob("*/SKILL.md")):
+    for skill_path in discover_skill_files():
         text = skill_path.read_text(encoding="utf-8")
         if uses_generic_boilerplate(text):
             flagged.append(str(skill_path.relative_to(ROOT)))
