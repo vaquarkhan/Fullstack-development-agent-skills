@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.5.0] - 2026-06-08
+
+### Added
+
+- Bundle script installs all 117 skills and 45 skill packs into workspaces
+- All 20 starter packs in QuickPick selector
+
+### Changed
+
+- Version 0.5.0 aligned with registry and JetBrains plugin
+- Full toolkit copies `skills/` and `skill-packs/` directories
+
 ## [0.4.0] - 2026-06-08
 
 ### Added

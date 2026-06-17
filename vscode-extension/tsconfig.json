@@ -12,5 +12,21 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true
   },
-  "exclude": ["node_modules", ".vscode-test"]
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    ".vscode-test",
+    "skills",
+    "skill-packs",
+    "presets",
+    "starter-packs",
+    "references",
+    "examples",
+    "hooks",
+    "mcp",
+    "templates",
+    "agents",
+    "registry",
+    "scripts"
+  ]
 }

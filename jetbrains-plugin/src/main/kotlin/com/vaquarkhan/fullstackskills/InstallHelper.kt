@@ -15,10 +15,16 @@ import java.io.File
 object InstallHelper {
 
     fun installFullToolkit(project: Project) {
-        val count = SkillsInstaller.installPaths(project, SkillsConstants.CORE_SKILLS)
+        var count = 0
+        for (dir in SkillsConstants.FULL_TOOLKIT_DIRS) {
+            count += SkillsInstaller.installDirectory(project, dir)
+        }
         val adapterCount = SkillsInstaller.installPaths(project, SkillsConstants.ADAPTER_PATHS)
-        val mcpCount = SkillsInstaller.installPaths(project, SkillsConstants.MCP_PATHS)
-        notify(project, "Full toolkit installed ($count skills, $adapterCount adapters, $mcpCount MCP templates)")
+        val fileCount = SkillsInstaller.installPaths(project, SkillsConstants.FULL_TOOLKIT_FILES)
+        notify(
+            project,
+            "Full toolkit installed ($count asset files, $adapterCount adapters, $fileCount manifests)"
+        )
     }
 
     fun installCoreSkills(project: Project) {

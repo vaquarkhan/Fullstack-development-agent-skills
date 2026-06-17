@@ -27,7 +27,7 @@ class SkillsToolWindowFactory : ToolWindowFactory {
                 alignmentX = Component.LEFT_ALIGNMENT
             })
             add(Box.createVerticalStrut(4))
-            add(JLabel("<html><i>53+ production-grade workflow skills for AI agents</i></html>").apply {
+            add(JLabel("<html><i>117 skills (72 core + 45 packs) for fullstack AI delivery</i></html>").apply {
                 foreground = Color.GRAY
                 alignmentX = Component.LEFT_ALIGNMENT
             })

@@ -81,7 +81,7 @@ def collect() -> dict:
         evals = sorted(rel(p) for p in eval_dir.rglob("*") if p.is_file())
 
     return {
-        "version": "0.4.0",
+        "version": "0.5.0",
         "description": "Machine-readable index for fullstack agent skill assets.",
         "entry": {"skill": "skills/using-fullstack-agent-skills/SKILL.md"},
         "counts": {

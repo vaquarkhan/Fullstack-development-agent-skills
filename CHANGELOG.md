@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.5.0
+
+### Added
+
+- Plugin bundle pipeline (`scripts/bundle-plugin-assets.py`) ships 117 skills into VS Code and JetBrains installers
+- 11 new skill packs: NestJS, .NET minimal APIs, EF Core, Rust Axum, Kotlin Ktor/Spring, Flutter, MongoDB, Elasticsearch, LangChain, Vercel AI SDK
+
+### Changed
+
+- Registry v0.5.0: 117 total skills (72 core + 45 packs)
+- VS Code and JetBrains plugins install full `skills/` and `skill-packs/` trees
+- All 20 starter packs available in plugin selectors
+
 ## 0.4.0
 
 ### Added

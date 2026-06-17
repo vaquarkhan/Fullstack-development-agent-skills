@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.vaquarkhan.fullstack-development-agent-skills</id>
     <name>Fullstack Development Agent Skills</name>
-    <version>0.4.0</version>
+    <version>0.5.0</version>
     <vendor email="vaquarkhan@gmail.com" url="https://github.com/vaquarkhan">Viquar Khan</vendor>
     <idea-version since-build="233" until-build="243.*"/>
 
@@ -11,11 +11,10 @@
 
         <h3>Features</h3>
         <ul>
-            <li><b>72 workflow skills</b> — UI, backend, microservices, identity, edge, cloud</li>
+            <li><b>117 skills</b> — 72 core + 45 stack packs (Java, NestJS, .NET, Rust, Flutter, AI)</li>
             <li><b>15 platform presets</b> — React, Angular, Vue, Node.js, Java, .NET, AWS, Azure, GCP, K8s</li>
-            <li><b>20 starter packs</b> — MVP, SaaS, payments, reliability, microservices</li>
-            <li><b>8 agent adapters</b> — Cursor, Claude, Gemini, Kiro, Copilot, Windsurf, OpenCode, Codex</li>
-            <li><b>Delivery lifecycle</b> — /spec → /plan → /build → /validate → /review → /ship</li>
+            <li><b>20 starter packs</b> — MVP, SaaS, payments, reliability, microservices, GitOps</li>
+            <li><b>10 lifecycle commands</b> — /spec through /optimize</li>
             <li><b>Operational hooks</b> — session start, release guard, review gates</li>
         </ul>
 

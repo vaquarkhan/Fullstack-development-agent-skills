@@ -4,6 +4,27 @@ object SkillsConstants {
     const val REPO_URL = "https://github.com/vaquarkhan/Fullstack-development-agent-skills"
     const val PLUGIN_NAME = "Fullstack Agent Skills"
 
+    val FULL_TOOLKIT_DIRS = listOf(
+        "skills",
+        "skill-packs",
+        "presets",
+        "starter-packs",
+        "references",
+        "examples",
+        "hooks",
+        "mcp",
+        "templates",
+        "agents",
+        "registry",
+        "scripts"
+    )
+
+    val FULL_TOOLKIT_FILES = listOf(
+        "AGENTS.md",
+        "CLAUDE.md",
+        "skills-index.md"
+    )
+
     val CORE_SKILLS = listOf(
         "skills/using-fullstack-agent-skills",
         "skills/fullstack-product-specification",
@@ -56,6 +77,17 @@ object SkillsConstants {
         "Incident Hardening & SLO" to "starter-packs/incident-hardening-and-slo-starter.yaml",
         "Microservice Patterns & Edge Security" to "starter-packs/microservice-patterns-and-edge-security-starter.yaml",
         "Microservices Architecture Modernization" to "starter-packs/microservices-architecture-modernization-starter.yaml",
-        "Identity, Edge & Global Delivery" to "starter-packs/identity-edge-and-global-delivery-starter.yaml"
+        "Identity, Edge & Global Delivery" to "starter-packs/identity-edge-and-global-delivery-starter.yaml",
+        "UI Production Excellence" to "starter-packs/ui-production-excellence-starter.yaml",
+        "AWS Serverless Fullstack" to "starter-packs/aws-serverless-fullstack-starter.yaml",
+        "Azure Serverless Fullstack" to "starter-packs/azure-serverless-fullstack-starter.yaml",
+        "GCP Serverless Fullstack" to "starter-packs/gcp-serverless-fullstack-starter.yaml",
+        "Multi-Cloud Platform" to "starter-packs/multi-cloud-fullstack-platform-starter.yaml",
+        "Data Platform & Events" to "starter-packs/data-platform-and-events-starter.yaml",
+        "Compliance & Privacy" to "starter-packs/compliance-privacy-starter.yaml",
+        "AI Features" to "starter-packs/ai-features-starter.yaml",
+        "Mobile Fullstack" to "starter-packs/mobile-fullstack-starter.yaml",
+        "Chaos & SRE" to "starter-packs/chaos-sre-starter.yaml",
+        "GitOps CI/CD" to "starter-packs/gitops-cicd-starter.yaml"
     )
 }

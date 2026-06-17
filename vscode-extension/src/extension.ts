@@ -44,7 +44,7 @@ const ASSET_GROUPS: Record<string, AssetGroup> = {
   },
   examples: {
     label: "Architecture Examples",
-    description: "End-to-end runnable scaffolds",
+    description: "End-to-end architecture blueprints",
     paths: ["examples"],
   },
   hooks: {
@@ -82,6 +82,17 @@ const STARTER_PACKS = [
   { label: "Microservice Patterns & Edge Security", file: "starter-packs/microservice-patterns-and-edge-security-starter.yaml" },
   { label: "Microservices Architecture Modernization", file: "starter-packs/microservices-architecture-modernization-starter.yaml" },
   { label: "Identity, Edge & Global Delivery", file: "starter-packs/identity-edge-and-global-delivery-starter.yaml" },
+  { label: "UI Production Excellence", file: "starter-packs/ui-production-excellence-starter.yaml" },
+  { label: "AWS Serverless Fullstack", file: "starter-packs/aws-serverless-fullstack-starter.yaml" },
+  { label: "Azure Serverless Fullstack", file: "starter-packs/azure-serverless-fullstack-starter.yaml" },
+  { label: "GCP Serverless Fullstack", file: "starter-packs/gcp-serverless-fullstack-starter.yaml" },
+  { label: "Multi-Cloud Platform", file: "starter-packs/multi-cloud-fullstack-platform-starter.yaml" },
+  { label: "Data Platform & Events", file: "starter-packs/data-platform-and-events-starter.yaml" },
+  { label: "Compliance & Privacy", file: "starter-packs/compliance-privacy-starter.yaml" },
+  { label: "AI Features", file: "starter-packs/ai-features-starter.yaml" },
+  { label: "Mobile Fullstack", file: "starter-packs/mobile-fullstack-starter.yaml" },
+  { label: "Chaos & SRE", file: "starter-packs/chaos-sre-starter.yaml" },
+  { label: "GitOps CI/CD", file: "starter-packs/gitops-cicd-starter.yaml" },
 ];
 
 export function activate(context: vscode.ExtensionContext): void {
@@ -98,6 +109,9 @@ export function activate(context: vscode.ExtensionContext): void {
         await copyAssetGroup(extensionRoot, target, group);
       }
 
+      // Copy all skills and packs
+      await copyDirectory(path.join(extensionRoot, "skills"), path.join(target, "skills"));
+      await copyDirectory(path.join(extensionRoot, "skill-packs"), path.join(target, "skill-packs"));
       // Copy all presets
       await copyDirectory(path.join(extensionRoot, "presets"), path.join(target, "presets"));
       // Copy starter packs
