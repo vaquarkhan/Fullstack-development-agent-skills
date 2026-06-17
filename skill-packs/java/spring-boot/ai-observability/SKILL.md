@@ -231,6 +231,11 @@ logging:
 - Agent hardcodes token pricing — extract to config, prices change
 - Agent misses failed calls in metrics — track errors separately with error tag
 
+## Examples And Templates
+
+See \examples/\ for side-by-side good vs bad patterns agents commonly get wrong.
+See \	emplates/\ for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Spring Boot 3.x and Spring AI 1.0 GA artifact coordinates — reject pre-GA dead names.

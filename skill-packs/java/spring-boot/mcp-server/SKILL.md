@@ -264,6 +264,11 @@ private CallToolResult errorResult(String code, String message) {
 - Agent writes vague tool descriptions — the description IS the prompt the model reads; be specific about when to call it and what it returns
 - `stdio` for local tools (Claude Code, Claude Desktop); `-webmvc`/`-webflux` + Streamable-HTTP for remote
 
+## Examples And Templates
+
+See \examples/\ for side-by-side good vs bad patterns agents commonly get wrong.
+See \	emplates/\ for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Spring Boot 3.x and Spring AI 1.0 GA artifact coordinates — reject pre-GA dead names.

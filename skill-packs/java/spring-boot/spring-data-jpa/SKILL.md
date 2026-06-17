@@ -213,6 +213,11 @@ per row). `GenerationType.UUID` or a pooled sequence preserves it — another re
 - Agent writes N+1 without realizing — check for `items` access in loops
 - Agent batches inserts with `GenerationType.IDENTITY` — batching is silently off; use `UUID`/sequence
 
+## Examples And Templates
+
+See \examples/\ for side-by-side good vs bad patterns agents commonly get wrong.
+See \	emplates/\ for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Spring Boot 3.x and Spring AI 1.0 GA artifact coordinates — reject pre-GA dead names.

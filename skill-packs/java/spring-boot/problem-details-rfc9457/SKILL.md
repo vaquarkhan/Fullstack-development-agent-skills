@@ -168,6 +168,11 @@ Choose one approach per project. Don't mix `ApiResponse` for success and `Proble
 - Agent returns 200 with error in body — always use the correct HTTP status code
 - Agent creates handler without extending `ResponseEntityExceptionHandler` — extend it to get Spring's built-in exception handling for free
 
+## Examples And Templates
+
+See \examples/\ for side-by-side good vs bad patterns agents commonly get wrong.
+See \	emplates/\ for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Spring Boot 3.x and Spring AI 1.0 GA artifact coordinates — reject pre-GA dead names.

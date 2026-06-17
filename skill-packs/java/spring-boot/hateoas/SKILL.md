@@ -184,6 +184,11 @@ public ResponseEntity<PagedModel<EntityModel<OrderResponse>>> list(
 - Agent manually builds pagination links — use `PagedResourcesAssembler` instead
 - Agent forgets `self` link — every resource must have a `self` link
 
+## Examples And Templates
+
+See \examples/\ for side-by-side good vs bad patterns agents commonly get wrong.
+See \	emplates/\ for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Spring Boot 3.x and Spring AI 1.0 GA artifact coordinates — reject pre-GA dead names.

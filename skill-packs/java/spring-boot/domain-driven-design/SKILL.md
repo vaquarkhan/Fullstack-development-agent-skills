@@ -206,6 +206,11 @@ public class PaymentGatewayAdapter implements PaymentPort {
 - Agent publishes events before saving — publish after successful save/commit
 - Agent lets external API models into domain — use an Anti-Corruption Layer to translate
 
+## Examples And Templates
+
+See \examples/\ for side-by-side good vs bad patterns agents commonly get wrong.
+See \	emplates/\ for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Spring Boot 3.x and Spring AI 1.0 GA artifact coordinates — reject pre-GA dead names.

@@ -295,6 +295,11 @@ app:
 - Agent puts token validation logic in controller — belongs in filter
 - Agent puts refresh tokens in localStorage examples — recommend httpOnly cookies or secure storage; refresh tokens are long-lived credentials
 
+## Examples And Templates
+
+See \examples/\ for side-by-side good vs bad patterns agents commonly get wrong.
+See \	emplates/\ for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Spring Boot 3.x and Spring AI 1.0 GA artifact coordinates — reject pre-GA dead names.
