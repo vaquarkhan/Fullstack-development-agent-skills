@@ -27,6 +27,11 @@ disable-model-invocation: true
 - Actuator `/actuator/health` includes readiness for database and message brokers
 - Profiles (`dev`, `staging`, `prod`) externalize secrets and connection strings
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Spring Boot when team knows Spring ecosystem, need Spring AI, or largest community support.

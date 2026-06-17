@@ -27,6 +27,11 @@ disable-model-invocation: true
 - Migrations safe for large tables (disable_ddl_transaction, concurrent indexes)
 - Sidekiq jobs idempotent with unique-job locks where needed
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer service objects for multi-model orchestration over fat controllers.

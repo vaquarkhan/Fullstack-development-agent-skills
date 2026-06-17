@@ -27,6 +27,11 @@ disable-model-invocation: true
 - Secrets via environment; no credentials in application.yml committed to git
 - GraalVM native hints or build args documented if targeting native
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer reactive end-to-end for high fan-out I/O; use blocking MVC style only when team lacks reactive expertise.

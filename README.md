@@ -4,7 +4,7 @@
 [![Skills](https://img.shields.io/badge/Skills-106-brightgreen.svg)](#skills-catalog)
 [![Skill Packs](https://img.shields.io/badge/Skill%20Packs-34-orange.svg)](#skill-packs-by-stack)
 [![Presets](https://img.shields.io/badge/Presets-15-blue.svg)](#platform-presets)
-[![Examples](https://img.shields.io/badge/Examples-7-purple.svg)](#end-to-end-examples)
+[![Examples](https://img.shields.io/badge/Examples-10-purple.svg)](#end-to-end-examples)
 [![Starter Packs](https://img.shields.io/badge/Starter%20Packs-20-red.svg)](#starter-packs)
 [![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/ViquarKhan.fullstack-development-agent-skills)](https://marketplace.visualstudio.com/items?itemName=ViquarKhan.fullstack-development-agent-skills)
 [![JetBrains Plugin](https://img.shields.io/jetbrains/plugin/v/32167)](https://plugins.jetbrains.com/plugin/32167-fullstack-development-agent-skills)
@@ -248,6 +248,9 @@ Architecture blueprints (README-only design packs) are available in `examples/`:
 - `aws-lambda-api-cloudfront-spa` — Serverless API + CloudFront SPA distribution
 - `azure-apim-functions-static-web-app` — Azure Functions behind APIM with Static Web App
 - `gcp-cloud-run-pubsub-nextjs` — Event-driven Cloud Run with Next.js and Pub/Sub
+- `java-spring-boot-ai-agent` — Spring Boot + Spring AI + MCP agent platform
+- `java-quarkus-kubernetes-native` — Quarkus service on Kubernetes with native profile
+- `java-vaadin-fullstack-admin` — Vaadin Flow admin UI on Spring Boot
 
 ## Case Studies
 
@@ -324,7 +327,7 @@ fullstack-development-agent-skills/
 ├── starter-packs/             # 20 opinionated YAML bundles
 ├── references/                # 16 operational checklists
 ├── tutorials/                 # 12 guided walkthroughs
-├── examples/                  # 7 architecture blueprints (README-only)
+├── examples/                  # 10 architecture blueprints (README-only)
 ├── case-studies/              # 3 delivery scenarios
 ├── agents/                    # 6 reviewer personas
 ├── mcp/                       # 8 MCP template configs

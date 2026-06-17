@@ -27,6 +27,11 @@ disable-model-invocation: true
 - Error signals mapped to RFC 9457 or project error envelope
 - SSE/stream endpoints document client disconnect handling
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer WebFlux when I/O-bound concurrency dominates; use MVC + virtual threads when team prefers imperative style.

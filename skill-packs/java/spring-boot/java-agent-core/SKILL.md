@@ -29,6 +29,11 @@ disable-model-invocation: true
 - Side-effecting tools require authorization and audit logging
 - Memory scoped per user/session with explicit retention policy
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Spring AI ChatClient + advisors for LLM calls; MCP for external tool protocol.

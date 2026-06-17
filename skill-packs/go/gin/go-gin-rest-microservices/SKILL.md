@@ -27,6 +27,11 @@ disable-model-invocation: true
 - SQL uses parameterized queries — no string concatenation
 - Graceful shutdown drains in-flight requests
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer explicit dependency injection (constructors) over global state.

@@ -27,6 +27,11 @@ disable-model-invocation: true
 - Mass assignment guarded via $fillable or DTOs
 - Queue jobs idempotent with failed-job handling
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer FormRequest for validation; keep controllers thin.

@@ -27,6 +27,11 @@ disable-model-invocation: true
 - HTTP clients declare read timeouts and error handlers
 - Build fails on circular dependency or missing bean at compile time (fix, do not suppress)
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Micronaut when team wants Spring-like ergonomics with AOT-friendly DI.

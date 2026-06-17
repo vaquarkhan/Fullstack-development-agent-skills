@@ -27,6 +27,11 @@ disable-model-invocation: true
 - Rate limit keys scoped appropriately (IP vs API key vs user)
 - Fallback responses defined when upstream circuit opens
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Keep business logic out of gateway filters — auth, routing, and policy only.

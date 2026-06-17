@@ -27,6 +27,11 @@ disable-model-invocation: true
 - Native build runs in CI or release pipeline with documented JDK/Graal version
 - Horizontal Pod Autoscaler metrics tied to CPU or custom Micrometer metrics
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Quarkus over Spring Boot when cold start and memory dominate cost (serverless K8s, high churn).

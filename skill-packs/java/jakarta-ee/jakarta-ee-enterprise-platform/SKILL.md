@@ -27,6 +27,11 @@ disable-model-invocation: true
 - Transactions demarcated at service layer with clear rollback rules
 - Server-specific deployment descriptors documented (datasources, JNDI, security realms)
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Jakarta EE when portability across app servers and standards audit trail matter.

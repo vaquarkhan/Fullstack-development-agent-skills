@@ -27,6 +27,11 @@ disable-model-invocation: true
 - Secrets via environment; Settings class with validation
 - DB migrations via Alembic with rollback notes
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer async end-to-end when using asyncpg/httpx; use sync workers (gunicorn) for CPU-bound only routes.

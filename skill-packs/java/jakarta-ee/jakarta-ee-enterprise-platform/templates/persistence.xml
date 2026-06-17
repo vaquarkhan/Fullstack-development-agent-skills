@@ -1,0 +1,6 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+  <persistence-unit name="ordersPU" transaction-type="JTA">
+    <jta-data-source>jdbc/orders</jta-data-source>
+    <class>com.example.Order</class>
+  </persistence-unit>
+</persistence>

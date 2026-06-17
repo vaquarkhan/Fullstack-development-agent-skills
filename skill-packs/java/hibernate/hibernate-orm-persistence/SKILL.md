@@ -27,6 +27,11 @@ disable-model-invocation: true
 - Batch size (`@BatchSize` or `hibernate.default_batch_fetch_size`) for collection fetching
 - Second-level cache only with explicit invalidation strategy
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Spring Data repositories for simple CRUD; drop to Hibernate API for complex queries.

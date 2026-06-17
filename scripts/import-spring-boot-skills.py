@@ -215,6 +215,16 @@ def main() -> int:
         dest_dir.mkdir(parents=True, exist_ok=True)
         (dest_dir / "SKILL.md").write_text(build_skill(name, description, body), encoding="utf-8")
 
+        examples_section = (
+            "\n\n## Examples And Templates\n\n"
+            "See `examples/` for side-by-side good vs bad patterns.\n"
+            "See `templates/` for copy-paste starters.\n"
+        )
+        skill_text = (dest_dir / "SKILL.md").read_text(encoding="utf-8")
+        if "## Examples And Templates" not in skill_text:
+            skill_text = skill_text.replace("## Decision Framework", examples_section + "\n## Decision Framework", 1)
+            (dest_dir / "SKILL.md").write_text(skill_text, encoding="utf-8")
+
         # Copy examples/ and templates/ if present
         for sub in ("examples", "templates"):
             src_sub = skill_dir / sub

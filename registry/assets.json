@@ -222,6 +222,7 @@
     "bootstrap.ps1",
     "bootstrap.sh",
     "scripts/add-reference-provenance.py",
+    "scripts/add-skill-pack-examples.py",
     "scripts/check-skill-boilerplate.py",
     "scripts/import-spring-boot-skills.py",
     "scripts/install.ps1",
@@ -257,6 +258,9 @@
     "examples/aws-lambda-api-cloudfront-spa/README.md",
     "examples/azure-apim-functions-static-web-app/README.md",
     "examples/gcp-cloud-run-pubsub-nextjs/README.md",
+    "examples/java-quarkus-kubernetes-native/README.md",
+    "examples/java-spring-boot-ai-agent/README.md",
+    "examples/java-vaadin-fullstack-admin/README.md",
     "examples/payments-webhook-platform/README.md",
     "examples/react-nextjs-nestjs-monorepo/README.md",
     "examples/saas-multi-tenant-bff/README.md"

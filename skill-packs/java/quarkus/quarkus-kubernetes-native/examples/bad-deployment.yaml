@@ -1,0 +1,3 @@
+# BAD — no readiness, no limits, wrong health path
+livenessProbe:
+  httpGet: { path: /health, port: 8080 }

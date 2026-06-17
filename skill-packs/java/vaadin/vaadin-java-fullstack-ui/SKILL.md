@@ -27,6 +27,11 @@ disable-model-invocation: true
 - Session timeout and CSRF handled per Vaadin + Spring Security integration guide
 - Push enabled only when needed (WebSocket/Long polling) — understand server load
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Vaadin when team skill is Java-heavy and UI complexity is forms/grids/wizards.

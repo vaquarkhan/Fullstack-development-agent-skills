@@ -27,6 +27,11 @@ disable-model-invocation: true
 - Native build profile tested in CI or documented as manual gate
 - Config externalized via application.properties and env vars
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer RESTEasy Reactive for high-concurrency I/O-bound endpoints.

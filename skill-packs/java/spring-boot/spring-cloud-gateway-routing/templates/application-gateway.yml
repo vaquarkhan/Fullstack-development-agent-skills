@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: orders
+          uri: lb://order-service
+          predicates:
+            - Path=/api/v1/orders/**
+          filters:
+            - RemoveRequestHeader=Cookie

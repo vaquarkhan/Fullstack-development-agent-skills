@@ -27,6 +27,11 @@ disable-model-invocation: true
 - Migrations reviewed for locking impact on large tables
 - Celery tasks idempotent with retry and dead-letter handling
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer class-based views/viewsets over function views for consistency.

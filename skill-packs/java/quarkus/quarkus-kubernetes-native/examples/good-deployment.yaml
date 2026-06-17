@@ -1,0 +1,15 @@
+# GOOD — probes on Quarkus health endpoints, resource limits
+apiVersion: apps/v1
+kind: Deployment
+spec:
+  template:
+    spec:
+      containers:
+        - name: app
+          livenessProbe:
+            httpGet: { path: /q/health/live, port: 8080 }
+          readinessProbe:
+            httpGet: { path: /q/health/ready, port: 8080 }
+          resources:
+            requests: { memory: "64Mi", cpu: "100m" }
+            limits: { memory: "256Mi", cpu: "500m" }

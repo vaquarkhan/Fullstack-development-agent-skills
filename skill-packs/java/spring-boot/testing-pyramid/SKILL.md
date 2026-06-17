@@ -217,6 +217,11 @@ login_withInvalidCredentials_shouldReturn401()
 - Agent uses `assertEquals` from JUnit — use AssertJ (`assertThat(...).isEqualTo(...)`)
 - Agent names tests `test_createOrder()` — use `createOrder_condition_expected()` pattern
 
+## Examples And Templates
+
+See `examples/` for side-by-side good vs bad patterns agents commonly get wrong.
+See `templates/` for copy-paste starters aligned with this skill.
+
 ## Decision Framework
 
 - Prefer Spring Boot 3.x and Spring AI 1.0 GA artifact coordinates — reject pre-GA dead names.
